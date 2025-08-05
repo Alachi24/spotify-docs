@@ -1,0 +1,73 @@
+---
+id: save-shows-for-current-user
+title: "Save Shows for Current User"
+description: "Save one or more shows to current Spotify user's library."
+sidebar_label: "Save Shows for Current User"
+hide_title: true
+hide_table_of_contents: true
+api: eJzFVttu4zYQ/RViXgoYpC3bcdqoyIORe5qLUSuLFkkeGGpssStxtCTl2DX87wUlebvZZhd6aNEn2/TMmTlz4eEWvFw6iB9hntGrg2cOKTpldek1GYhhLlfIyCAjywqyyFywY56YqqxF49m8JK8XG1Y5tD84lusXK+2m/2SeTK93Rx7jXo9NK5+R1X/KAMucohKdYL1ecBKtiygo1YtNrwccqERb216lEIOTK6zzOyd70oR9cGiBQymtLNCjDRy2YGSBEINOHXxNZMoUFYUUDoOPx5Tl2nlGC+Yz/Ezi6tSxBdn6rGbaZ73erVzroioCj0kUTPrAQQfQTxXaDXBwKsNCQrwFvylDBs5bbZbAAdeyKPNwdEC/3N5eXM5PKU2j14PDYZT8cX3Hoxuar+nofHL0+/Xr8tO5cTQeTmC3e+Zg0ZVkHLqAPIqi8PFVezJ6ZaE8KXDIUKZ1JbYwzb2Yr1T42iW3bHz8BPHBwfgJfmaFPB5NjkZRFPFsLEZH7/4Fux2HEzIejRc3aJY+6xqs8f2gZVeHyySZDUYM0yWWltYbzob9IVsSLXOssaRS6JxQZLylXMg8p1ehLKZovJa56xrI2+o7gF+UtwvYVCksPWfTshSzXPoF2YK/XQTO9hVMNiVydm/1UhvOfkVvN2K68Gj5fjRFwPmA1tV+v4mTnKpUJFYqFDXK2nOmch3QPH1Ew5lqwVs29em36RXoM0o707s4Szib3c8Tzu5nydX93Zyz2UPC2enZzVlyxtlsmpxcfjsc1Vy7Ruu9B1TItZBL7IpxGB381A6uzL1w//l6KKky3GfbNVZp9Up65Kxld9xgpdJ3JjqXnrPoR3ZdGTaKRhM2GsXRUTwasovbpEZzaFdou+KhWdGm8fNWKy+8lcaVZL1wqCqr/aYr1J7UeDgZH+7rtBb7SQ2OgurLrfMgGnJGLxYtkqUX8k54uezur02Ka84MLSiMJuzq5jUpQbytfzbbEfpT+Vp3wn0Hg9VwUOCgVgrYl7WRosrmYXK8L108GMhS912zyH1FBez4PyyUosp499bsOQjNgmoG2jfdbaVqOrsCDqvmRoAYhv2oH0GTuFRN4hxKcr6Q9Z614lgreq2mtdK1espaQX0jL9u/q/B/PQTavoXrbVDmUhvY8aZy27YJj7AaQmhQaMD+EZOR8+Gv7fZFOnyw+W4Xjhu9Du1JtZMvOaYQL2Tu8DvE/+2Hw7uMPuLm87tlJfMqWNTdX0mrQ6IQPz5/OYazh7DJfwEwmUPV
+sidebar_class_name: "put api-method"
+info_path: docs/spotify/spotify-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Save Shows for Current User"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"put"}
+  path={"/v1/me/shows"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Save one or more shows to current Spotify user's library.
+
+**Note:** Authorization scopes- **user-library-modify**
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"ids","description":"A comma-separated list of the Spotify IDs for the shows. **Maximum:** 50 IDs.","in":"query","schema":{"type":"string","example":"4oKMMGHSDodd0w4610TjJN,0LoSxo9F59YJwgqFnso315"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Show saved","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"}},"Content-Length":{"schema":{"type":"string","example":"0"}},"Via":{"schema":{"type":"string","example":"HTTP/2 edgeproxy, 1.1 google"}},"access-control-allow-credentials":{"schema":{"type":"string","example":"true"}},"access-control-allow-headers":{"schema":{"type":"string","example":"Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token"}},"access-control-allow-methods":{"schema":{"type":"string","example":"GET, POST, OPTIONS, PUT, DELETE, PATCH"}},"access-control-allow-origin":{"schema":{"type":"string","example":"*"}},"access-control-max-age":{"schema":{"type":"string","example":"604800"}},"alt-svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"}},"cache-control":{"schema":{"type":"string","example":"private, max-age=0"}},"date":{"schema":{"type":"string","example":"Sat, 07 Jun 2025 22:09:21 GMT"}},"server":{"schema":{"type":"string","example":"envoy"}},"strict-transport-security":{"schema":{"type":"string","example":"max-age=31536000"}},"x-content-type-options":{"schema":{"type":"string","example":"nosniff"}},"x-robots-tag":{"schema":{"type":"string","example":"noindex, nofollow"}}},"content":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

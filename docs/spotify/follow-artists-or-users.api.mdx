@@ -1,0 +1,73 @@
+---
+id: follow-artists-or-users
+title: "Follow Artists or Users"
+description: "Add the current user as a follower of one or more artists or other Spotify users."
+sidebar_label: "Follow Artists or Users"
+hide_title: true
+hide_table_of_contents: true
+api: eJzNV99v2zgM/lcEPgZy4iTtcPWhD16b23rYlmx1d9s1fVBsJlZnS54kZ/GC/O8HSU7TtV1hHLDD5aGJfvAjP5Ii2S0YttIQXcOVRqXhhkKGOlW8MlwKiCDOMmJyJGmtFApDao2KME0YWcqikN9QEbkkUiCRipRSIWHKcG20XUuToyKXlTR82ThR3Z+Luej13kmDUa9H4trkUvHvzKojOpUV6oD0evZu4DUEpcz4sun1gIKsULmrFxlE4M9jr2+qPAMKFVOsRGMX0fUWBCsRIjBNhfCQXZIjuTgn9qw1LHakMrJmRY3amjgHz2gOlMzBGjYHf3eyYWVVOB4W4dTfAwrcYn+tUTVAQac5lgyirTchAm0UFyuggF4eolYD7Hb0zl6e6UfmxiSVZckCjZajwYwUXBsbABsiD2L9blcuUHvXX5zrPolJyTa8rEsrcBzaTZIyQRZItA0tFy6OCr/WqE3/3/AIP4/Z6j1jL1YjFX4uX8+m0xOV0/GbaRnGf99W3z6+x8X6S8PE7XlDR6/C5vM0EzO1XL4cvVU4/HT2dg273Q2F1oqXMmusylQKg8LYn6yqCp66LBjcauuX7WPb5OIWUxuKStmcMRy1PbVOPVxiSjHLjBss9fPE2q3dvb3r/ebNbnfYdzh/uMQk8eEl+NyMtuDy6s6UHzAcjEJdSaE9zig8sl8PkuAuzC7E7TPMgEKOLGvVxIUJLtfpk755gl4+Pp1DdHQ0nsPvpGSno+OTURiGNB8Ho5Mnj2yuwkfOump4nSSzwYhgtsJKyU1DybA/JCspVwU6LJamqHVgA61kETD39FOFGQrDWaG7KjKqfgbwnou6gMVpipWhJK6qYFYws5SqpD8WLUrOfG4GSVMhJVPFV1xQ8gGNaoJ4aVDR/TsMLM5HVNrJfQrOCllnQaJYioFD2RhK0oJbNCO/oKCkTfygZeN2f06vRJPLrDO9V5OEktn0MqFkOksupu8uKZldJZScT95Mkgklszg5e/1zddJx7aqt9xRQyTYBW2FXjBfh0W9t8rHCBPqXp3jK0hz31nbVVSm+ZgYpadmdeqyMmc5E/8KMkuGQ/FkLMgpHx2Q0jI7CaHxEXr1NHJpGtUbVFQ/FWjZeziiemsAoJnQllQk0prXipukKtSc1Hh6PX+z9tGaqM4B/VcFEpDJzVXVHYRPsM93KBdJVu86JLKQWfLlskZRcSKMDw1bd5bnIcEOJkL6egivGh67jlv512fjWrrUwk0MEg/VwUOLAy3lgHxo/ftSqsNlnTKWjwYBVvK99MeinsgTb8B/cSFNZC6N/vHZDwfa6D4euONkb/7iV2Ma9lI4xN47ffg6IZxdAYe0rEEQw7If9EDxRlnqiFCqpTcncu26HkZ81tAcDyr0+/T8bHNvQ2wo7qArGhW3lzvHbNo7XsB6CjTFQOMTyhkIutbHH2+2CabxSxW5nt/1YZCOccc0WBWYQLVmh8Rmf/KJx80lyX7A5TL3t1AEu37rb+1/Pm88Q8ePwgceNKzncEoHo2ua8b+0uIl7kfl++J/tofrRYd097dpUAhUU7dpYysyKKfQPq/kbg/gu5K05ubwsFE6vatTHwkPbzD9rChVo=
+sidebar_class_name: "put api-method"
+info_path: docs/spotify/spotify-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Follow Artists or Users"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"put"}
+  path={"/v1/me/following"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Add the current user as a follower of one or more artists or other Spotify users.
+
+**Note:** Authorization scopes- **user-follow-modify**
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"type","description":"The ID type.\n\n**Allowed values:** \"artist\", \"user\"\n\n**Example:** type=artist","in":"query","schema":{"type":"string","example":"artist"}},{"name":"ids","description":"A comma-separated list of the artist or the user Spotify IDs. A maximum of 50 IDs can be sent in one request.","in":"query","schema":{"type":"string","example":"0Y3agQaa6g2r0YmHPOO9rh,3LOm0AZjpwVQebvkyanjDy,2G0yYOdnPrffB2Mre1XCMv"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"ids":{"type":"array","items":{"type":"string","example":"string"},"example":["string"]}}},"examples":{"Follow Artists or Users":{"value":{"ids":["string"]}}}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"204":{"description":"Artist or user followed","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"}},"Via":{"schema":{"type":"string","example":"HTTP/2 edgeproxy, 1.1 google"}},"access-control-allow-credentials":{"schema":{"type":"string","example":"true"}},"access-control-allow-headers":{"schema":{"type":"string","example":"Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token"}},"access-control-allow-methods":{"schema":{"type":"string","example":"GET, POST, OPTIONS, PUT, DELETE, PATCH"}},"access-control-allow-origin":{"schema":{"type":"string","example":"*"}},"access-control-max-age":{"schema":{"type":"string","example":"604800"}},"alt-svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"}},"cache-control":{"schema":{"type":"string","example":"private, max-age=0"}},"date":{"schema":{"type":"string","example":"Wed, 11 Jun 2025 21:40:34 GMT"}},"server":{"schema":{"type":"string","example":"envoy"}},"strict-transport-security":{"schema":{"type":"string","example":"max-age=31536000"}},"vary":{"schema":{"type":"string","example":"Accept-Encoding"}},"x-content-type-options":{"schema":{"type":"string","example":"nosniff"}},"x-robots-tag":{"schema":{"type":"string","example":"noindex, nofollow"}}},"content":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,73 @@
+---
+id: remove-user-s-saved-audiobooks
+title: "Remove User's Saved Audiobooks"
+description: "Remove one or more audiobooks from the Spotify user's library."
+sidebar_label: "Remove User's Saved Audiobooks"
+hide_title: true
+hide_table_of_contents: true
+api: eJzFVk1z4zYM/SscXNp6KNvyR3ajTg5umibZ2U08sZJp83GgKchiI5EKSSnWevTfO5TkbDzd7ejWk20SeMADQDzvwLKNgeABFkUk1FqpZwNPFCI0XIvcCiUhgBvMVIlESSRKk0xpJOzNnMRaZcQmSFa5siKuSGFQ/2RIKtaa6Wr4KB/lYHClLAaDAVkUNlFafGUOmxiucjQeGQyck9e5eJmKRFwNBkBB5agb28sIAtBNJrcG9WrFSozeZU0hZ5plaFE7QjuQLEMIQETuTjgeLwXqCigYnmDGINiBrXJnY6wWcgMUcMuyPHVH/sfq7uU5Wkc35Woy4+PL9O8JF9S/OH+dfppebe+v/XDp/xbauyS/px/ERbwu/L+Wi9PXI3W/XPzxyb4g1PUTBY0mV9KgcQEn47H7OKzvG4ufzS8kYSWSNaIkLdnoW4G78gCFBFnU8NzBIrXequTuax9eyfTkEYLZbPoIv5KMnUzmx5PxeEyTqTc5/u4V1DWFUyUtSut9RrmxSd9gre+dYH0dLsJwOZoQjDaYa7WtKPGHPtkotUmxwWKcozEeV9JqlXosTdWrxzVGKK1gqekbyOriPwDflbcP2IJzzC0lizz3limzsdIZPZx0SvYVDKscKbnWYiMkJTdodeUtYoua7h+Q53DuUJvG70/vNFVF5IWacfQalK2lhKfCoVn1jJIS3oF3bJrTH9PL0CYq6k3v/CykZHm9Cim5XoaX11crSpa3ISW/n30+C88oWS7C04sfh1MN177RBt8DytjWYxvsi3E0nn3sBpcznuAep69/rkXJLFLSxT1psSJme6cQFkjJ5AP5wioyGU/mxD8O5vNgNiPnX8IGzaAuUffFQ1mqqvWzWnDrWc2kyZW2nkFeaGGrvlB7UlN/Pj3aP/Ctt58h5+ipZjf1HhGpjBRx3CFptVbWeJZt+vsLGeGWEqli5YYG6qZ5bUoQ7Jqf7dxCABGmaLFZ+W4Zwaj0RxmO2Hs1aMvbSkGhU7f6rM1NMBqxXAxN+9SGXGVQ039ZcK4Kac2h2ZOTkVg1TIRt8t5L3mJ5CRTK9s069RiOh2NoCTDeEqCQK2Mz1ryETpw6Zb1tFbORNHKgaQdCsftWkP9Vk7s+ukU0ylMmJNS0reCu68gDlD64hgEFdvDPIlHGuvvdbs0M3uq0rt1xK82uV5EwbJ1iBEHMUoMUnrF6k/GSpYUL3TSjZFo4Uwgent5PR7uWoK7/AVZpAJs=
+sidebar_class_name: "delete api-method"
+info_path: docs/spotify/spotify-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Remove User's Saved Audiobooks"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/v1/me/audiobooks"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Remove one or more audiobooks from the Spotify user's library.
+
+**Note:** Authorization scopes- **user-library-modify**
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"ids","in":"query","schema":{"type":"string","example":"18yVqkdbdRvS24c0Ilj2ci,1HGw3J3NxZO1TP1BTtVhpZ,7iHfbu1YPACw6oZPAFJtqe"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Audiobook(s) have been removed from the library","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"}},"Content-Length":{"schema":{"type":"string","example":"0"}},"Via":{"schema":{"type":"string","example":"HTTP/2 edgeproxy, 1.1 google"}},"access-control-allow-credentials":{"schema":{"type":"string","example":"true"}},"access-control-allow-headers":{"schema":{"type":"string","example":"Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token"}},"access-control-allow-methods":{"schema":{"type":"string","example":"GET, POST, OPTIONS, PUT, DELETE, PATCH"}},"access-control-allow-origin":{"schema":{"type":"string","example":"*"}},"access-control-max-age":{"schema":{"type":"string","example":"604800"}},"cache-control":{"schema":{"type":"string","example":"private, max-age=0"}},"date":{"schema":{"type":"string","example":"Tue, 27 May 2025 19:55:44 GMT"}},"server":{"schema":{"type":"string","example":"envoy"}},"strict-transport-security":{"schema":{"type":"string","example":"max-age=31536000"}},"x-content-type-options":{"schema":{"type":"string","example":"nosniff"}},"x-robots-tag":{"schema":{"type":"string","example":"noindex, nofollow"}}},"content":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,73 @@
+---
+id: transfer-playback
+title: "Transfer Playback"
+description: "Transfer playback to a new device and optionally begin playback. This API only works for users who have Spotify Premium. The order of execution is not guaranteed when you use this API with other Player API endpoints."
+sidebar_label: "Transfer Playback"
+hide_title: true
+hide_table_of_contents: true
+api: eJztV99v2zYQ/lcOfNlmUI4dO92qoQ9ua7QBlsZLnK5YEhQ0dbbYSKRKnmyrhv/3gZTsuMuPadjr/GRId9/x7r47ftowEgvH4ms2yUSFlt1ylqCTVhWkjGYxm1qh3RwtFJmoZkLeARkQoHEFCS6VRBA6ARPMRZZVMMOF0nvrLkxT5WA0OQWjswpWxt45mBsLpUPrYJUaSMUS4bIwpOYVTCzmqsy9H4KxCVowc8A1ytKHAOVAG4JFKazQhJjAKkUNlSk9ItAu2kpRCoZStFCnFp6iTgqjNLnujb7Rnc4HQxh3OjAqKTVWfRMhhpOmQBdBp+MPGeUmUfMq2qUUORKEnQ7jzBRog8tpwmJGTakmjSHjzOLXEh29NknF4g2TRhNq8n9FUWRKBuejL86XesOcTDEX/h9VBbKYmdkXlMQ4K6wPRQqdf1sX/rNK3IGtsFZUjDNFmB8+d2SVXjDOcC3yIvOPfh6OLv/8Y4bD7JMoZ68HL76RffeJbQ9srp8yut1u7+1CnD1D9nnHG7YUWYl/P+uzoAHXoiuMdjXwca9XIxzycbKnYRPWYuJPPuwNHhq/Fgmc+95C0wj4cWWNXoA02pU5WrjDisNMJKCNlsgB14WymACpHB2JvOh2uz914UrPjaVSC8Ks4mAxEiWlqCm0UC+AUgyMhpXRPxCkmBWQosUu4yxFkaANKY0yii6X8tFmP9KodPDqhsXD4eCG/Qq5eHV88vK41+vxdBAdv3z0FfNV3HUkGmtpEg/aMp5MS33n67nl7KMSbd3eT6eTo2PAZIGFNeuKQ7/bh4UxiwwDlpASnYs8/a3JIpFlZhVJi4mvoMhc20Bky2cAD+rcBmwkJRbEYVQU0SQTNDc2599vAg5v6omNplWBHM6tWijN4QLJVtFoTmj5bnNFHucjWhf8PkVvMlMm0dQKiVFAWRMHmSmPRuYONYdmHURNNuHp0+nlSKlJWqf3bjzlMDm/nHI4n0xPzz9ccphcTTm8Hf82no45TEbTN++fDmdCrm2jdR4DysU6Egtsi/GiN/ylYbAUMsUdTlv/wqqlIOTQxH3VYDVVxn85DItvqggAiaDWOVwK4jDow5mo4Lh3fAL9YTzoxcMTeHc2DWgO7RJtWzzUS1PVfmSVpCisvcJYihzK0iqq2kLtqjLonwxe7FbFOtqVxztG9T3emmPaOK3m8wbJmpkhF5FoXWJtlE5wzUGbufGsY9uDjv3XaxKtNfafzXJ0rmHp0ydtNIQ0ee71zlyoDJN4p1bC9aKam8iiaA76DNzF+Oz06uzzxfj3q9OL8VsWGiyoPLy5dZnP0B76DXuD5qJsfwHvq7DPs3Uy97k8PPD9eXeHCueql5QfxjJUWlDKYna07B/leFTUGnM3A14RbFhpM3/TERUuPjoSheq6eqF2pcnZlj+wkNKUXsF9Z3bLmafHxb3eGu+K1lqDcKb03IQGKKqnuRGlo8kp42xZL3cWs3631+2xmqhCeqL63AvjKBeh81rkeCieDyThdwrlQBL+r7SfU9rNSPhb1NNIaT8xgRibhmTXbNlnnoCedvuPmdQ48u82m5lweGWz7dY//lqirVh8fcvZUlglZkHzegrUIiIw8w4rFrNDBeBJUM/Vw8XkmVp71MLiWdvbg0mZXE0ZZ7PmEyE3iXexYuXHT6xYzMKHxn4vh2cblgm9KOtxriH97y+LY7zD
+sidebar_class_name: "put api-method"
+info_path: docs/spotify/spotify-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Transfer Playback"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"put"}
+  path={"/v1/me/player"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Transfer playback to a new device and optionally begin playback. This API only works for users who have Spotify Premium. The order of execution is not guaranteed when you use this API with other Player API endpoints.
+
+**Note:** Authorization scopes- **user-modify-playback-state**
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"device_ids":{"type":"array","items":{"type":"string","example":"74ASZWbe4lXaubB36ztrGX"},"example":["74ASZWbe4lXaubB36ztrGX"]}}},"examples":{"Transfer Playback":{"value":{"device_ids":["74ASZWbe4lXaubB36ztrGX"]}}}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Playback transferred"},"403":{"description":"Bad OAuth request (wrong consumer key, bad nonce, expired timestamp...). Unfortunately, re-authenticating the user won't help here.","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"}},"Transfer-Encoding":{"schema":{"type":"string","example":"chunked"}},"Via":{"schema":{"type":"string","example":"HTTP/2 edgeproxy, 1.1 google"}},"access-control-allow-credentials":{"schema":{"type":"string","example":"true"}},"access-control-allow-headers":{"schema":{"type":"string","example":"Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token"}},"access-control-allow-methods":{"schema":{"type":"string","example":"GET, POST, OPTIONS, PUT, DELETE, PATCH"}},"access-control-allow-origin":{"schema":{"type":"string","example":"*"}},"access-control-max-age":{"schema":{"type":"string","example":"604800"}},"cache-control":{"schema":{"type":"string","example":"private, max-age=0"}},"content-encoding":{"schema":{"type":"string","example":"gzip"}},"date":{"schema":{"type":"string","example":"Sat, 31 May 2025 14:30:45 GMT"}},"server":{"schema":{"type":"string","example":"envoy"}},"strict-transport-security":{"schema":{"type":"string","example":"max-age=31536000"}},"x-content-type-options":{"schema":{"type":"string","example":"nosniff"}},"x-robots-tag":{"schema":{"type":"string","example":"noindex, nofollow"}}},"content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"object","properties":{"message":{"type":"string","example":"Player command failed: Premium required"},"reason":{"type":"string","example":"PREMIUM_REQUIRED"},"status":{"type":"number","example":403}}}}},"examples":{"Transfer Playback":{"value":{"error":{"message":"Player command failed: Premium required","reason":"PREMIUM_REQUIRED","status":403}}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

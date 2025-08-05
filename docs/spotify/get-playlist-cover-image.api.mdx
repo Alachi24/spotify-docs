@@ -1,0 +1,71 @@
+---
+id: get-playlist-cover-image
+title: "Get Playlist Cover Image"
+description: "Get the current image associated with a specific playlist."
+sidebar_label: "Get Playlist Cover Image"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9lm1v2zYQx78KcS8HypblhyYa8sJIg9TDthiLVgxIg4GmzhZbieTIk2PX0HcfKNmpuyWrhgHzGwu07ncPvvsfD0Bi4yF9gGUp9qXy5OGRQ45eOmVJGQ0p3CIxKpDJ2jnUxFQlNsiE90YqQZizJ0UFE8xblGqtJLNH1gA4GItOBNAihxQ2SCdH12aLbhFQwMGht0Z79JAeIInj8PV1EHPmkZhZd949cChQ5Ohai3lJ0f1WhkcvC6xEeKK9RUjBk1N6AxxwJypbhqNifPUB0slk/AG+Z5W4SqaXSRzHvBhHyeWLP0HTcMic0H6NLrrR0uQB2tOfLGr9CfMW8l6Jvmbvsmw5TBjmG7TO7PacjQYjtjFmU2LLElKi95E0mpwpI1GW5imSDnPUpETp+zoiV/8D8KzOfWBzKdESZ3Nro2UpaG1cxdm8psI49bltBc6ujSbUFGV7i5zdObVRmrNfkNw+mq8JHWf31pBa76PAeY/Ot3a/RdelqfMoc0Ji1FJ2xJksVaCR+YSaM3mEH7NpT19Pr0IqTN47vdubjLPl3X3G2d0yW9z9fM/Z8teMs7c3P95kN5wt59n1u9fdmTbXvt6+ewlUiV0UxqYnYxZPLo4dLIUs8MTpa2+d2gpCzo5+r46sY5XxXw7D5rOyLSAX1DuHrEbO4jH7odYsiZMpG12m0ySNE3b7U9bSPLotur481Fuz7+zIKUkRhdm2xlHkUdZO0b4v6lSV8Wg6np2kYhedyhMMI9OqWO8e08ZrtV4fSc6sDPmIRO8Sa6N0jjvOtFmb0HXQnP1jwVZYWyrZDuPwozcv96NwTuyBgyKs/Nm5WX1EScDBuqDupDrZLlBtCjp7T9fVCt15ZLNJ3HCoXfkNfSayPh0O1cDLXA+kGbaiPxSr2ZvZaJbHcRyvkjfj0Wo6Tlar6UWeryeTWI4vkovxOL+EhsOTyqn4ZjChLM8HD19ymE3iY5z/PZjnWILDxy8O26KF3XraiKxdiazbiekBtqKs/7ew2g8HK5yokFq9fziAFlUo3inC3xc5/PV2kBV40mq2eBs2dLgrnF8BgtyBFVS0i/6PWjnMIQ1Lh7/azk3zyKGT5u7aENotIFIYbkfDE94PD4ez4Jpm+Hw96AShS+PrkgmrBr6LeCBNBQ3/2xtSmlqT//q1x5DK2rTBKmo79ZT4fLkADttuTUEKo0E8iKEbOSHDUDRN8yfjlSau
+sidebar_class_name: "get api-method"
+info_path: docs/spotify/spotify-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Playlist Cover Image"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/playlists/{{Playlist_Id}}/images"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get the current image associated with a specific playlist.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"Playlist_Id","description":"The Spotify ID of the playlist.","in":"path","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A set of images","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"}},"Transfer-Encoding":{"schema":{"type":"string","example":"chunked"}},"Via":{"schema":{"type":"string","example":"HTTP/2 edgeproxy, 1.1 google"}},"access-control-allow-credentials":{"schema":{"type":"string","example":"true"}},"access-control-allow-headers":{"schema":{"type":"string","example":"Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token"}},"access-control-allow-methods":{"schema":{"type":"string","example":"GET, POST, OPTIONS, PUT, DELETE, PATCH"}},"access-control-allow-origin":{"schema":{"type":"string","example":"*"}},"access-control-max-age":{"schema":{"type":"string","example":"604800"}},"cache-control":{"schema":{"type":"string","example":"private, max-age=0"}},"content-encoding":{"schema":{"type":"string","example":"gzip"}},"date":{"schema":{"type":"string","example":"Tue, 03 Jun 2025 19:52:02 GMT"}},"server":{"schema":{"type":"string","example":"envoy"}},"strict-transport-security":{"schema":{"type":"string","example":"max-age=31536000"}},"x-content-type-options":{"schema":{"type":"string","example":"nosniff"}},"x-robots-tag":{"schema":{"type":"string","example":"noindex, nofollow"}}},"content":{"application/json":{"schema":{"type":"array","items":{"type":"object","properties":{"height":{"type":"number","example":640},"url":{"type":"string","example":"https://i.scdn.co/image/ab67616d0000b2731b532bb58ddf440c382833d9"},"width":{"type":"number","example":640}}},"example":[{"height":640,"url":"https://i.scdn.co/image/ab67616d0000b2731b532bb58ddf440c382833d9","width":640}]},"examples":{"Get Playlist Cover Image":{"value":[{"height":640,"url":"https://i.scdn.co/image/ab67616d0000b2731b532bb58ddf440c382833d9","width":640}]}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

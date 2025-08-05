@@ -1,0 +1,65 @@
+---
+id: get-user-s-saved-shows
+title: "Get User's Saved Shows"
+description: "Get a list of shows saved in the current Spotify user's library. Optional parameters can be used to limit the number of shows returned."
+sidebar_label: "Get User's Saved Shows"
+hide_title: true
+hide_table_of_contents: true
+api: eJzdVt9v2zYQ/lcIPmyAQdmykharBmMwUi9NsSTGrBRrkzzQ1NliSpEqeXLtGPrfB1J24qxpqw7Yy54kkHff/eZ9W4p86Wh6TWeF+ezoLaM5OGFlhdJomtJTQMKJkg6JWRDnhYjjK8iJ1AQLIKK2FjSSWWVQLjakdmB/dkTJueV20yeXAYkrUnHLS0CwjgiuyRy8aE7QECVLiQFM1+Uc7KMlC1hbDXn/Rt/oXu/CIKS9HhnXWBgr77mHJk6YClxEej1vO9pZjizwvNejjJoKbJA8y2lKl4BXDuxs5oNog2bUgquMduBouqVJHPvP0zxM+RLcg2OU0QJ4DjYojBVGs5Xwv04UUHL/h5sKaEodWqmXlFFY87JS/qg4Gt3Q9Pj46Ib+Sko+Sl68SuI4ZsVRlLx69oo2DaOZ5dotwEYTLUzuQTvaE0WtP0IeQN5J3lXtTZZNBwmBfAmVNesNI8P+kCyNWSoIWFwIcC4SRqM1KuJKmc+RsJCDRsmV62oIbf0NwIM8dwEbCwEVMjKuqmiqOC6MLdnThmHkxGgEjVG2qYCRSyuXUjPyJ6DdROMFgmX7do48zjuwLuj9FZ0oU+dRZrmAKKCskRGhpEdD8xE0I2IHvosmnH49vBKwMHnn8E4nGSPTy1nGyOU0O7u8mDEyvcoYeT35Y5JNGJmOs5M3XzdnQqxdrfWeAyr5OuJL6IrxMj7+ZdfBXGHk/vM5EVwUsPe2q62qnispGNkFN9pB7UoJPzhxy3tZBYCcY+dEnfsOi1+Rt7UmSZy8IMMkPU7S4Utyep4FNEDe2YUben4SnZVXw/dZcfchE0cXp5PN+d2Hu/fJW3Vx+qF4f/e2vLj/vTi/nwzPXy/js+VodEODHQd2BbarJdArs2n10EqBEfqHqjIWIweithI3XaH22T8avjh6ua/nitvOAE/mPGivo30RvVZkwnveedy0cVouFjska+YGXfQDVdBG6hzWjGizMH4AaXPQV16XV5WSIvg7uHPm+dE08zsQSBmtrF9mKNtFVVhYfGeEECuXDga8kn3Xvmh9YcrBajgoYRBW2W9msXCAo/insIZHSUwbRiVC6Q6wubV8Qx/PmwMr17cNo0H5QKHd5IfOJHHDqIZ1kNK1Unzuj/3rfyDlLxpGW6e+iefhKgsraWrXBRINcvUdxOYxroDp2c9VS2gCXyAtYUi3dMVVDY9F+JeZfkjo9e1DCpN4nybv+GMq4sNw26tdSN7vJvjebpOW5fh24VjQlB46Qffj7Y1uaW3V152nDftCQghTa3RPxW4ZlXphQnIlhs7b08Hx9Iwyumo3KE3psB/3fdx+BLjwFfZ+V8ZhyUPza17Cjnc+k/l/0NPt4yj9H5jqrjM9qxhUikvtRzEUYLur5TVdDamvs6/jnrEXxqG/2m7n3MGVVU3jjz/V4F9O31orbmU7G2FYW04VGuAjbB5Yky9U29ZfPku+xg/ddTrxC+lvwi8kig==
+sidebar_class_name: "get api-method"
+info_path: docs/spotify/spotify-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get User's Saved Shows"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/me/shows"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get a list of shows saved in the current Spotify user's library. Optional parameters can be used to limit the number of shows returned.
+
+**Note:** Authorization scopes- **user-library-read**
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Pages of shows","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"}},"Transfer-Encoding":{"schema":{"type":"string","example":"chunked"}},"Via":{"schema":{"type":"string","example":"HTTP/2 edgeproxy, 1.1 google"}},"access-control-allow-credentials":{"schema":{"type":"string","example":"true"}},"access-control-allow-headers":{"schema":{"type":"string","example":"Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token"}},"access-control-allow-methods":{"schema":{"type":"string","example":"GET, POST, OPTIONS, PUT, DELETE, PATCH"}},"access-control-allow-origin":{"schema":{"type":"string","example":"*"}},"access-control-max-age":{"schema":{"type":"string","example":"604800"}},"alt-svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"}},"cache-control":{"schema":{"type":"string","example":"public, max-age=0"}},"content-encoding":{"schema":{"type":"string","example":"gzip"}},"date":{"schema":{"type":"string","example":"Mon, 09 Jun 2025 12:42:16 GMT"}},"etag":{"schema":{"type":"string","example":"\"MC-ImU1YThjZTc3NGEyMjZjY2JlNGZhYjJmNzFhMzE1MDg0Ig==\""}},"server":{"schema":{"type":"string","example":"envoy"}},"strict-transport-security":{"schema":{"type":"string","example":"max-age=31536000"}},"vary":{"schema":{"type":"string","example":"Authorization"}},"x-content-type-options":{"schema":{"type":"string","example":"nosniff"}},"x-robots-tag":{"schema":{"type":"string","example":"noindex, nofollow"}}},"content":{"application/json":{"schema":{"type":"object","properties":{"href":{"type":"string","example":"https://api.spotify.com/v1/me/shows?offset=0&limit=20"},"items":{"type":"array","items":{},"example":[]},"limit":{"type":"number","example":20},"next":{"nullable":true,"example":null},"offset":{"type":"number","example":0},"previous":{"nullable":true,"example":null},"total":{"type":"number","example":0}}},"examples":{"Get User's Saved Shows":{"value":{"href":"https://api.spotify.com/v1/me/shows?offset=0&limit=20","items":[],"limit":20,"next":null,"offset":0,"previous":null,"total":0}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

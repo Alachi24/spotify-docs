@@ -1,0 +1,75 @@
+---
+id: update-playlist-items
+title: "Update Playlist Items"
+description: "Either reorder or replace items in a playlist depending on the request's parameters. To reorder items, include range_start, insert_before, range_length and snapshot_id in the request's body. To replace items, include uris as either a query parameter or in the request's body. Replacing items in a playlist will overwrite its existing items. This operation can be used for replacing or clearing items in a playlist."
+sidebar_label: "Update Playlist Items"
+hide_title: true
+hide_table_of_contents: true
+api: eJztV99v2zYQ/lcOfBlgUP6ZdKuGPriN0aRrGy9WunVJUNDU2WIikSxJOXYN/+8DKdmxWyfzuqcBzUtkiffd3ce7j8clcWxqSXxFhjlb5MI6S24oSdFyI7QTSpKYDITL0IBBZVI0oPyjzhlHEA4LC0ICA13bQ4oaZSrkFJQElyEY/FyidT9Z0MywAh0a24REbQADCgUheV6mCIbJKX6yjhnnX1o07tMYJ8ogrb/lKKcuAyZTsJJpmyn3SaQ+jl1/Y5Uuak9b8T54Ko2wwCxglSCDzyWaxUOYPtVHQC8Cos9yHwf3Is9BzdDcG+G8Wws4F9Zt1jchyYQFpdEwzzJwJmGMUFpMYbJhOLBogOfIzCO+mtfyWjYaQxs3GnVUGJhZs8sMQlG6kuX5AnDO89KKGT64tnCfCZ6BzfxKn6tlBQLKVCshHYVx6SBjM4RUTCZoULrdjczQ7sBxJn9yPhmmdS4wBaemGAgOgVshp/mG0Dr898qhT6BfukwZ8aUixXKl0UbQaKyzjQqViski0uU4F7zRoPu+GTFjDhsNQskmrLOUxKTUKXO4rvQzTyahpI7kpUoXJF4SrqRD6fxjSIAH+9at9b2wJJZnWDD/5BYaSUzU+Ba5I5Ro4705gdZ/3SncreWyLMZoCCU4Z4XOkcS9FSXbdf3k4u5mcWiQJ9d2VqvV5mcI6jIQAGsGoKIgXpIZy0vcE3bv69C6X7n3PoIbg1YraSs/3Xbb/9uVkf6mWeHsJBS5L7b17hFKMmQpmgDQz100mvG9hFvne2E7UZL1XlyT+Oiod01+hYK96B4/77bbbZr1ou7zvZ+IjzkxTNoJmmggufKSdag/npXyDtMA8kGwQ81Ok2TY6gKmU9RGzRcUOs0OTJWa5hiwGOdobeRL0Kg8Ynmu7iNuMEXpBMvtoY6cKZ8A3OL5ELA+56gdhb7W0TBnbqJMQXc7lcKrqmuiZKGRwrkRUyEpXKAzi6g/cWgojLRyvj89zgc0Ntj9Gb3KVZlGiWEco4AydxR4LjyaU3coKdQtGdXZhLePp1egy1R6cHqvBwmF4fkooXA+TM7O348oDC8TCieDt4NkQGHYT16dPu5OhVwP9dbYB1SwecSmeCjGs/bRL3UFc8YzXOMcal8LJIXa74saq2YZ/2UzTL8IHQC8thxqlJRIod2DN6WEbrt7DJ1ufHQUd47g9bskoFk0MzSH4qGcqUVl54zgLnK+t7UyLrLISyPc4lCoNSu9znHv2Voq5tGaHm8YqSBqB9eYVFaKyaRGMmqsnI0cO5hiqYRMcU5BqonyVUdWWzv2X4+qrRnqH5Sg3++/LIuPE/zjrD/4Tb55c4vt23x0cXQ6+utz8TP5jgNnx/lBHqrzpupyX81lyIj504m0Zp3W+kSxrWdvxceXenR8Mng+/H3w7iT7+OX0nLecYfzOn/xVifnxd0lKk/uDxDlt41aLadG0lV41uSrIin6zgnNVSmd3l91Q4tm/eBgpBmv2vudspUTIiQqbIlzYglpEoT88I5TMKhklMek02802qUqCcV8SniStrCtYKAbJCm+/f0O+mvi3hqAfw/+P4f//OvzXQuYnCi8KQpIVrbp4WevFFZl1vHhs7r6U7NcMj1apxg0lmbLO2y6XY2bx0uSrlX8d6ofEVzeUzJgRbOwb9upmtR5sg8zc4YLEZHta8m1cieG3Iu5lp7KohrAn195sieLwMiGUjOsrTaFSb2LYvb/usHsSk3A32pxh4d2S5ExOyzCIkArS//0NQlKgCw==
+sidebar_class_name: "put api-method"
+info_path: docs/spotify/spotify-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Update Playlist Items"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"put"}
+  path={"/v1/playlists/6LiYBpS5DE9PQEMDhYzHOc/tracks"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Either reorder or replace items in a playlist depending on the request's parameters. To reorder items, include range_start, insert_before, range_length and snapshot_id in the request's body. To replace items, include uris as either a query parameter or in the request's body. Replacing items in a playlist will overwrite its existing items. This operation can be used for replacing or clearing items in a playlist.
+
+**Ps:** Replace and reorder are mutually exclusive operations which share the same endpoint, but have different parameters. These operations can't be applied together in a single request.
+
+**Note:** Authorization scopes- **playlist-modify-public**, **playlist-modify-private**
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"insert_before":{"type":"number","example":3},"range_length":{"type":"number","example":2},"range_start":{"type":"number","example":1}}},"examples":{"Update Playlist Items":{"value":{"insert_before":3,"range_length":2,"range_start":1}}}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A snapshot ID for the playlist","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"}},"Transfer-Encoding":{"schema":{"type":"string","example":"chunked"}},"Via":{"schema":{"type":"string","example":"HTTP/2 edgeproxy, 1.1 google"}},"access-control-allow-credentials":{"schema":{"type":"string","example":"true"}},"access-control-allow-headers":{"schema":{"type":"string","example":"Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token"}},"access-control-allow-methods":{"schema":{"type":"string","example":"GET, POST, OPTIONS, PUT, DELETE, PATCH"}},"access-control-allow-origin":{"schema":{"type":"string","example":"*"}},"access-control-max-age":{"schema":{"type":"string","example":"604800"}},"cache-control":{"schema":{"type":"string","example":"private, max-age=0"}},"content-encoding":{"schema":{"type":"string","example":"gzip"}},"date":{"schema":{"type":"string","example":"Tue, 03 Jun 2025 12:44:14 GMT"}},"server":{"schema":{"type":"string","example":"envoy"}},"strict-transport-security":{"schema":{"type":"string","example":"max-age=31536000"}},"x-content-type-options":{"schema":{"type":"string","example":"nosniff"}},"x-robots-tag":{"schema":{"type":"string","example":"noindex, nofollow"}}},"content":{"application/json":{"schema":{"type":"object","properties":{"snapshot_id":{"type":"string","example":"AAAABumYfeWIAEKnJJje0jlSR4HSZqm7"}}},"examples":{"Update Playlist Items":{"value":{"snapshot_id":"AAAABumYfeWIAEKnJJje0jlSR4HSZqm7"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,63 @@
+---
+id: get-featured-playlists-deprecated
+title: "Get Featured Playlists[DEPRECATED]"
+description: "Get a list of Spotify featured playlists (shown, for example, on a Spotify player's 'Browse' tab)."
+sidebar_label: "Get Featured Playlists[DEPRECATED]"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9Vk1v4zYQ/SvEXNIWlC1/JGhU5OAmTjaLdmNstIsCWR9oamRxI5EsSTn2Gv7vBWnJSZqkqx7akwRp5s3Mm+E8bsGxpYXkDmYl25TCOgtzChlaboR2QklI4AodYcT/JCont1o5kW9IjszVBjOiW0/ygy3Ug6QkV4bgmlW6REqUJOzg5G3RHFly9KtRDxaPiGOLH3tAQWk0zAe8ziCBJbrLBv+Q2AVqg5w5zICCQauVtGgh2cIwjv3jedYTotkSM2IxpH3IEnYUxvH4pUNaIDFoVW04WiKVI7mqpQ9WIMvQhFCT0kW3K+5fLS+wYv7NbTRCAtYZIZdAoakdEihGZ18gGY9HX+AXUrGz4fHpMI5jWoyi4emrv2C3o5AaJm2OJppKrjIP2jEeL2p5j1kA+SxYV7d3aTrrDwlmS9RGrTeUDHoDslRqWWLAYpyjtRFX0hlVRqws1UPEDWYonWCl7RrImfofAJ/w3AVswjlqR8lE62hWMpcrU1EyqV2hjPgWhomScyUdShelG42U3BixFJKSj+jMJprkDg1thzPyOJ/R2OD3R3ReqjqLUsM4RgFl7SjhpfBoTt2jpIQ34E014evb5VXoCpV1Lu9qmlIyu7lNKbmZpdc3H24pmX1KKbmY/jZNp5TMJun5u7fDqVBr12g/vQZUsXXEltgV4yQe/9xMMCtdZP/zc8IZL7DNtmssbcSKOaSkqe6swWp6if/yyC2/CR0AMuY6M3VpBCXxCXlfSzKMh8dkGCejk2R4Sq5+TwOaRbNC0xUP5Upt9n7OCO4i5zeIVsZFFnlthNt0hWpZGQ2ORyct0euopcc7RirszM6TLJWVIs9h94Rn78G0LgUPB7X/1arXZ1UtviJ3QEEbrxFO7Hc+GqPM980qtLaZ4Lfz+6AcuQy7PhDIXG2fOMi6WqB56jCOx7tdKKb5FMy9TLaiRQ6qdXcxnX2cnk/S6cXcW61YWeOzAg4pPsnjMY02Vgi33yB7ffSlMldAAv3VoL8IctpvRTl6lLt2lLzKb6E2pT9uzmmb9PtMi57db78eVxXs6AsLzlUtnX1uNqcgZK4CScIFDluFn8yugcJqv0YhgUEv7sWwbzvjvu2+EK2sq1houGQVNpeM77D3t3vJ9nGU/p8rSjMPXgj6umRC+nEJdG2bVtzBagAU9s0ACq+0Y06hUNZ52+12wSx+MuVu5z//WaPZQHI3p7BiRrCF5/VuvmvvH6F/97g5KJ/neT9NL0+Sb9FhWq6mfqf8BeGNWac=
+sidebar_class_name: "get api-method"
+info_path: docs/spotify/spotify-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Featured Playlists[DEPRECATED]"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/browse/featured-playlists"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get a list of Spotify featured playlists (shown, for example, on a Spotify player's 'Browse' tab).
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A paged set of playlists"},"404":{"description":"The resources not found","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"}},"Transfer-Encoding":{"schema":{"type":"string","example":"chunked"}},"Via":{"schema":{"type":"string","example":"HTTP/2 edgeproxy, 1.1 google"}},"access-control-allow-credentials":{"schema":{"type":"string","example":"true"}},"access-control-allow-headers":{"schema":{"type":"string","example":"Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token"}},"access-control-allow-methods":{"schema":{"type":"string","example":"GET, POST, OPTIONS, PUT, DELETE, PATCH"}},"access-control-allow-origin":{"schema":{"type":"string","example":"*"}},"access-control-max-age":{"schema":{"type":"string","example":"604800"}},"alt-svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"}},"cache-control":{"schema":{"type":"string","example":"private, max-age=0"}},"content-encoding":{"schema":{"type":"string","example":"gzip"}},"date":{"schema":{"type":"string","example":"Fri, 06 Jun 2025 20:36:29 GMT"}},"server":{"schema":{"type":"string","example":"envoy"}},"strict-transport-security":{"schema":{"type":"string","example":"max-age=31536000"}},"x-content-type-options":{"schema":{"type":"string","example":"nosniff"}}},"content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"object","properties":{"message":{"type":"string","example":"Not Found"},"status":{"type":"number","example":404}}}}},"examples":{"Get Featured Playlists[DEPRECATED]":{"value":{"error":{"message":"Not Found","status":404}}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

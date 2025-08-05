@@ -1,0 +1,71 @@
+---
+id: get-several-tracks-audio-features-deprecated
+title: "Get Several Tracks' Audio Features[DEPRECATED]"
+description: "Get audio features for multiple tracks based on their Spotify IDs."
+sidebar_label: "Get Several Tracks' Audio Features[DEPRECATED]"
+hide_title: true
+hide_table_of_contents: true
+api: eJy1VlFz0zgQ/isavXDXkRMnaQn4hgdfE3rtAM1RF5iWPqjyOhaVJVdah6SZ/PcbyQlXSuHMDPeUjKz9dvfb1e63psjnjiaXNLNc3Dh6xWgOTlhZozSaJvQIkPAml4YUwLGx4EhhLKkahbJWQDDYkWvuICdGEyxBWnJWG5TFihxPXI8yamqw3AMe5zShc8AzWIDlqnWaeviXW/QJ1BYER8gpozW3vAIE60NcU80roAmVuaMPw0yJMFXFIwfeBiEnSjokpvAB3Q8nRO/P2sB7ZG/vNV/KqqmSvT0yiONdzNLD3jZgV5RRJ0qoOE3WFFe1j8GhlXpOGYUlr2rljwbx+P0HgfxCqkP3YTwev1EXByds/HKxXLwfN8VEzvU7UY0vXlUmY8OTv0/S7PZ8cnH77P2dunuajsRJSjebK0YtuNpoB847HMax/3mYroOQ3deloRtG9+PRt/f/5Dk5TRssiYXbBhyS3z5bo+dEGO2aCiy5gRUj1zwn2mgBjMCylhZygrICh7yqe73e7z1yrgtjsdEcQa0YsRDxBkvQKAVHqeeB2saBJZ+NfoKkBFWTEix4SkvgeajlmqYKo7OF8H+7cFuOXnykyf7+6CP9g1T8xfDg+TCOY1aOouHzRz/RzYb5ptauABtNtTC5B+3oT5SNvoE8gLyTvKvZX1k26w8J5HOorVmuGBn0BmRuzFxBwOJCgHORMBqtURFXynyOhIXcM8iV6+oIbfMDwHs8dwFLhYAaGUnrOpopjoWxFSO+W4yVd+HdMnJoNILGKFvVwMiplXOpGXkLaFdRWiBYtntlkcd5B9YFuw/RoTJNHvmnDlFAWSIjQkmPhuYGNPNdGMC32YTT76dXAZYm75ze0TRjZHZ6ljFyOsuOT9+cMTI7zxiZTF9NsykjszQ7/Ov77kzItau3vceAKr6M+By6YjyN959tO5grjNz//k4EFyXsou3qq7ZywREY2Wb3You1rSX85JOb38k6AOQcOzP12rdY/JycNJoM4+EBGYySeJgMYnL0OgtoDuwCbFc80Auzau3QSoER+glSG4uRA9FYiauuUDtWRoOD0dMd0ctoR483jEyYz507WRunZVHQzT2evQWvaxXmr9H9T8483qvm+hMI9EvV+nWMsl0vYK2x/33NIcfG3bunm+oa7P3w9uPRZhNC2x6F614/bLc9adf9ExIWPtlt/MvJdPZ2ephm08mVt1hw1cBXoe2c7zwEJ+0UaOVEkApY0oT2F4N+2InRl52464FWQzRW+XeCWLuk3+e17Ll2bPWEqeiGfXNDCNNodF9fu/L6oDCBD4mhODuNkc6OKaOLdv55WdCLezFt68WFr5ePvjYOKx4qtVU1P0nUAwG0/rcffo1k25bZT+t+rbjUXlsEatZbri/pYkAZfcD2FaOlceg/r9fexblVm40/brWUr0EuHb9WkNOk4MrBD1L59bLu0bxuYPVFV27bj4YiL7iVPlSaXF5tdgIm5NCatKvzntU3T9GjfGnVo6kfSv8Ayy3cqA==
+sidebar_class_name: "get api-method"
+info_path: docs/spotify/spotify-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Several Tracks' Audio Features[DEPRECATED]"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/audio-features"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get audio features for multiple tracks based on their Spotify IDs.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"ids","description":"A comma-separated list of the Spotify IDs for the tracks. **Maximum:** 100 IDs.","in":"query","schema":{"type":"string","example":"107WXctaZilCsX777NlZ5J,7FvxvW7ufDignVcm7ZLmoT,2JQJATqUDZq8Wzlz6A3cJA"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A set of audio features"},"403":{"description":"Bad OAuth request (wrong consumer key, bad nonce, expired timestamp...). Unfortunately, re-authenticating the user won't help here.","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"}},"Transfer-Encoding":{"schema":{"type":"string","example":"chunked"}},"Via":{"schema":{"type":"string","example":"HTTP/2 edgeproxy, 1.1 google"}},"access-control-allow-credentials":{"schema":{"type":"string","example":"true"}},"access-control-allow-headers":{"schema":{"type":"string","example":"Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token"}},"access-control-allow-methods":{"schema":{"type":"string","example":"GET, POST, OPTIONS, PUT, DELETE, PATCH"}},"access-control-allow-origin":{"schema":{"type":"string","example":"*"}},"access-control-max-age":{"schema":{"type":"string","example":"604800"}},"alt-svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"}},"cache-control":{"schema":{"type":"string","example":"private, max-age=0"}},"content-encoding":{"schema":{"type":"string","example":"gzip"}},"date":{"schema":{"type":"string","example":"Mon, 09 Jun 2025 13:02:10 GMT"}},"server":{"schema":{"type":"string","example":"envoy"}},"strict-transport-security":{"schema":{"type":"string","example":"max-age=31536000"}},"x-content-type-options":{"schema":{"type":"string","example":"nosniff"}}},"content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"object","properties":{"status":{"type":"number","example":403}}}}},"examples":{"Get Several Tracks' Audio Features[DEPRECATED]":{"value":{"error":{"status":403}}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

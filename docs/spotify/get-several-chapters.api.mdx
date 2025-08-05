@@ -1,0 +1,71 @@
+---
+id: get-several-chapters
+title: "Get Several Chapters"
+description: "Get Spotify catalog information for several audiobook chapters identified by their Spotify IDs. Chapters are only available within the US, UK, Canada, Ireland, New Zealand and Australia markets."
+sidebar_label: "Get Several Chapters"
+hide_title: true
+hide_table_of_contents: true
+api: eJzdVltz2jgU/isaPe7I4Jikm3gnD5SwhLZJmGI6KUkehHzAAllyJZmEMPz3HcmG0m26477uAxddzneuOt/ZYksXBscPuJfRwoI2+IngFAzTvLBcSRzjAVg0LpTl8w1i1FKhFojLudI5dTfQXGlkYA2aCkTLlKuZUivEajzEU5CWzzmkaLZBNgOuD3DDK9NCe82IakBKig2ia8oFnQlAz9xmXDopNBkTNPlIUI9KmlKChhoElSlBt/CMpkDdArlPtzRWU8EpyqlegTUtTLAqQHtzhymO8QLsuLL44DbBBdU0B7+IH7ZY0hxwjHnqzrgLxLcS9AYTbFgGOcXxFttN4e4Yq7lcYILhheaFcFvh0Nx/GYUfcvY+oum43+mcD1YfSWd6Pzv/++N0MAn7191PX+/flb3XCQmvzp77t+kqfZ59E/pa0Q8Xi+gC73ZPBGswhZIGjFMYhaH7+TFBXWTAIjU/xBwTnAFNvSdb3BU2GK+Z+9vE8qxz+Yjj09POI/4L5fQyOruIwjAkWSeILt48wrsdwYmm0sxBB33JVOpAG+pjWSlXkHqQL5w2FbtOklE7QpAuoNDqZUPQSesELZRaCPBYlDEwJmBKWq1EQIVQzwHT4MuRCtNUkdXlfwAexbkJWJcxKCxB3aIIRoJa94oI6pY2U5q/+gIlqKekBWmDZFMAQXeaL7gk6DNYvQm6cwua7B9Q4HC+gDZe7j7oCVWmQaIpg8CjvFiCmOAOzaoVSIJYDV5743d/7V4ONlNpY/cG/YSg0d04IehulAzvbscEjSYJQVf9T/2kT9Com/Suf61OeV+bavvjLaCcvgR0AU0x3oWn53UFM8oy2OM0lS/KmeCMoFrtZQ1VBxl+8y0sXnnhAVJqG7uQlEBQ9Ce6oRsUhdEZisI4uohPO2hwk3g0sLSxCY/4phcMl4vX6TITX1+n/Gb5OZ/m0+zu6j2/HXyNplfDs5ulEDfL7tntYBINF5eXj9jrMaDXoJtqArlWm0rOas5sYF0LKZS2gQFWam43TaH20e+cnHXe7TvSS7BPgxMMlG+XjUtZKiP5fF4jaTVT1gS/EUepuEzhhSCp5soVN94dVYaTpUUhOPNvvr006u2yV7MlMOvYSTsKs7zigUOn/36Tak0dO3ELud+XpfAkimPXwo5scwe7o/WD2yCHrydvaH3qkfwEUDN870jzmooSfjTnDaydx6s6ScW9nmxthmPcXp+0j1irKqCKf0stHBtZW5i43aYFb5mq6bWYyvGO/HSDMVVKa3689uS4e658nLj1mdkPH93REBO8rronjvFJK2yFuEoRZS5Fzu5CGZtTn5x6IngzGv8amrbfE/3/mJ/qInOM0i4E5RLvSJWAbZ3LB7w+cdE7miMzZaw72G5n1MBEi93ObVdzlMtxyo0zM8XxnAoDBK9gc5i56urCPolrqnlVzA9Pu/144zEqkYpYj6R+el0O5VCEg77rjP8AY5i+Lg==
+sidebar_class_name: "get api-method"
+info_path: docs/spotify/spotify-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Several Chapters"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/chapters"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get Spotify catalog information for several audiobook chapters identified by their Spotify IDs. Chapters are only available within the US, UK, Canada, Ireland, New Zealand and Australia markets.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"ids","in":"query","schema":{"type":"string","example":"0IsXVP0JmcB2adSE338GkK,3ZXb8FKZGU0EHALYX6uCzU,0D5wENdkdwbqlrHoaJ9g29"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A set of chapters","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"}},"Transfer-Encoding":{"schema":{"type":"string","example":"chunked"}},"Via":{"schema":{"type":"string","example":"HTTP/2 edgeproxy, 1.1 google"}},"access-control-allow-credentials":{"schema":{"type":"string","example":"true"}},"access-control-allow-headers":{"schema":{"type":"string","example":"Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token"}},"access-control-allow-methods":{"schema":{"type":"string","example":"GET, POST, OPTIONS, PUT, DELETE, PATCH"}},"access-control-allow-origin":{"schema":{"type":"string","example":"*"}},"access-control-max-age":{"schema":{"type":"string","example":"604800"}},"cache-control":{"schema":{"type":"string","example":"public, max-age=0"}},"content-encoding":{"schema":{"type":"string","example":"gzip"}},"date":{"schema":{"type":"string","example":"Tue, 27 May 2025 20:29:43 GMT"}},"etag":{"schema":{"type":"string","example":"\"MC-IjgzZjhlYzZiMjRmZmZhODBiNGY2ZDI5MjllMjA5NGU2Ig==\""}},"server":{"schema":{"type":"string","example":"envoy"}},"strict-transport-security":{"schema":{"type":"string","example":"max-age=31536000"}},"x-content-type-options":{"schema":{"type":"string","example":"nosniff"}},"x-robots-tag":{"schema":{"type":"string","example":"noindex, nofollow"}}},"content":{"application/json":{"schema":{"type":"object","properties":{"chapters":{"type":"array","items":{"nullable":true,"example":null},"example":[null,null,null]}}},"examples":{"Get Several Chapters":{"value":{"chapters":[null,null,null]}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

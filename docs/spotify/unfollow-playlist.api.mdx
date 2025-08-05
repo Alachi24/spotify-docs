@@ -1,0 +1,73 @@
+---
+id: unfollow-playlist
+title: "Unfollow Playlist"
+description: "Remove the current user as a follower of a playlist."
+sidebar_label: "Unfollow Playlist"
+hide_title: true
+hide_table_of_contents: true
+api: eJy1lW9v2zYQxr/K4V4KpC3bcbFqyAsjDVoPXWM0ajGgCQaWOlvEJJIjT649w999kGQNCZYMerNX+sf73T2n48MTstpFzL7hl0gh4qPAgqIOxrNxFjP8TLXbE3BJoJsQyDI0kQKoCAq2rqrcDwrgtqDAV+pYmciTB/tgk+STY8qSBFYNly6Yv1RLhKidpyghSYblsnaF2R6lb75XRieJeOlbMHvFlCQo0HkKHWtdYIaN7YvYXCJQYKDonY0UMTvhPE3by3NRw2IYoqlAgSWpou1BdsJVxfJ+r9vbqEuqVXvHR0+YYeRg7A4F0kHVvmpflYvrB8yurhYP+DPU6nq+fDtP01SUCzl/++InPJ8F3jjLZFl+JLvjcmyyPvarUWMDPuT5ZjoHKnbkgzscBcwmM9g5t6uoYymtKUapneXgKqnajkgdqCDLRlVxbCIOzX8An7R3DGylNXkWsPJebirFWxdq8XyYBAwdzI+eBNwFszNWwGficJSrLVMQcO8dtyPUcr5SiF3cb/Kmck0h86A0yY5yYAG6Mi2N3R9kBegL/KKme/u6vJq4dMVoee9vcwGbu/tcwN0mX999uhew+ZILeHf78Ta/FbBZ5TcfXk/nOq1jsyUvgWp1kGpHYxlv0qufLoOrKpbxf98eWumShmrH5ro4hYCLuuueVSgeLTQvGwGzOfzSWJin8yXMltkyzdIreP9r3tEihT2FsTyye3fs4zgYzZKDstG7wDKSboLh41jUIGoxWy7eDH06yGFS20DpOpcbPYjWRWu22wspuO+Oo2S1Gx9vbEEHAdb1Xorn7uf1JWF26h69Cqom7vb/txNaVdMTH/593frvc4/OSxr2LqzftSdMewb9c8agwHb80SsuO8//szGBCsxaExKvVn4+PwrstypmWFBFTCh6SobT/Ww6ZIjT0+lJfefzdDjtIg4T0ItpQtUOObOP2XSqvJnEvu6JdjWexb9WaO0ay/H5ssdW0NZ1JRvuWjvIX23WKHDfmxdmOJukkxT7Hit96fHfUvaf5g==
+sidebar_class_name: "delete api-method"
+info_path: docs/spotify/spotify-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Unfollow Playlist"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/v1/playlists/{{Playlist_Id}}/followers"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Remove the current user as a follower of a playlist.
+
+**Note:** Authorization scopes- **playlist-modify-public**, **playlist-modify-private**
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"Playlist_Id","description":"The Spotify ID of the playlist.","in":"path","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Playlist unfollowed","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"}},"Content-Length":{"schema":{"type":"string","example":"0"}},"Via":{"schema":{"type":"string","example":"HTTP/2 edgeproxy, 1.1 google"}},"access-control-allow-credentials":{"schema":{"type":"string","example":"true"}},"access-control-allow-headers":{"schema":{"type":"string","example":"Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token"}},"access-control-allow-methods":{"schema":{"type":"string","example":"GET, POST, OPTIONS, PUT, DELETE, PATCH"}},"access-control-allow-origin":{"schema":{"type":"string","example":"*"}},"access-control-max-age":{"schema":{"type":"string","example":"604800"}},"alt-svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"}},"cache-control":{"schema":{"type":"string","example":"private, max-age=0"}},"date":{"schema":{"type":"string","example":"Thu, 12 Jun 2025 15:50:04 GMT"}},"server":{"schema":{"type":"string","example":"envoy"}},"strict-transport-security":{"schema":{"type":"string","example":"max-age=31536000"}},"x-content-type-options":{"schema":{"type":"string","example":"nosniff"}},"x-robots-tag":{"schema":{"type":"string","example":"noindex, nofollow"}}},"content":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

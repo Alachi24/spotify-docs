@@ -1,0 +1,73 @@
+---
+id: seek-to-position
+title: "Seek To Position"
+description: "Seeks to the given position in the user's currently playing track. This API only works for users who have Spotify Premium. The order of execution is not guaranteed when you use this API with other Player API endpoints."
+sidebar_label: "Seek To Position"
+hide_title: true
+hide_table_of_contents: true
+api: eJztVlFv2zYQ/isHvnQzKFuxk6LV0AcvNdoAS+MlTjGgCQqGOlusJZ5Knhyrhv/7QFpuk6XtvPc92aB43919/Mj7NoLVwovsg5iWqkUnbqXI0WtnajZkRSauEJcemIALhIVZoYWavAlfwdi42nh0zzzoxjm0XLZQl6o1dgHslF72YVYYD+PpGZAtW7gnt/QwJxfjPNwXBIVaIVzVxGbewtRhZZoqxCGQy9EBzQHXqJtdVg+WGBaNcsoyYg73BVpoqQmIwPts94YLIC7Qwa65uIo2r8lY9v0be2N7vXfEmPV6MG64IGe+qJjDa6rRJ9DrhSKTinIzb5PQ153Sy8SzYuz1hBRUo4shZ7nIhEdczmja8SOkqJVTFTK6wPFGWFWhyMSewI+VF1KYQPPnBl0rpPC6wEqJbCO4rcNez87YhZAC16qqy7A0PEnTVGy3t1I49DVZjz5EDNM0/Dw+v1OqKmVz8GhZbKU4TkdPN/2ucrgIDIDDzw16hl/uHdkFaLK+qdDBElsJdyoHS1ajBFzXxmEObCr0rKq63+//2odrOyfHjVWMZSvBYaIaLtCy0YqjJDq9wD3ZZwwFljUU6LAvpChQ5ZGpjRiXnFytdPh7CCPF6NWNyI6PRzfiN6jUq+HJy2GaprIYJcOX3/0ktlspZk5ZP0eXTKymPIAemE8XjV1iHkHeG3Vo2NvZbDoYAuYLrB2tWwlH/SNYEC1KjFhKa/Q+0WTZUZmosqT7RDvMA4Oq9IcmYtf8BPABz4eAjbXGmiWM6zqZlorn5Cr5+L5IOCXLaDmZtTVKuHBmYayES2TXJuM5o5P7+50EnPfofIz7KzktqcmTmVMak4iyZgm6NAGNaYlWBhVG8K6buPrj9irkgvKD23szmUmYXlzNJFxMZ2cX764kTK9nEl5P/pjMJhKm49np2x+no9jrodl63wOq1DpRCzwU43l6/KJTsFa6wD3OofG1MyvFKKHL+6rD6ljG/3gZFl9MHQFyxQf3cKVYwugIzlULw3R4AsM0G6XZyQt4cz6LaB7dCt2heGhX1O7i2BnNCYe7XZPjxKNunOH2UKg9K6Ojk9Hz/VOxTvb0hMCE4st5sMYseWvm8w7J0R2xT1gdTLElY3NcS7A0p6A6sX1wYiFW1XUZ31iyg0+evq9HuvuEmsNYcmFusdnNDXSO3L9vq9D7TqU/rrSbtLqbOnNlSsyz/UyP4yXMjTCJHKqu0J/AXU7Oz67PP15O/rw+u5y8FvGAFTf+QZxtqjt0D+OO09F2GynqluL2YGVgRvB1PmcbsVJlg49I+Nrmwb18a+Vpvd/K3dcUy9q9UeEuNpFoxYXIxGB1NKhwUMe8g2AmxP4e7PxD48ow7Zhrnw0GqjZ9v3tU+5oqsZVPdmhNTfA6j7bdBs8xp8ig4d117LzXeHompFjtXmeRiaN+2k/FTmlKB6WF6mvyXKnIX+donlD7Dxu5+abV/x3lzx1lJ+owB4MSjA2aj8e66XTyQayORNBQUM7OtstoPYN7L8hz2LLZ3CmP167cbsPyzl8GDeXGq7sSc5HNVelRiiW2Tzxpdy1EFMtKORNCRPbhdru3aRFrF7ozCA+injxGAeWr5KfX4YH/G7qNRRE=
+sidebar_class_name: "put api-method"
+info_path: docs/spotify/spotify-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Seek To Position"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"put"}
+  path={"/v1/me/player/seek"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Seeks to the given position in the user's currently playing track. This API only works for users who have Spotify Premium. The order of execution is not guaranteed when you use this API with other Player API endpoints.
+
+**Note:** Authorization scopes- **user-modify-playback-state**
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"position_ms","in":"query","schema":{"type":"string","example":"25000"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Command sent"},"403":{"description":"Bad OAuth request (wrong consumer key, bad nonce, expired timestamp...). Unfortunately, re-authenticating the user won't help here.","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"}},"Transfer-Encoding":{"schema":{"type":"string","example":"chunked"}},"Via":{"schema":{"type":"string","example":"HTTP/2 edgeproxy, 1.1 google"}},"access-control-allow-credentials":{"schema":{"type":"string","example":"true"}},"access-control-allow-headers":{"schema":{"type":"string","example":"Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token"}},"access-control-allow-methods":{"schema":{"type":"string","example":"GET, POST, OPTIONS, PUT, DELETE, PATCH"}},"access-control-allow-origin":{"schema":{"type":"string","example":"*"}},"access-control-max-age":{"schema":{"type":"string","example":"604800"}},"cache-control":{"schema":{"type":"string","example":"private, max-age=0"}},"content-encoding":{"schema":{"type":"string","example":"gzip"}},"date":{"schema":{"type":"string","example":"Sat, 31 May 2025 20:30:58 GMT"}},"server":{"schema":{"type":"string","example":"envoy"}},"strict-transport-security":{"schema":{"type":"string","example":"max-age=31536000"}},"x-content-type-options":{"schema":{"type":"string","example":"nosniff"}},"x-robots-tag":{"schema":{"type":"string","example":"noindex, nofollow"}}},"content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"object","properties":{"message":{"type":"string","example":"Player command failed: Premium required"},"reason":{"type":"string","example":"PREMIUM_REQUIRED"},"status":{"type":"number","example":403}}}}},"examples":{"Seek To Position":{"value":{"error":{"message":"Player command failed: Premium required","reason":"PREMIUM_REQUIRED","status":403}}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

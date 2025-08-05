@@ -1,0 +1,73 @@
+---
+id: save-tracks-for-current-user
+title: "Save Tracks for Current User"
+description: "Save one or more tracks to the current user's 'Your Music' library."
+sidebar_label: "Save Tracks for Current User"
+hide_title: true
+hide_table_of_contents: true
+api: eJzFVltv2zoM/isCXwoEcuIkbbb6oA9Zm7Xdeskatzhb2wdFphOttuVJcho3yH8/kOz0snaFgYODk4fEocWP/EiK5AoMm2kIriFUjN9puKUQoeZK5EbIDAKYsAUSmSGRiqRSITHuIDGSmDkSXiiFmSGFRrWlydZ3WShyWmjBt0gipoqpsn2T3WSt1pk0GLRaZFiYuVTigVkDRHOZo/ZIq2URvFrFS2Uk4rLVAgoyR+XOHkcQgGYLrFz9LNV+ZfxSowIKOVMsRYPK8llBxlKEAESk4XdOQ8JlmjJPo9UxGJFEaENk7ChNcmlEXJLjA90mrdYpW4q0SK3rO74TAgVhYX4VqEqgoPkcUwbBCkyZW5vaKJHNgAIuWZonVjR4+CGWnwfF96k5/FiIs4eD897JEfWT+cnkfnHx9fAoPuZXo4d+8e3rgPZyTPPDwZfkw4+jg3z/0yj5dokc1utbCgp/FajNJxmV1iSXmcHM2EeW54ngLladn9oyXb32TU5/Ijc2XMpG1gjU9q0N09MhphSzzITBVL9PrBatn8muN8Lb9fpJ7nBcNVX5I7FUpM4gcSkMVrBgSYGP/rwAclgKdS4zXYH1fN/+vMytAye2TCKgMEcWuYJYwTAx3mTB3wzKG7zm/b0bCLa3+zfwF0nZXm9nt+f7Pp33vd7um6/AOrhfpcM7wWxm5k2NVbpXgjVVOArDcadHMJphruSypKTb7pKZlLMEHRbjHLX2bHUomXgsSeS9xxVGmBnBEt3UkFHFO4DPwtsEbMg55oaSYZ5744SZWKqUvmwIlGwiGJY5UnKuxExklFygUaU3jA0qurmhnsW5QqWd3t/efiKLyLMFgJ5DWRpKeCIsmpF3mFFS3xavZuOkf6aXopnLqDG9w1FIyfh8ElJyPg6Pz88mlIwvQ0oORiejcETJeBjuH/3ZnHRcm1prvQWUsqXHZtgUY+Bvf6wLlyXG0//59eCMz3HjbVNbuRILZpCSmt1ehRUx05joqa0Qf5d8KTLS83s7pNsPujuB3yWHp6FD06gWVQ9qgofZQpaVnlGCG88olulcKuNp5IUSpmwKtSHV7+70B5s4Lb1NpVpFT7ru1rgQM6kzEcc1kpJTabRn2Ky5vsgiXFKSyVja0gTXfJ9Gjftb3Q6bn8LNE2b7HXQW3U6KnWpLgE1cq5FcqMSWjjG5Djodlou2rm5ym8sU1vTVCc5lkRn98tgtBTvdLp7m4Gjj+eu5YUd1LB1dYRy5zXgfjo+BwqJqHxBAt+23fahYMl6xpJBLbVLmLmW9ULw7wn7bNJ6N5/9/karzbdtiJ0+YyOzQdgFf1cm7hkUXbGLt6cd9cC61se9WqynTeKmS9dqKq+3HpjUSmk0TjCCIWaLxnRj8+8XrTRJ3WD5uevUGAa5OFkwJ6xoE17YUqnHlfK5Uns+aZ7qvFimL9Vju48sQKEzr/SuVkVVR7B6o+w7ALa2PF9bJVpCwbFa41gwVpP38A9Gr3go=
+sidebar_class_name: "put api-method"
+info_path: docs/spotify/spotify-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Save Tracks for Current User"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"put"}
+  path={"/v1/me/tracks"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Save one or more tracks to the current user's 'Your Music' library.
+
+**Note:** Authorization scopes- **user-library-modify**
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"ids","description":"A comma-separated list of the Spotify IDs. **Maximum:** 50 IDs.","in":"query","schema":{"type":"string","example":"6zZixF6uYbtG8uiNzDO2LH,0lhLSwvRKGHfIcVEz3uQK6,2pempG6Jl7ZHDpCBElQUec"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"ids":{"type":"array","items":{"type":"string","example":"string"},"example":["string"]}}},"examples":{"Save Tracks for Current User":{"value":{"ids":["string"]}}}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Track saved","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"}},"Content-Length":{"schema":{"type":"string","example":"0"}},"Via":{"schema":{"type":"string","example":"HTTP/2 edgeproxy, 1.1 google"}},"access-control-allow-credentials":{"schema":{"type":"string","example":"true"}},"access-control-allow-headers":{"schema":{"type":"string","example":"Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token"}},"access-control-allow-methods":{"schema":{"type":"string","example":"GET, POST, OPTIONS, PUT, DELETE, PATCH"}},"access-control-allow-origin":{"schema":{"type":"string","example":"*"}},"access-control-max-age":{"schema":{"type":"string","example":"604800"}},"alt-svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"}},"cache-control":{"schema":{"type":"string","example":"private, max-age=0"}},"date":{"schema":{"type":"string","example":"Mon, 09 Jun 2025 13:15:01 GMT"}},"server":{"schema":{"type":"string","example":"envoy"}},"strict-transport-security":{"schema":{"type":"string","example":"max-age=31536000"}},"x-content-type-options":{"schema":{"type":"string","example":"nosniff"}},"x-robots-tag":{"schema":{"type":"string","example":"noindex, nofollow"}}},"content":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

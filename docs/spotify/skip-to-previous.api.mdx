@@ -1,0 +1,65 @@
+---
+id: skip-to-previous
+title: "Skip To Previous"
+description: "Skips to previous track in the user's queue. This API only works for users who have Spotify Premium. The order of execution is not guaranteed when you use this API with other Player API endpoints."
+sidebar_label: "Skip To Previous"
+hide_title: true
+hide_table_of_contents: true
+api: eJztVm1vGzcM/iuEvnQzdH5NivWGfvBSow2wNF7iFAOSYFB0tE/1nahKPMdXw/990Pmcl6XtvO/75IMsPiQfPhS5EawWQaTXYlqoGr24lSLDoL1xbMiKVFwujQvABM7jylAVgL3SSzAWOEeoAvpXAb5UWGEXZrkJMJ6eAtmihnvyywBz8s2tAPc5Qa5WCJeO2MxrmHosTVVGOwTyGXqgOeAadRW9gwlgiWFRKa8sI2Zwn6OFmqqICLz3dm84B+IcPezSaE7RZo6M5dC9sTe20/lIjGmnA+OKc/Lmq2p8BE0OQwKdTgwyKSkz8zpxharvlF4mgRVjpyOkIIe+MTnNRCrC0rgZTVtOhBQegyMbMIh0I4b9fvx5zuQJlaWyGQS0LLZSHPVHLy/9pjI4jxGCxy8VBoaf7j3ZBWiyoSrRwxJrCXcqA0tWowRcO+MxAzYlBlal63a7P3fhys7Jc2UVY1FL8JioinO0bLRiYxcP1YN7sq8Yciwc5OixK6TIUWXom1TGBSeXKx0/g86xVPGLa4eRBPbGLoQUuFalK+JRPnp7I9Kjo9GN+BVK9XZ4/GbY7/dlPkqGb775l9hupZh5ZcMcfTKxmrIIeqA/nVd2iVkD8smoQ80+zGbT3hAwW6DztK4lDLoDWBAtCmywlNYYQqLJsqciUUVB94n2mEUGVREOdcS++gHgE54PARtrjY4ljJ1LpoXiOflSPtezhBOyjJaTWe1Qwrk3C2MlXCD7OhnPGb3c918ScT6hD43dn8lJQVWWzLzSmDQoa5agCxPRmJZoZVRhA95m05x+P70SOafs4PTeT2YSpueXMwnn09np+cdLCdOrmYR3k98ns4mE6Xh28uH77qjJ9VBvnW8BlWqdqAUeivG6f/RLq2CtdI57nEPtnTcrxSih9fu2xWpZxv/YDIuvxjUAmeKDc7hULGE0gDNVw7A/PIZhPx2+SfsDeH82a9AC+hX6Q/HQrqje2bE3mhOOve3IcxJQV95wfSjUnpXR4Hj0ev9UrJM9PdEwoeblPFhjloI183mL5OmOOCSsDqbYkrEZriVYmlNUndg+qVi0Vc4VzRtLtvc50Lf1SHefUbOQwvk4V9js5gZ6T/7fr5UYQqvS70faTkLdTp25MgVm6X7mNuMlzo04iTyqNtAfwF1Mzk6vzv66mPxxdXoxeSeaAiuuwhM7W5V36J/aHfVH221DUXvUXI9LBcwIHuZnuhErVVT4jISHNA/O5TGVl/E+hruPqQlr90bFXqTQMK04F6norQa9Enuucdxzj3N+1wxxZdqIyhdx5DG7kPZ6yplu2L2sXU2l2MoXN7SmKi4kz67dSmHsnBoaDe96sl2QxtNTIcVq90SLVAy6/W5f7OSmdJRbTCFGXqqmflaV2C5tz/j9x1a3eRTs/wvefsFrNRzHXqy7sVHiTQE3rSquxWogomSiTnb7cmzNluNbKfKoofRabDZ3KuCVL7bbePylQl+L9PpWipXyRt3FIl/fbveLViOmJdYPIz4WfdcOL5+TqJcH0cZpKbbbvwGuNgi0
+sidebar_class_name: "post api-method"
+info_path: docs/spotify/spotify-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Skip To Previous"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/v1/me/player/previous"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Skips to previous track in the user's queue. This API only works for users who have Spotify Premium. The order of execution is not guaranteed when you use this API with other Player API endpoints.
+
+**Note:** Authorization scopes- **user-modify-playback-state**
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Command sent"},"403":{"description":"Bad OAuth request (wrong consumer key, bad nonce, expired timestamp...). Unfortunately, re-authenticating the user won't help here.","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"}},"Transfer-Encoding":{"schema":{"type":"string","example":"chunked"}},"Via":{"schema":{"type":"string","example":"HTTP/2 edgeproxy, 1.1 google"}},"access-control-allow-credentials":{"schema":{"type":"string","example":"true"}},"access-control-allow-headers":{"schema":{"type":"string","example":"Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token"}},"access-control-allow-methods":{"schema":{"type":"string","example":"GET, POST, OPTIONS, PUT, DELETE, PATCH"}},"access-control-allow-origin":{"schema":{"type":"string","example":"*"}},"access-control-max-age":{"schema":{"type":"string","example":"604800"}},"cache-control":{"schema":{"type":"string","example":"private, max-age=0"}},"content-encoding":{"schema":{"type":"string","example":"gzip"}},"date":{"schema":{"type":"string","example":"Sat, 31 May 2025 20:29:01 GMT"}},"server":{"schema":{"type":"string","example":"envoy"}},"strict-transport-security":{"schema":{"type":"string","example":"max-age=31536000"}},"x-content-type-options":{"schema":{"type":"string","example":"nosniff"}},"x-robots-tag":{"schema":{"type":"string","example":"noindex, nofollow"}}},"content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"object","properties":{"message":{"type":"string","example":"Player command failed: Premium required"},"reason":{"type":"string","example":"PREMIUM_REQUIRED"},"status":{"type":"number","example":403}}}}},"examples":{"Skip To Previous":{"value":{"error":{"message":"Player command failed: Premium required","reason":"PREMIUM_REQUIRED","status":403}}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

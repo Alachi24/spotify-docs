@@ -1,0 +1,73 @@
+---
+id: remove-user-s-saved-shows
+title: "Remove User's Saved Shows"
+description: "Delete one or more shows from current Spotify user's library."
+sidebar_label: "Remove User's Saved Shows"
+hide_title: true
+hide_table_of_contents: true
+api: eJzFVt9v2zYQ/leIexkgkLZsx22jIg9eEjQZ8sOIlaRbkgeGOllEJVIjKcWaof99oGS3DZYWetiwJ8vk3cf77o73cQuOry1ED7DK9IuFJwoJWmFk6aRWEMEJ5uiQaIVEG1Jog8R6S5IaXRBRGYPKkVWpnUwbUlk0v1iSy2fDTTN6VI8qCK60wygIyKJymTbyL+6hiRW6RMtIEHgntnNhhU5k2gQBUNAlms72PIEIDBa6xluLZrXiNSZ9vBRKbniBDo1nsQXFC4QIZOL3XlNZEKGLgjOL3sdhQnJpHdEpcRl+pXB+YkmqTbfWMR2RILjkG1lUhWcxD73JCChID/pnhaYBClZkWHCItuCa0kdgnZFqDRRww4sy90tzvbpaCnV/Ea8uV2t5dpPNqsrR+XRa3N3/YdRB9fnq99lsUrzYX++hbZ8oGLSlVhatR56Gof95zcrngfTJSYBChjzpcrGFRe7Yqhb+c0h02ezoEaKDg9kjfCQFP5rOD6dhGNJsxqaHb25B21I41sqhcuwC1dplQw/rfe8kH+pwFsfL8ZRgssbS6E1DyWQ0IWut1zl2WFwItJYJrZzROeN5rl+YMJigcpLnduhBzlQ/AfwuvUPAFkJg6ShZlCVb5tyl2hT09UWgZJ/BuCmRkmsj11JRcoPONGyROjR035zM49yhsZ3fZ3ac6yphseECWYeycZSIXHo0p7+gokTswHdsutUf0yvQZToZTO/TaUzJ8noVU3K9jM+vr1aULG9jSk5OL07jU0qWi/j47MfH6Y7r0NOCt4AKvmF8jUMx3oUHH3aNy3PH7H9+PQQXGe6jHXpWaWTNHVKyY3fUYyXcDSZ66TskPCS/VYpMw+mcTKbRwYcofE8+XcYdmkVToxmKh6rWTe/njBSOOcOVLbVxzKKojHTNUKg9qdlkPnu3z9OG7TvVOzLdjbfBjai0VTJNd0hGP2tnmePr4f5SJbihROlU+9aEtiteHxJE2+5vfzsggqQTxU58/MiDcT0ZFzi2O0nqM9vrUWVy3zzOlTYaj3kpR7a/yyOhC2jpPyyE0JVy9rXZk1ebVHckpOtC3uvVYnkOFOp+KEAEk1E4CqGPnYs+dgqltq7g3VXbKeRNJxnktlfsTlLJXlNfKcz2Wxr+z9fArnh+xo3LnEsFLe1zt92V4QHqCfgq+RLsXzOZts5vbbfP3OKtydvWL/ey7QuUSMufc0wgSnlu8Sfk/+33w5uMvmDz9flS87zyFl39a26kDxSih6fve7EftdC2fwODgkjo
+sidebar_class_name: "delete api-method"
+info_path: docs/spotify/spotify-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Remove User's Saved Shows"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/v1/me/shows"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Delete one or more shows from current Spotify user's library.
+
+**Note:** Authorization scopes- **user-library-modify**
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"ids","description":"A comma-separated list of the Spotify IDs for the shows. **Maximum:** 50 IDs.","in":"query","schema":{"type":"string","example":"5oSNPcnWLTSMSgiHRh3uut,522mVWZrn4uXNY331mwsBW"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Show removed","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"}},"Content-Length":{"schema":{"type":"string","example":"0"}},"Via":{"schema":{"type":"string","example":"HTTP/2 edgeproxy, 1.1 google"}},"access-control-allow-credentials":{"schema":{"type":"string","example":"true"}},"access-control-allow-headers":{"schema":{"type":"string","example":"Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token"}},"access-control-allow-methods":{"schema":{"type":"string","example":"GET, POST, OPTIONS, PUT, DELETE, PATCH"}},"access-control-allow-origin":{"schema":{"type":"string","example":"*"}},"access-control-max-age":{"schema":{"type":"string","example":"604800"}},"alt-svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"}},"cache-control":{"schema":{"type":"string","example":"private, max-age=0"}},"date":{"schema":{"type":"string","example":"Mon, 09 Jun 2025 12:48:07 GMT"}},"server":{"schema":{"type":"string","example":"envoy"}},"strict-transport-security":{"schema":{"type":"string","example":"max-age=31536000"}},"x-content-type-options":{"schema":{"type":"string","example":"nosniff"}},"x-robots-tag":{"schema":{"type":"string","example":"noindex, nofollow"}}},"content":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

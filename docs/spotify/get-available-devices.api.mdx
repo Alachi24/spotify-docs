@@ -1,0 +1,65 @@
+---
+id: get-available-devices
+title: "Get Available Devices"
+description: "Get information about a user's available Spotify Connect devices. Some device models are not supported and will not be listed in the API response."
+sidebar_label: "Get Available Devices"
+hide_title: true
+hide_table_of_contents: true
+api: eJzdV99P4zgQ/lcsv5xUOW3aUg5y4qECxCIdS3V0VycBQhNn2npJbJ896ZJF/d9PTlIox4/Nve4T7eD57O+bz+PpIydYep5c81kOFTp+K3iGXjplSRnNE36GxJReGFdAiDBITUkMWOnR/eYZrEHlkObIrqwhtajYsdEaJbEM10qi77MrU2D7jRUmw9wzcMi0IeZLa40jzBjojH1XeV6HU2S58iGsNKMVsunsnDn01miP/Rt9o3u9z4Yw6fXYtKSVcepHczovjUUfsV4vnC9yCFlkc6hSkPeRJyDs9bjgxqKrE84znvAl0nRL46Q5NRd8u5/nySMfxXH481KaKfNIzCy2VLngK4QMXZ0yzSm6Wsvw0csVFhA+UWWRJ9yTU3rJBccHKGweQqvx0Q1P9vbGN/wPVsDRaHI4iuNYrMbR6PDNf/HNRvC5A+0X6KJTLU0WQDvuJ1elvsesBvmqoGvap/l8NhgxzJZonXmoBBv2h2xpzDLHGgukRO8jaTQ5k0eQ5+Z7JB1mqElB7rtuRK78AHBH5y5gUynRkmBTa6NZDhTsLF5aRwTjEmqK5pVFwS6dWiot2F9IroqmC0Inth6PAs5XdL7O+zs6zk2ZRXMHEqMa5YEEk7kKaGTuUQsmW/CWTR19n16BtDJZZ3pnp3PBZpdXc8EuZ/Pzy89Xgs2+zAU7Of3zdH4q2Gw6P/70/nam5tp1t95bQAU8RLDErhj78d5B62AJcoVbnK751qk1EArW7nvUYrUq4/+8DMsfytYAGVBnDldAgo2H7AIqNopHEzaKk2GcjMfs7GJeo3l0a3Rd8VCvTdXkkVOSIgp3O/THyKMsnaKqK9RWlfFwMt7ftoqHaCtPSIxM3cY6e0wbr9Vi0SI5kxryEUFnibVROsMHwbRZmOA6vtmpWMgFa3Ml68s4+ObN23406TeUxAW3LjRxUk1/3nbg54XgHFRccEVY+J8DqOzj448Bh6mUi719zCbp4eHiEA4kpuPRZDQBOIjT30cjKSfIN4IrfweS1Bp3IFNjcgS9ixk6XLO6dfOdR+9VQ/z9tAXkvs1z2DgFs24pGgr8mObs8viSXeyxmTOBSfs++7u1ycviJ3y2uzQrPrw5BTiyK6NruRrsO4tOtk5oM3VZpOh2M4dxXLvmKXDdVK57eV5UJ1Tg7QLUXF5p3EYbGV9o9YZU7eKWyw7l14wDrdtdYrUlw+T1NJewk2eHryEv8YXrfy0ZNrUUzRvYjGfhugKteMIH6+GgwIGtp9XB8+DVtNpGitLlYaAisj4ZDMCqvm/e7b40Bd+IVyukNKUm/3LZreBh7q39qKjxbTviTmfn4fjNAMATPuzH/Zg3zQxksHAgYI2nAurb3Er1dkX/M3E/PvfEX3P4bq0QpqRQR6VDE6gr8thW+Zqvhzw4INS9+V0insx+K/jKeAqrHh9T8PjF5ZtNCP9Toqt4cn0r+BqcCsKEb5vtWF6b4x6rp4EwFLG5S68fn1D/JwuenYYH/V+K1H2b
+sidebar_class_name: "get api-method"
+info_path: docs/spotify/spotify-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Available Devices"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/me/player/devices"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get information about a user's available Spotify Connect devices. Some device models are not supported and will not be listed in the API response.
+
+**Note:** Authorization scopes- **user-read-playback-state**
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A set of devices","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"}},"Transfer-Encoding":{"schema":{"type":"string","example":"chunked"}},"Via":{"schema":{"type":"string","example":"HTTP/2 edgeproxy, 1.1 google"}},"access-control-allow-credentials":{"schema":{"type":"string","example":"true"}},"access-control-allow-headers":{"schema":{"type":"string","example":"Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token"}},"access-control-allow-methods":{"schema":{"type":"string","example":"GET, POST, OPTIONS, PUT, DELETE, PATCH"}},"access-control-allow-origin":{"schema":{"type":"string","example":"*"}},"access-control-max-age":{"schema":{"type":"string","example":"604800"}},"cache-control":{"schema":{"type":"string","example":"private, max-age=0"}},"content-encoding":{"schema":{"type":"string","example":"gzip"}},"date":{"schema":{"type":"string","example":"Sat, 31 May 2025 20:10:33 GMT"}},"server":{"schema":{"type":"string","example":"envoy"}},"strict-transport-security":{"schema":{"type":"string","example":"max-age=31536000"}},"x-content-type-options":{"schema":{"type":"string","example":"nosniff"}},"x-robots-tag":{"schema":{"type":"string","example":"noindex, nofollow"}}},"content":{"application/json":{"schema":{"type":"object","properties":{"devices":{"type":"array","items":{"type":"object","properties":{"id":{"type":"string","example":"3ae1bccf46ed5b99f9a8ceb32525aa80b722cc5e"},"is_active":{"type":"boolean","example":true},"is_private_session":{"type":"boolean","example":false},"is_restricted":{"type":"boolean","example":false},"name":{"type":"string","example":"POCO M4 Pro"},"supports_volume":{"type":"boolean","example":false},"type":{"type":"string","example":"Smartphone"},"volume_percent":{"type":"number","example":100}}},"example":[{"id":"3ae1bccf46ed5b99f9a8ceb32525aa80b722cc5e","is_active":true,"is_private_session":false,"is_restricted":false,"name":"POCO M4 Pro","supports_volume":false,"type":"Smartphone","volume_percent":100}]}}},"examples":{"Get Available Devices":{"value":{"devices":[{"id":"3ae1bccf46ed5b99f9a8ceb32525aa80b722cc5e","is_active":true,"is_private_session":false,"is_restricted":false,"name":"POCO M4 Pro","supports_volume":false,"type":"Smartphone","volume_percent":100}]}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

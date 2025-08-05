@@ -1,0 +1,71 @@
+---
+id: get-artist
+title: "Get Artist"
+description: "Get Spotify catalog information for a single artist identified by their unique Spotify ID."
+sidebar_label: "Get Artist"
+hide_title: true
+hide_table_of_contents: true
+api: eJztV11v2zYU/SsEHwfKlvyVWEMejMRIPSyNl6jd6qYoaOpKYiORKkm5dgP994GSnNhF7Cgt9rYnGxTvOffzkHzAhsYa+x/xRBmujcafCA5BM8Vzw6XAPr4Eg25zaXi0QYwamsoYcRFJlVG7A0VSIYo0F3EKiFYoiIcgDI84hGi5QSYBrlAh+NcCHqFmFx1MsMxBVTCzEPs4BlO7gQlWoHMpNGjsP+Ce69qffccmoqHDBCdAQ1DV3klqnNsVs381SyCj9p/Z5IB9rI3iIsYEw5pmeWqXkv7ZHfYHg/4d/h1l9Kw3HPdc1yVJ3+mNn/2Ey5LgQFGhI1DOVDAZWtCWfCwpxD2EFch7TtuavQmCebeHIIwhV3K9IcjreCiWMk6hwqKMgdYOk8IomTo0TeU3hymoKkFT3ZbIqOII4E6e24BNGIPcEDTJc2eeUmO7hqBJYRKp+Peq8ASdS2FAGCfY5EDQteIxFwTdgFEbZxIZUGTbNI7FeQ9KV3b/OOepLEInUJSBU6GsDUEs5RbNyHsQBLEGvImmWj0cXgYmkWHr8C6nAUHz69uAoOt5MLt+e0vQ/F1A0MX0z2kwJWg+Cc7fHKaTVaxt2X57Diija4fG0BZj5A5Omw6mqXH0fz4njLIEtt625cqLZcoZQU1wZw1UU0p45cTF33leAYTUtE5UkBQEeT30RyFQz+0NkTf2Bye+N0aXV0GFBoa2duEOX507s+yGLy6m7ocvi/Rt7y9vcXnlLi7i4YfebHB9Mf3+NvjQv/r7nbu4SLNZfHZ2hyseDWoFqi0TiJXc1HZGcWYcY4Uql8o4GlihuNm0hdpmv+8N+6NtPdfOtgzW0JGVGLceGCG14FHUICm5lEY7r8ijkFyEsCZIyEjaEcLlTmdYW5rnKWeVsnS/aPn8cMnlF2D22MiVPYAMr08ZWBtQgqafC1Xr5fHtuhalF8bGmFz73a7MQXQaiw6TWbc+urojb3ET5vliqM9NOs6GcZTIy+s6rDrERm6P+5IoiOyvKNKULi2z1fEdR+yHkmAjDU134ESRLUHtejzqj8enbsUfg1CwS06VohtMMDeQ6eNx04zmnAqJy53Vj0/LNgC+ogaQZomUKdoux19lhgmmkZJIyyLFn0ryGN7LeaY530vzymsyrQ+mmmAevqCahy0zGrdK0aG6AY8Tc7wgA7ckuFBpuwTwjmah6DDZrXzr0uXoZOSNPNd1XRjCsr8MT4eMhi5Qjw1OwT2lJ/2QMRvNNx6a5EVnyr2SPsUwGriNn7/uzKMvVfRPHP3eqziG3sngZY5+b4/DG72KI/JOTl/m8EZuaTtZ0AyOF/KG32/QDWf3tiK5zIuUblX7YFmGnp3t6uvRoayvy1U78eNbmxnyaxP/mEw1RlU/28dCc4X3H/CKpgU8q6yP2vnTAvmDPNYKYVXuUeQaJXvSsZ+Tn636/ILE1ApzSEaeVOT/YXrFMG1naWdg9udl6JEnVW7eiVXft2/usmrwnCqagak67ePDlrZu88+z0BbQvkdzapLq4fq14ArC7RF86F5T2hDqB0f99LXuWwgf77bUw8MjUVni7XWw9mQ/rz/0JbZl+GEHY7IQRu9v+2T9j2TlITfV9G8f6ZP5DBO8ql9c2Mdex+24uL5wUWZnvCzLfwHaZGXT
+sidebar_class_name: "get api-method"
+info_path: docs/spotify/spotify-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Artist"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/artists/{{Artist_Id}}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get Spotify catalog information for a single artist identified by their unique Spotify ID.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"Artist_Id","in":"path","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"An artist","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"}},"Transfer-Encoding":{"schema":{"type":"string","example":"chunked"}},"Via":{"schema":{"type":"string","example":"HTTP/2 edgeproxy, 1.1 google"}},"access-control-allow-credentials":{"schema":{"type":"string","example":"true"}},"access-control-allow-headers":{"schema":{"type":"string","example":"Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token"}},"access-control-allow-methods":{"schema":{"type":"string","example":"GET, POST, OPTIONS, PUT, DELETE, PATCH"}},"access-control-allow-origin":{"schema":{"type":"string","example":"*"}},"access-control-max-age":{"schema":{"type":"string","example":"604800"}},"alt-svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"}},"cache-control":{"schema":{"type":"string","example":"public, max-age=0"}},"content-encoding":{"schema":{"type":"string","example":"gzip"}},"date":{"schema":{"type":"string","example":"Thu, 12 Jun 2025 19:47:19 GMT"}},"etag":{"schema":{"type":"string","example":"\"MC-ImRiZDE0YjZlN2Q1ZGM0ZDg5Y2I4ODEzNTY3MWU0ZDlmIg==\""}},"server":{"schema":{"type":"string","example":"envoy"}},"strict-transport-security":{"schema":{"type":"string","example":"max-age=31536000"}},"x-content-type-options":{"schema":{"type":"string","example":"nosniff"}},"x-robots-tag":{"schema":{"type":"string","example":"noindex, nofollow"}}},"content":{"application/json":{"schema":{"type":"object","properties":{"external_urls":{"type":"object","properties":{"spotify":{"type":"string","example":"https://open.spotify.com/artist/61ZRdppZ5sCtl9m5gfhoGO"}}},"followers":{"type":"object","properties":{"href":{"nullable":true,"example":null},"total":{"type":"number","example":639980}}},"genres":{"type":"array","items":{"type":"string","example":"amapiano"},"example":["amapiano","private school piano","gqom","afro soul"]},"href":{"type":"string","example":"https://api.spotify.com/v1/artists/61ZRdppZ5sCtl9m5gfhoGO"},"id":{"type":"string","example":"61ZRdppZ5sCtl9m5gfhoGO"},"images":{"type":"array","items":{"type":"object","properties":{"height":{"type":"number","example":640},"url":{"type":"string","example":"https://i.scdn.co/image/ab6761610000e5eb3bd85cad0ea1c48e08a73dcc"},"width":{"type":"number","example":640}}},"example":[{"height":640,"url":"https://i.scdn.co/image/ab6761610000e5eb3bd85cad0ea1c48e08a73dcc","width":640},{"height":320,"url":"https://i.scdn.co/image/ab676161000051743bd85cad0ea1c48e08a73dcc","width":320},{"height":160,"url":"https://i.scdn.co/image/ab6761610000f1783bd85cad0ea1c48e08a73dcc","width":160}]},"name":{"type":"string","example":"Riky Rick"},"popularity":{"type":"number","example":51},"type":{"type":"string","example":"artist"},"uri":{"type":"string","example":"spotify:artist:61ZRdppZ5sCtl9m5gfhoGO"}}},"examples":{"Get Artist":{"value":{"external_urls":{"spotify":"https://open.spotify.com/artist/61ZRdppZ5sCtl9m5gfhoGO"},"followers":{"href":null,"total":639980},"genres":["amapiano","private school piano","gqom","afro soul"],"href":"https://api.spotify.com/v1/artists/61ZRdppZ5sCtl9m5gfhoGO","id":"61ZRdppZ5sCtl9m5gfhoGO","images":[{"height":640,"url":"https://i.scdn.co/image/ab6761610000e5eb3bd85cad0ea1c48e08a73dcc","width":640},{"height":320,"url":"https://i.scdn.co/image/ab676161000051743bd85cad0ea1c48e08a73dcc","width":320},{"height":160,"url":"https://i.scdn.co/image/ab6761610000f1783bd85cad0ea1c48e08a73dcc","width":160}],"name":"Riky Rick","popularity":51,"type":"artist","uri":"spotify:artist:61ZRdppZ5sCtl9m5gfhoGO"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

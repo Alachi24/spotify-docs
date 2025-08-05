@@ -1,0 +1,73 @@
+---
+id: set-playback-volume
+title: "Set Playback Volume"
+description: "Set the volume for the user's current playback device. This API only works for users who have Spotify Premium. The order of execution is not guaranteed when you use this API with other Player API endpoints."
+sidebar_label: "Set Playback Volume"
+hide_title: true
+hide_table_of_contents: true
+api: eJztVt9v2zYQ/lcOfNlmUP6ZFKuGPnip0QZYGi9xigFNUNDU2WIjkSx5sq0a/t8HUnKbLGmnve/JNn333d3Hj3e3ZyTWnqUf2LwQNTp2x1mGXjplSRnNUnaNBJQjbExRlQgr4+LPyqP7yYOsnENNYAtRL4W8hww3SmIfFrnyMJ2fg9FFDVvj7n30DX4etrmBXGwQrq0htaph7rBUVRn8EIzL0IFZAe5QViEPUB60IVhXwglNiBlsc9RQmyogAh2jbRXlYChHB01B8RR1Zo3S5Pu3+lb3eu8MYdrrwbSi3Dj1RcQYXhqLPoFeLySZlCZTqzo5VpZ4EoS9HuPMWHTR5TxjKfNI89bmfeSIcWaFEyUSukDtnmlRIktZQ+FHi06iJsaZCgR/rtDVjDMvcywFS/eMahvMPTml14wz3InSFuHodMgOhzvOHHprtEcfzMfDYfh4fG1npiyFzsCHSAfOToaTp0a/iwwuAwng8HOFnuDnrTN6DdJoX5Xo4B5rDkuRgTZaIgfcWeUwA1IlehKl7ff7v/ThRq+Mo0oLwqLm4DARFeWoSUlBSq+/Sga2Rv9EkGNhIUeHfcZZjiKLTO3ZtKDkeiPD1y505JNXtyw9OZncst+gFK/Gpy/Hw+GQ55Nk/PLZv9jhwNnCCe1X6JKZliYLoB3jybzS95hFkPdKdHV7u1jMB2PAbI3WmV3NYdQfwdqYdYERS0iJ3ifSaHKmSERRmG0iHWaBQVH4roHIVT8AfMBzF7CplGiJw9TaZF4IWhlX8sdPhsOZ0YSakkVtkcOlU2ulOVwhuTqZrggdPz7xJOC8R+ej31/JWWGqLFk4ITGJKDviIAsV0Mjco+ZBhRG8rSaefr+8Eik3Wefy3swWHOaX1wsOl/PF+eW7aw7zmwWH17M/ZosZh/l0cfb2++FMrLVrtN5zQKXYJWKNXTFeDE9+bRUshczxiNPV3zq1EYQc2rivWqyWZfyPj2H9RdkIkAnqXMO1IA6TEVyIGsbD8SmMh+nkJB2N4c3FIqJ5dBt0XfFQb0zd+JFTkhIKb9saR4lHWTlFdVeoIyuT0enkxbFV7JIjPcExMbFzdtaYNl6r1apFcmZpyCckOlOsjdIZ7jhoszJBdezw4MaCr7C2iD3W6MEnb57Xo1l+QhnmjXVhdJFq5gY6Z9y/m5XofavS72faDlvZTp2VUAVm6XGsx/ES5kaYRA5Fm+gP4K5mF+c3Fx+vZn/enF/NXrN4wYIq/8BPV+US3UO/k+HkcIgUtUfRPGwwxwkN7YhO92wjigof8fC10s7lfKvmacrfMj6mFTNr2lR4jlXkWlDOUjbYjAYlDmyMO9gc94jmMTRLROWKMPKIrE8HA2FV3zedtS9NyQ78iYWUpgo7zyOzu7B1rEykUVHzJtsdbDo/Z5xtmhbNUjbqD/tD1shNyCC3kL81nkoR769da57j9x9b5P6bZv9fKJ8ulK2gwwwMElA66D3e5r4VyAe2GbEgniCZZlPn7T4ZVvbceApG+/1SeLxxxeEQjpvVMognU14sC8xYuhKFR87usX5uI20fBYtC2QinghdLP9wdjntahGu8mw3hgdeTbhRQvgp+fhM6/N+heELk
+sidebar_class_name: "put api-method"
+info_path: docs/spotify/spotify-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Set Playback Volume"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"put"}
+  path={"/v1/me/player/volume"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Set the volume for the user's current playback device. This API only works for users who have Spotify Premium. The order of execution is not guaranteed when you use this API with other Player API endpoints.
+
+**Note:** Authorization scopes- **user-modify-playback-state**
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"volume_percent","in":"query","schema":{"type":"string","example":"50"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Command sent"},"403":{"description":"Bad OAuth request (wrong consumer key, bad nonce, expired timestamp...). Unfortunately, re-authenticating the user won't help here.","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"}},"Transfer-Encoding":{"schema":{"type":"string","example":"chunked"}},"Via":{"schema":{"type":"string","example":"HTTP/2 edgeproxy, 1.1 google"}},"access-control-allow-credentials":{"schema":{"type":"string","example":"true"}},"access-control-allow-headers":{"schema":{"type":"string","example":"Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token"}},"access-control-allow-methods":{"schema":{"type":"string","example":"GET, POST, OPTIONS, PUT, DELETE, PATCH"}},"access-control-allow-origin":{"schema":{"type":"string","example":"*"}},"access-control-max-age":{"schema":{"type":"string","example":"604800"}},"cache-control":{"schema":{"type":"string","example":"private, max-age=0"}},"content-encoding":{"schema":{"type":"string","example":"gzip"}},"date":{"schema":{"type":"string","example":"Sat, 31 May 2025 20:34:12 GMT"}},"server":{"schema":{"type":"string","example":"envoy"}},"strict-transport-security":{"schema":{"type":"string","example":"max-age=31536000"}},"x-content-type-options":{"schema":{"type":"string","example":"nosniff"}},"x-robots-tag":{"schema":{"type":"string","example":"noindex, nofollow"}}},"content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"object","properties":{"message":{"type":"string","example":"Player command failed: Premium required"},"reason":{"type":"string","example":"PREMIUM_REQUIRED"},"status":{"type":"number","example":403}}}}},"examples":{"Set Playback Volume":{"value":{"error":{"message":"Player command failed: Premium required","reason":"PREMIUM_REQUIRED","status":403}}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

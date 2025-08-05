@@ -1,0 +1,74 @@
+---
+id: check-user-s-saved-audiobooks
+title: "Check User's Saved Audiobooks"
+description: "Check if one or more audiobooks are already saved in the current Spotify user's library."
+sidebar_label: "Check User's Saved Audiobooks"
+hide_title: true
+hide_table_of_contents: true
+api: eJzNVltv4jgU/ivWeVkJOYVAmc5k1Qe2y7YdDS0a0nbp5cE4B+KS2KntUFLEf185CS3dma4ybwsSF+ec7/hcv7MByxYGgjsY5JFQM6WWBh4oRGi4FpkVSkIAJzHyJRFzoiQSpUmqNBL2qkCY+5toZFFBDFthRIQkNkbCc61RWjLJlBXzguQG9W+GJGKmmS4O7qV7t1oXymLQapFBbmOlxQtzdonhKkPjkVbLqXm1kufMtFpAQWWoS8nzCALg7o5XBvVk4m6w5w6FjGmWokXtPN2AZClCACJyz4Rz8ClHXQAFw2NMGQQbsEXmZIzVQi6AAq5ZmiXuyP9cXD8to1n0fTXpHvLOefLY5YL6Z6fPva+9i/XtpR+O/T9Cex1nt/RInM1nuT8dD06eP6nb8eCvr/YJYbt9oKDRZEoaNM5gt9NxX+8DP9CaFUTNyUypBJk0VbyG1WVcyO7mLDFIrc7xASjEyKLSzQ0MEutNVtz9bOJW3Du+h+DwsHcPv5OUHXf7X7qdTofGPa/75aePYLulEGomzRy1N5RcRQ60oT0e53KJUQlyLVhTtbMwHLe7BKMFZlqtC0r8A58slFokWGIxztEYjytptUo8liTq2eMaI5RWsMQ0NeQi+jHgXpybgA04x8xSMsgyb5wwO1c6pe/LnZITJS1K64VFhpRcarEQkpLvaHXhDeYWNd31kedwrlGbUu9v7yRReeSFmnH0SpS1pYQnwqFZtURJCa/Ba2/K04/dS9HGKmrs3ukwpGR8OQkpuRyH55cXE0rGVyElfw6/DcMhJeNBeHL2sTlV+trUWutnQClbe2yBTTE+dQ4/1xXMGY9xh9NUP9NixSxSUts9rrHqKOMvNsPiRWQlQMRsYx/CHCnpHpERK0i30+0T/0vQPwoOe+R0FJZoaFnjK9zD6MQ7f+SdaXqbjl54f3Qz9afh18eLm+/L0eOgN31Z9i9upv1pd/g8Crl/vjg+vofSjkG9Qt3UEsqVKio9qwW3nnUzJFPaegZ5roUtmkLtot/z+71Pu5G0YroxwLsWLLXX3i6JTstT5Shu3AlSGSnm8xpJq5myxvuFLEglZIRrSqSaK9cbsN2rK6fLsiwRvLxv+9Gon3cNc7zhyM1iavbOaxrZN1nyx3bvoGaUvc+Ht8clWLUOXFVcXrIt2aPbYAMrluQfIJUvCtWAcZWPtiRoG0MA7ZXfTrH9tlm0neNMSEfUVZFVDJ7rxFGWtZkJ2m2WiQNTTcYDrlLY0h8kOFe5tOa92INj/7kq4yNsGf/dojIYnwOFVTViHekfdA46UCWCcZcI50WmjE1ZmYJ6p/jv0Pxrr9q85fV/umLVZeMIpZ0lTEjY0iq0mzpnd7DyweUTKLB9T18z90AhVsY60c1mxgxe6WS7dcfV1uXyGQnDZglGdTlSWGLxuqHV1QRlwlZMCycKwZ0ry4qHS4xKpWLaPa0f+sWhvJbf6dBNyn8Ahem/Sw==
+sidebar_class_name: "get api-method"
+info_path: docs/spotify/spotify-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Check User's Saved Audiobooks"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/me/audiobooks/contains"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Check if one or more audiobooks are already saved in the current Spotify user's library.
+
+
+**Note:** Authorization scopes- **user-library-read**
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"ids","in":"query","schema":{"type":"string","example":"18yVqkdbdRvS24c0Ilj2ci,1HGw3J3NxZO1TP1BTtVhpZ,7iHfbu1YPACw6oZPAFJtqe"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Array of booleans\n\n**Example:** [false,true]","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"}},"Transfer-Encoding":{"schema":{"type":"string","example":"chunked"}},"Via":{"schema":{"type":"string","example":"HTTP/2 edgeproxy, 1.1 google"}},"access-control-allow-credentials":{"schema":{"type":"string","example":"true"}},"access-control-allow-headers":{"schema":{"type":"string","example":"Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token"}},"access-control-allow-methods":{"schema":{"type":"string","example":"GET, POST, OPTIONS, PUT, DELETE, PATCH"}},"access-control-allow-origin":{"schema":{"type":"string","example":"*"}},"access-control-max-age":{"schema":{"type":"string","example":"604800"}},"cache-control":{"schema":{"type":"string","example":"private, max-age=0"}},"content-encoding":{"schema":{"type":"string","example":"gzip"}},"date":{"schema":{"type":"string","example":"Tue, 27 May 2025 19:57:43 GMT"}},"etag":{"schema":{"type":"string","example":"\"MC-Ijc0YmZmMzc5MWY1YTJjNWRkMjA3Yzk5NWY5Y2EwMTc1Ig==\""}},"server":{"schema":{"type":"string","example":"envoy"}},"strict-transport-security":{"schema":{"type":"string","example":"max-age=31536000"}},"vary":{"schema":{"type":"string","example":"Authorization"}},"x-content-type-options":{"schema":{"type":"string","example":"nosniff"}},"x-robots-tag":{"schema":{"type":"string","example":"noindex, nofollow"}}},"content":{"application/json":{"schema":{"type":"array","items":{"type":"boolean","example":false},"example":[false,false,false]},"examples":{"Check User's Saved Audiobooks":{"value":[false,false,false]}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

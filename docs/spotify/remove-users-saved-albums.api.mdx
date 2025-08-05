@@ -1,0 +1,71 @@
+---
+id: remove-users-saved-albums
+title: "Remove Users' Saved Albums"
+description: "Remove one or more albums from the current user's 'Your Music' library."
+sidebar_label: "Remove Users' Saved Albums"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVktv4zYQ/ivEXAIUlC35tY2KHJzHJimSjTd2ti2yOdDU2GaWEhWS0lo1/N8LUnIeiDfQoT7EzpDzzXzDeW3AsqWB+B7Gcl6kBh4oJGi4FrkVKoMYbjFVJRKVIVGapEojYf4qWWiVErtCwgutMbOkMKgPDDn4RxWaXBdG8AMixVwzXXWAgspRM4d6mUAM2uPeGdRmykpMGvsUcqZZiha1c2sDGUsRYhCJOxPOo6cCdQUUDF9hyiDegK1yd8dYLbIlUMA1S3PpRIPkT8mPD9PTr9HJ/Pq2f1XefFl9psPowqyui/XoKSq/Hj9+ilIcyJSO5GUv+uvT6Oo0nPbLk+HwXC+mU9huHyhofCrQ2GOVVM4kV5nFzLqfLM+l4J5Z99G4oG3e+6bmj8ito6ddHKxA404drZdLTGvmmAmLqfmYWCPavpLd74QP2+2L3OM0j+ijfUB8vEkT8HgDJZMFPnvzBsYjaTS5ykwN1QtD97U3SfbhU1ghS/xrbmAsbTAt+d4I7SG56h99h3gw6H+HP0jKjnrDw14YhnTVD3qHe4/A+XtSv01whdnSrtoaq3W/CdZW4WI2m3R7BJMl5lqtK0qiTkSWSi0leizGORoTuFTRSgZMSvUz4BoTzKxg0rQ1ZHXxAeCr8LYBG3OOuaVknOfBRDK7UDqlZFzYldLiX5/FlOwiOKtypORGi6XIKLlFq6tgvLCoKZnmyopFFTicb6iN1/s7OJGqSIKZZhwDj7K2lHApHJpVPzCjpCmdoGHjpb+ml6JdqaQ1vfOzGSWTm+mMkpvJ7PLmy5SSyd2MktOzq7PZGSWT8ezk4tfmlOfa1tpv+4BStg7YEttijMLB703icsZXuMNpq59rUTKLlDR2j2qshNnWLnzWgpJoRK5ZRXphb0jCKA57cX9Azq9nHs2gLlG3xcOsVFWtZ7XgNrCaZSZX2gYGeaGFrdpC7Uj1o2F/tCvwdbDLIacYKN+GWqdIpkwmFosGSau5siawbNleX2QJrinJ1EK5pAHfJV8mgv+3zluIIUGJFv1gc80IumXUTbHLdu2xDm097AotXduzNjdxt8ty0TF1mXW4SmFL393gXBWZNW+vPVBwc+j2ZWKd7Zx/3+PdUF0oz1hYz6+pbDKeXAKFsq5tiCHqhJ0QaqKM10Qp5MrYlPmKaUb1h8Pgzdx4NUb/xz2jeTnXerq5ZCJzU9LHbdO8wT2UEbgnAgrsee9ZKWPd2WYzZwbvtNxunbheN9zrJMKwucQE4gWTBin8wOp5NWmGKPjwl0wLdxXiexfhukV7jFrldX99pftuk3BYz4lUdzCgMG92kFQlTkuzn0D93xj8mvVcDV62AcmyZeE7EtSo7vMf9ZReDA==
+sidebar_class_name: "delete api-method"
+info_path: docs/spotify/spotify-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Remove Users' Saved Albums"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/v1/me/albums"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Remove one or more albums from the current user's 'Your Music' library.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"ids","in":"query","schema":{"type":"string","example":"4dJlcB9mDQ1CbMR3LvONhF,51HshMux6q1vQBj71me4lm,6lI21W76LD0S3vC55GrfSS"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"ids":{"type":"array","items":{"type":"string","example":"string"},"example":["string"]}}},"examples":{"Remove Users' Saved Albums":{"value":{"ids":["string"]}}}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Remove Users' Saved Albums","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"}},"Content-Length":{"schema":{"type":"string","example":"0"}},"Via":{"schema":{"type":"string","example":"HTTP/2 edgeproxy, 1.1 google"}},"access-control-allow-credentials":{"schema":{"type":"string","example":"true"}},"access-control-allow-headers":{"schema":{"type":"string","example":"Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token"}},"access-control-allow-methods":{"schema":{"type":"string","example":"GET, POST, OPTIONS, PUT, DELETE, PATCH"}},"access-control-allow-origin":{"schema":{"type":"string","example":"*"}},"access-control-max-age":{"schema":{"type":"string","example":"604800"}},"cache-control":{"schema":{"type":"string","example":"private, max-age=0"}},"date":{"schema":{"type":"string","example":"Fri, 16 May 2025 01:02:34 GMT"}},"server":{"schema":{"type":"string","example":"envoy"}},"strict-transport-security":{"schema":{"type":"string","example":"max-age=31536000"}},"x-content-type-options":{"schema":{"type":"string","example":"nosniff"}},"x-robots-tag":{"schema":{"type":"string","example":"noindex, nofollow"}}},"content":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

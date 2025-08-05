@@ -1,0 +1,71 @@
+---
+id: get-several-audiobooks
+title: "Get Several Audiobooks"
+description: "Get Spotify catalog information for several audiobooks identified by their Spotify IDs. Audiobooks are only available within the US, UK, Canada, Ireland, New Zealand and Australia markets."
+sidebar_label: "Get Several Audiobooks"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVt9z2jgQ/ld29HIzNzI/Q5tykwcuTRN6R8IVk7uS5EHYayyQJUeSAZfhf7+RbRLSpDfu4z0QgqT9drXfavfbEcsWhvTvyCALuZortTLkgZIQTaB5armSpE8u0cIkVZZHOQTMMqEWwGWkdMLcCYiUBoNr1EwAe8IBHqK0POIYwjwHGyPXTzDDj6YBzz6BaQQlRQ5szbhgc4Gw4Tbm0tnBdEJh+geFcyZZyCgMNQomQwrXuIEZMvcD3GeQGauZ4AwSpldoTYNQolLURaDDkPTJAu2kjPXoypSkTLMELWqXjR2RLEHSJzx0e9wl4TFDnRNKTBBjwkh/R2yeujPGai4XhBLcsiQVbql9mt8+rsJ5+GU96ZwEraFYdgJO21eXm+7n7vV2dtP2x+3ffXsbpzP6nl9F86z9dTw437xTs/Hg02f7iGS/f6BEo0mVNGicw06r5b5ekjMAgxZUdJT5BgwjUBLdqkufxscMjcXwBTsGMvmcbRujhFxlvwgBEXfpBJkJAdxiAhUN7JgvzXLYxKjx5Rao+RIDCxuViRCUjVFvuEGYY+Ne3stXECp6LoOb0vQLPmZcY0goiZGFBSU7MhDWm6wD928dCuLu2T3pn5x078lvkLCzTu9Dp9Vq0bjrdT68uUX2e0p8zaSJUHsXMlChA63pL4gzucKwALnlrK7Zle+Pmx3AcIGpVtucQrvRhoVSC4EFFgsCNMYLlLRaCY8JoTZeoLF4W0yYuo6szv4D8CjPdcAGQYCppTBIU28smHWtgMIgs7HS/Fvx1iicK2lRWs/PU6Rwo/mCSwpf0OrcG0QWNT10A8/h3KI2hd0/3rlQWej5mgXoFShbSyEQ3KFZtUJJIajAq9sUqz++XoI2VmHt611e+BTGNxOfws3YH95cTyiMpz6Fjxd/XvgXFMYD//zqx+5Ucde63n59CyhhW48tsC7Gu9bJaVXBAQtiPODUtU+zueABhcrtWQVVJRl/8i0svvG0AAiZrX0FP0MKnfcwYjl0Wp0etHv93mm/24PLkV+goWW1Q7gno3NvuPyr93U57YyS6eb626I382d85k871/6qO1qONl+X4XK0/Ly6/vvTcrg4O7snhR+Deo26rieUa5WXdlbzwHrWtZBUaesZDDLNbV4X6pD9brvXfXfoSFvvQIMz9FTR92uXslRG8iiqkLSaK2u8n8ijVFyGuKUgVaRccZP9UWU4W5amggfFm28ujXq77Muh4MasdtPY8nKgPU+Do7PFXHBT12JSrLs55GYU6bsmdhSd29gf/b5zC/Tpz0MRarVbIFWD/0h4uNU1Exl+H84bWPsCr+wlpZAodIONSZ801+0mO9YTZRGVYiLTwk0ka1PTbzZZyhumbHyNQCVkT1+dCAKVSWteHntwQiRSRaa4Ldg5qKnBeEgoWZcd1OmPRqvRIiVNLHA0uchTZWzCCoIqeVMIu9c5+U7/7Z7p/r9LwarE3ERppoJxSfa0TP6uYvKOrNuEHpfCAyWxMtZt7XZzZnCqxX7vlktJ6BgOuXGBhqQfMWGQkhXmT/Kxqi9SULhmmpfFfPewPwicAqM0KUfrkdWr9+VQnorw8sL1xn8B6WAKqQ==
+sidebar_class_name: "get api-method"
+info_path: docs/spotify/spotify-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Several Audiobooks"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/audiobooks"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get Spotify catalog information for several audiobooks identified by their Spotify IDs. Audiobooks are only available within the US, UK, Canada, Ireland, New Zealand and Australia markets.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"ids","in":"query","schema":{"type":"string","example":"18yVqkdbdRvS24c0Ilj2ci,1HGw3J3NxZO1TP1BTtVhpZ,7iHfbu1YPACw6oZPAFJtqe"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A set of audiobooks. If one of the requested audiobooks is unavailable then you'll find a null item in the audiobooks array where the audiobook object would otherwise be.\n\naudiobooks array of AudiobookObject Required","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"}},"Transfer-Encoding":{"schema":{"type":"string","example":"chunked"}},"Via":{"schema":{"type":"string","example":"HTTP/2 edgeproxy, 1.1 google"}},"access-control-allow-credentials":{"schema":{"type":"string","example":"true"}},"access-control-allow-headers":{"schema":{"type":"string","example":"Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token"}},"access-control-allow-methods":{"schema":{"type":"string","example":"GET, POST, OPTIONS, PUT, DELETE, PATCH"}},"access-control-allow-origin":{"schema":{"type":"string","example":"*"}},"access-control-max-age":{"schema":{"type":"string","example":"604800"}},"cache-control":{"schema":{"type":"string","example":"public, max-age=0"}},"content-encoding":{"schema":{"type":"string","example":"gzip"}},"date":{"schema":{"type":"string","example":"Tue, 27 May 2025 15:58:35 GMT"}},"etag":{"schema":{"type":"string","example":"\"MC-IjQ5YjU2MmUwNzg5ZTZiZTU2NTk3MjMwYjdjMjJkNWFjIg==\""}},"server":{"schema":{"type":"string","example":"envoy"}},"strict-transport-security":{"schema":{"type":"string","example":"max-age=31536000"}},"x-content-type-options":{"schema":{"type":"string","example":"nosniff"}},"x-robots-tag":{"schema":{"type":"string","example":"noindex, nofollow"}}},"content":{"application/json":{"schema":{"type":"object","properties":{"audiobooks":{"type":"array","items":{"nullable":true,"example":null},"example":[null,null,null]}}},"examples":{"Several Audiobooks":{"value":{"audiobooks":[null,null,null]}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

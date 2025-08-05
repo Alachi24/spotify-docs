@@ -1,0 +1,65 @@
+---
+id: get-user-s-saved-audiobooks
+title: "Get User's Saved Audiobooks"
+description: "Get a list of the audiobooks saved in the current Spotify user's 'Your Music' library."
+sidebar_label: "Get User's Saved Audiobooks"
+hide_title: true
+hide_table_of_contents: true
+api: eJzNVt9v6jYU/lcsP6wSciBA2+1mQhPqUC/SKGyk3XpLH4xzIG4TO9d2KCnK/z7ZCYWu7W6u9rKnRLbPd853fu+woWuNgzs8zCMul1I+anxPcASaKZ4ZLgUO8CUYRFHCtUFyhUwMiL68RppuIEJcuHOWKwXCoHkmDV8VKNegTjQ6uZW5QpNcc3aCEr5UVBXthViIVutKGghaLTTMTSwVf6ZWJ9JMZqA91GpZBK8W8RTQqNXCBMsMlHs5jnCA12CuNaj53JpyRIRgBTqTQoPGwQ73fN9+XnOb0TVoS4sey8VAI1BOapgYb75h9lezGFJq/0yRAQ6wNoqLNSYYtjTNEnsU9wcLHJye9hf4Z5TSQe/sU8/3fRL3vd6nd69wWRIcKir0CpQ3EkxGFrShPhbn4hEiB3LDaVOxz2E46/QQRGvIlNwWBHXbXbSWcp2Aw6KMgdYek8IomXg0SeSTxxREIAyniW6qyKj8XwCP/NwEbMgYZIagYZZ5s4SalVQpeZ06BF1IYUAYLywyIGiq+JoLgv4AowpvuDKgyD49PYtzA0o7ub+8i0TmkRcqysBzKFtDEEu4RTPyEQRBrAav2bjTj+mlYGIZNaZ3OQoJmk3nIUHTWTieXs0Jml2HBP06+m0UjgiaDcOLzx+rk45rU22t94BSuvXoGppinPunP9UZzCiLYY/TVD5TfEMNEFTrHdRYtZfhO4th/cwzBxBR05hDmANBvR/RhBao5/fOUPc88PtB9wxdTkKHBoY2NmGBJxfe+OEm/nJ5W0z/HJ3d9kbPVw+PvUnv9+5VOHyehsOn23T8NAknp1/S8dl4PRgssNOjQW1ANdUEYiOLSs4ozoxnbA/JpDKeBpYrboqmUHvv97tn/fN9S9pQ1RjgVQk66a23D6KV8qTrt40rQUgt+GpVIym5lEZ73xEFIbmIYEuQkCtpawOXR3llZWmWJZw5ezsPWr5fNXL5AMxggjNlJ47h1SCJFay+MQWMyXTQ6dCMt3XVbNpMpp1Nt5NC5zBqfpGrlQYz8H9IeMrNoOfjkmBuINVHCqhStMCH8/JI1d19SbATPhIQeboEdWyRXxIsYOseiTxJ6NKe2uZ89MhelARXNn0TLlOw4TLXTSCNNDT5BmJ5oOUwr6vdwQ11dDTVgx3e0CSHQyT+i7tfvHp3/+JHf+8ra/3BH/4x5+qq5mWNLx2BquNXO4nNG2piHOA3huB9sVvFO5yr5GMWuCRvXjAmc2H062f3BHOxks7N3Lg83O9hw9kYE7ypRh0OcLftty13WxCU2Vhb4zOpTUpdKQiaQr35fRSHf2yJu0N1/Q8Xxjrv7EjvZAnlwtaZc+quDtId3nSxDSAmmL5ahmOpjb3f7ZZUw7VKytIef83BNkibNxuqeJX+rhyrrcZF9hGKl73FRqBK3LfdxwbvJXcuR3bu/A0giPL0
+sidebar_class_name: "get api-method"
+info_path: docs/spotify/spotify-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get User's Saved Audiobooks"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/me/audiobooks"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get a list of the audiobooks saved in the current Spotify user's 'Your Music' library.
+
+**Note:** Authorization scopes- **user-library-read**
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Pages of audiobooks","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"}},"Transfer-Encoding":{"schema":{"type":"string","example":"chunked"}},"Via":{"schema":{"type":"string","example":"HTTP/2 edgeproxy, 1.1 google"}},"access-control-allow-credentials":{"schema":{"type":"string","example":"true"}},"access-control-allow-headers":{"schema":{"type":"string","example":"Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token"}},"access-control-allow-methods":{"schema":{"type":"string","example":"GET, POST, OPTIONS, PUT, DELETE, PATCH"}},"access-control-allow-origin":{"schema":{"type":"string","example":"*"}},"access-control-max-age":{"schema":{"type":"string","example":"604800"}},"cache-control":{"schema":{"type":"string","example":"private, max-age=0"}},"content-encoding":{"schema":{"type":"string","example":"gzip"}},"date":{"schema":{"type":"string","example":"Tue, 27 May 2025 16:03:15 GMT"}},"etag":{"schema":{"type":"string","example":"\"MC-IjVhZGYyOWE5Y2EzNjk2M2Q1NTAzOTAwYmIwMTM4ZmI5Ig==\""}},"server":{"schema":{"type":"string","example":"envoy"}},"strict-transport-security":{"schema":{"type":"string","example":"max-age=31536000"}},"vary":{"schema":{"type":"string","example":"Authorization"}},"x-content-type-options":{"schema":{"type":"string","example":"nosniff"}},"x-robots-tag":{"schema":{"type":"string","example":"noindex, nofollow"}}},"content":{"application/json":{"schema":{"type":"object","properties":{"href":{"type":"string","example":"https://api.spotify.com/v1/me/audiobooks?offset=0&limit=20"},"items":{"type":"array","items":{},"example":[]},"limit":{"type":"number","example":0},"next":{"nullable":true,"example":null},"offset":{"type":"number","example":0},"previous":{"nullable":true,"example":null},"total":{"type":"number","example":0}}},"examples":{"User's Saved Audiobooks":{"value":{"href":"https://api.spotify.com/v1/me/audiobooks?offset=0&limit=20","items":[],"limit":0,"next":null,"offset":0,"previous":null,"total":0}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

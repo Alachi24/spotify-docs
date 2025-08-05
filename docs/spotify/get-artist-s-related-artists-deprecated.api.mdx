@@ -1,0 +1,71 @@
+---
+id: get-artist-s-related-artists-deprecated
+title: "Get Artist's Related Artists[DEPRECATED]"
+description: "Get Spotify catalog information about artists similar to a given artist. Similarity is based on analysis of the Spotify community's listening history."
+sidebar_label: "Get Artist's Related Artists[DEPRECATED]"
+hide_title: true
+hide_table_of_contents: true
+api: eJy1Vt9v2zYQ/lcOfCkwULb8I8WiIQ9G4qUZtsaItWJAGgwMdZbYSiRHnty4gf73gZTcpmiyaQ97snC8+777jsc7PzISpWfZLVs5Up48u+OsQC+dsqSMZhm7RIKtNaR2B5CCRG1KUHpnXCOCB4h70xKIPhy8alQtHJABAaXaox6OJrDtjxQdQHm4Fx4LCPFa1AevPJgdUIVfuUzTtFrR4ZWHWnlCrXQJlfJk3GHCODMWXUzhqmAZK5F6CdsbrAVhMQi6QOtQBgPjzKG3Rnv0LHtk8zQNP9+qXYFHCqkMgljH2TJdfu94g960TqIHbQh2ptWBoEJRoIvwq5qS7V6GTy8rbET4ooNFljFPTumScYYPorF1MFWLs/csWy4X79lP0Iiz+cnpPE1TXi2S+emzR6zrOMud0H6HLllraYoAOpJPVq3+iEUEeafE2LA3eb6ZzgGLEq0zDwcOs8kMSmPKGiOWkBK9T6TR5EydiLo2nxLpsEBNStR+LBG59h8An9R5DNhKSrTEYWVtsqkFhe7lsGqpMk59jk3E4dxoQk1JfrDI4dqpUmkON0jukKx2hI4fezMJOO/Q+Rj3R3Jem7ZIcickJhHlgTjIWgU0Mh9Rc5AD+KAmWl+W1yBVphgt73Kdc9hcb3MO15v86vrtlsPm95zDxfrXdb7msFnl529epjNR61i2H54DasRDIkoci/E6Xf44dLCoKfH/+zuRQlZ4zHYsl3VqLwg5DOrOBqzhLvE/Prnys7IRoBA0ulJ51XKYzeGXVsM8nZ/A7DQ7WWTpEi5/yyOaR7dHNxYP9d4c+jhySlJCYYJY4yjxKNswnsdCHauymJ0sXh8L/ZAcyxMCExPn5ehO1sZrtdux7kmdQ4SwtlYyPtTpB2+e71Vz/wElMc6sC7uBVD/n0Tnj/t2tQe+HDn45v7eG4Oc462MBBbX+SYBum3t0TwOW6bLropjBFN3DSu3X0ysPw7oaDP72Yr25WZ+v8vXFXfDdi7rFb2R8SfRJNl+TOTJGUiucaJDipLx9ZFo0cRpGpj+vQlh49swKquJ2/KtVDguWheHLX7ywrrvjrB9R/eINtQwQGZvuZ9Nhc04fH78Qdd3U9TKT41499m2fWevq8LaJrM+mU2HVxPejdiJNwzr+nYeUptXkv3W7C3p2JmasKF7Y8d/EanPFONv3M5tlbDZJJynre0zI0GNd1/0NGu8SDg==
+sidebar_class_name: "get api-method"
+info_path: docs/spotify/spotify-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Artist's Related Artists[DEPRECATED]"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/artists/{{Artist_Id}}/related-artists"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get Spotify catalog information about artists similar to a given artist. Similarity is based on analysis of the Spotify community's listening history.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"Artist_Id","in":"path","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A set of artists"},"404":{"description":"Resources not found","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"}},"Transfer-Encoding":{"schema":{"type":"string","example":"chunked"}},"Via":{"schema":{"type":"string","example":"HTTP/2 edgeproxy, 1.1 google"}},"access-control-allow-credentials":{"schema":{"type":"string","example":"true"}},"access-control-allow-headers":{"schema":{"type":"string","example":"Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token"}},"access-control-allow-methods":{"schema":{"type":"string","example":"GET, POST, OPTIONS, PUT, DELETE, PATCH"}},"access-control-allow-origin":{"schema":{"type":"string","example":"*"}},"access-control-max-age":{"schema":{"type":"string","example":"604800"}},"alt-svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"}},"cache-control":{"schema":{"type":"string","example":"private, max-age=0"}},"content-encoding":{"schema":{"type":"string","example":"gzip"}},"date":{"schema":{"type":"string","example":"Thu, 12 Jun 2025 19:53:04 GMT"}},"server":{"schema":{"type":"string","example":"envoy"}},"strict-transport-security":{"schema":{"type":"string","example":"max-age=31536000"}},"x-content-type-options":{"schema":{"type":"string","example":"nosniff"}}},"content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"object","properties":{"message":{"type":"string","example":"Not Found"},"status":{"type":"number","example":404}}}}},"examples":{"Get Artist's Related Artists[DEPRECATED]":{"value":{"error":{"message":"Not Found","status":404}}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

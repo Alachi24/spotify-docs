@@ -1,0 +1,73 @@
+---
+id: get-followed-artists
+title: "Get Followed Artists"
+description: "Get the current user's followed artists."
+sidebar_label: "Get Followed Artists"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9V21v2zYQ/ivEfdgAg4ptJS1WDcZgpF6aokncRWnXxvnAUGeJqURqJOVaMfTfB1Jy4qRpq2JYP1kgec/dc+/egGWpgegSLgxqA1cUEjRci9IKJSGCI7TEZkh4pTVKSyqD+ldDlirP1WdMCNNWGGv2FnIhB4NTZTEaDMi0spnS4pY5FGK4KtEEZDBw0kErG2hkyWAAFFSJ2j88TiCCFO2fHfi0xQYKJdOsQOssjC43IFmBEIGtS4THBscZkuOXxN0FW6vzmiiZ152xRBhiqrJU2mLSGT7t6KxYXqFxFBbQvl5A+2K2ZkWZe3YOe9LeAgXhtP5Toa6BguEZFgyiTWtcBMZqIVOggK08RB0uNM0VBY2mVNKgcSLhaOR+HvKZkpKlmBCDlqjl1t9AIUOWeIdsYJrb4HzF3WcfA7L9yQKig4P9BfxOCjYJn70IR6MRzfaD8MWTV9A0FGLNpFmiDmaSq8SB9tTHs0p+wsSDvBOsr9irOJ4PQ4JJiqVW65qS8d6YpEqlOXosxjkaE3AlrVZ5wHxacY0JSitYbvoqsrr6BuCOn/uATTnH0lIyLctgnjO7VLqgDwuCkkMlLUobxHWJlJxpkQpJyV9odR1MlxY1JeelsmJZBw7nHWrj5f4ODnNVJUGsGcfAo6wtJTwXDs2qTygp4R14x8affp1egTZTSW96R7OYkvnZeUzJ2Tw+Pjs9p2R+EVPycvZmFs8omU/jw1dfV6c8177aBk8BFWwdsBT7YjwfHfzWZTDLbWD+9zrhjGe4tbavrlKLFbNIScdu0mF1scQfLLn0VpQeIGG2t6feY0LJeExeV5KEo/AZCcdRGEYH++ToJPZoaFlvExZwchgc3yT5aXhSf7hNw9Oj1zcfX05HJ8U78eH92/rjzevi5P3F7Wn84eAkfvv5OJ1MFuD1GNQr1H01oVypupWzWnAbWNepXH8PDPJKC1v3hdp6f3/8bP/5NqArpnsDPCh0L70OtkH0M0n5xt673qQyUiyXHZJW18qa4AeiIJWQCa4pkaqdu9Ds5JWTZWWZC+7tHd4Y9XRtqusb5G7aldqNayvaibWdRt99yCttlO7xkLnu5z5klefs2nFw7XmHkrvwHDKNy+8UsLWliYZDVoo90/bTPa6K4Wo8LHDY+kPI9I+dgf5LLgphJ+EIGgrCYrFrM9OauSm/PW92lF1eNRS88I6ArIpr1Ls2haOGgsS1/T5HClZZln8TbtQ03hfdgTfWrWzbFYpM7yPkd5tHUduJS+f5TnXr3P/mwTtHXV7duSYcbek7RXcUWx6eSjuQ2k3Qr342gwgea4Rtk2g3wkrnX7cWGvrFC85VJa15+OzKbXNL5T0urE+hbgyT6fwYKKzaQQwRjPdGe46hKyTGXTSd7aUytmC+hLod9clgPNpZN/fl+DP27S6Z3OowLHMmpEt1755N5+1LWI3BRQIo3Hv8ikKmjHXXm801M3ih86Zxx+326+KQCOMSOoFoyXKD3yD60/f0J2l/wvr+j0RXIOATYcW0aGvTV3a7BXqOrUy75+1IfdFHHcpdMh/N3AT9F2QekXg=
+sidebar_class_name: "get api-method"
+info_path: docs/spotify/spotify-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Followed Artists"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/me/following"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get the current user's followed artists.
+
+**Note:** Authorization scopes- **user-follow-read**
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"type","description":"The ID type- currently only artist is supported.\n\n**Allowed values:** \"artist\"\n\n**Example:** type=artist","in":"query","schema":{"type":"string","example":"artist"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A paged set of artists","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"}},"Transfer-Encoding":{"schema":{"type":"string","example":"chunked"}},"Via":{"schema":{"type":"string","example":"HTTP/2 edgeproxy, 1.1 google"}},"access-control-allow-credentials":{"schema":{"type":"string","example":"true"}},"access-control-allow-headers":{"schema":{"type":"string","example":"Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token"}},"access-control-allow-methods":{"schema":{"type":"string","example":"GET, POST, OPTIONS, PUT, DELETE, PATCH"}},"access-control-allow-origin":{"schema":{"type":"string","example":"*"}},"access-control-max-age":{"schema":{"type":"string","example":"604800"}},"alt-svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"}},"cache-control":{"schema":{"type":"string","example":"private, max-age=0"}},"content-encoding":{"schema":{"type":"string","example":"gzip"}},"date":{"schema":{"type":"string","example":"Wed, 11 Jun 2025 21:22:43 GMT"}},"etag":{"schema":{"type":"string","example":"\"MC-IjdlN2MyYzg2NGJjZDA0MmViYWQyZjJmMWUzNTY4MTQwIg==\""}},"server":{"schema":{"type":"string","example":"envoy"}},"strict-transport-security":{"schema":{"type":"string","example":"max-age=31536000"}},"vary":{"schema":{"type":"string","example":"Authorization"}},"x-content-type-options":{"schema":{"type":"string","example":"nosniff"}},"x-robots-tag":{"schema":{"type":"string","example":"noindex, nofollow"}}},"content":{"application/json":{"schema":{"type":"object","properties":{"artists":{"type":"object","properties":{"cursors":{"type":"object","properties":{"after":{"nullable":true,"example":null}}},"href":{"type":"string","example":"https://api.spotify.com/v1/me/following?type=artist&limit=20"},"items":{"type":"array","items":{},"example":[]},"limit":{"type":"number","example":20},"next":{"nullable":true,"example":null},"total":{"type":"number","example":0}}}}},"examples":{"Get Followed Artists":{"value":{"artists":{"cursors":{"after":null},"href":"https://api.spotify.com/v1/me/following?type=artist&limit=20","items":[],"limit":20,"next":null,"total":0}}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

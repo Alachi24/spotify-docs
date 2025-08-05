@@ -1,0 +1,73 @@
+---
+id: add-items-to-playlist
+title: "Add Items to Playlist"
+description: "Add one or more items to a user's playlist."
+sidebar_label: "Add Items to Playlist"
+hide_title: true
+hide_table_of_contents: true
+api: eJzNV9ty2zYQ/RXMvnRGA1o3Xyp28iDbSqJMEisR7dq1PR0IXImISYAGQEWMRv/eAUg5cuykbPvQ6EHigLtngd2DPas1WLYwEF7DJGVlKow1cEshRsO1yK1QEkIYxjFREonSJFMaibCYGWIVYaQwqH8xJK+d927kjWy13iuLYatFhoVNlBZfmAMihqscTUBara15kKlYzMsgL2ap4K0Wfe6dFktmsdUCCipH7bHGMYTA4njsdhKp7d6Bgsb7Ao09VnEJ4Rq4khaldY8sz1PBvXv7k3EHW4PhCWbMPdkyRwhBzT4hdzi5dsGsQOPe5sqIKhkPlrLIZqiBAq5YlqcIYWdDodDC7BgxrVkJFHzGdtaN1UIudp3B5MqKeRlazfhd2DW9l2Z8epVeHsrkw+H55cv9i95n2Ox4XDdzod+a7S8+HE2zd38gjk76V8PJ8cHy5VOzfXFx8PuguBrFV+cX7GgwXM2OPiZwu9l83YM/kSPHeEuIh0KEa1iytMDHyetsE/S/7d1vX6PJlTTV/nudrvv5hvHESJabRFkyPiVzpYlN8IHlQCFBFqOuEpDaYLrkz9LpmTon/Rc3EO7v92/gN5KxF72DQa/T6dCkH/QGz74Ct+dIM2nmqIOR5Cp2oA3j8aSQdxh7kAvBmrq9jqJJu0cwXmCu1aqkpLvXJQulFil6LMY5GhO4C6ZVGrA0VZ8DrjFGaQVLTdNAVhc/ANzJcxOwIeeYW0qGeR5MUmbnSmf0cRui5KTqCUFU5kjJmRYLISn5iFaXwXBuUVMyrfgUOJwL1Mb7XQYnqSriINKMY+BRVpYSngqHZtUdSkrqhhPUp/Gr3z9ehjZRcePjvRpFlEzOphElZ5NofPZ+SsnkPKLkdPR2FI0omQyjk9ffD6f8WZtGaz0HlLFVwBbYFOOws/9rzWDOeIJbnKb+dfenpI77osaqs4z/8DIsvojcA8TMNj5DVCAlnT55U0jS6/QOSLcX9o/CXoe8ehd5NIN6ibopHsqlKis/qwW3gXV3O1faBgZ5oYUtm0Jts9LvHvQPt61iFWzT4xwD5ZtaY45JZaSYz2skrWbKmsCyximWSsgYV5RINVeOdbDZqdh/FeJtW/5TxH/TCYbD4fHUDCbH08+xuGSSd9+8ik8G78/F8f344hD+hZA9Ct4oQqU31S13bFZePHJmEwihvey2t5Ji2odvxdVxPj04HQ0mH0bvTpOrL6/PeNsrmoEtx5x2rqHQqVMSa3MTttssF3u1AO5xlcGGPrHgXBXSmsdmtxRc+j9+nZhG2/T9TKJNQci58tUW1te27s5kOBkDhWXVnyGE7l5nrwMV1xh3tXPZd0nPmGeZZBnW8+zTSn8z9e7Mjj/PAFzz3QmPo46Q4GdO304rVl3Dsuso9jDNU3ieWQ6t4tYthcQRM7yG9XrGDJ7rdLNxy/cF6hLC61sKS6YFm/m505Wk0mVPxjssIYRdUXVFqe7M07vuyFl5VFr9Q9vbnbvjZA8ozOrBPlOx89HMMcl9h+D/IDz0Or+2hpTJReEFCypM9/kLu1tmgw==
+sidebar_class_name: "post api-method"
+info_path: docs/spotify/spotify-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Add Items to Playlist"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/v1/playlists/6LiYBpS5DE9PQEMDhYzHOc/tracks"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Add one or more items to a user's playlist.
+
+**Note:** Authorization scopes- **playlist-modify-public**, **playlist-modify-private**
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"position":{"type":"number","example":0},"uris":{"type":"array","items":{"type":"string","example":"spotify:track:1s2FsIDYlX6nhQ6UXF4V2w"},"example":["spotify:track:1s2FsIDYlX6nhQ6UXF4V2w","spotify:track:14gQ7SmMZeeEC3YAPB5vFw","spotify:track:4iV5W9uYEdYUVa79Axb7Rh"]}}},"examples":{"Add Items to Playlist":{"value":{"position":0,"uris":["spotify:track:1s2FsIDYlX6nhQ6UXF4V2w","spotify:track:14gQ7SmMZeeEC3YAPB5vFw","spotify:track:4iV5W9uYEdYUVa79Axb7Rh"]}}}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"201":{"description":"A snapshot ID for the playlist","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"}},"Transfer-Encoding":{"schema":{"type":"string","example":"chunked"}},"Via":{"schema":{"type":"string","example":"HTTP/2 edgeproxy, 1.1 google"}},"access-control-allow-credentials":{"schema":{"type":"string","example":"true"}},"access-control-allow-headers":{"schema":{"type":"string","example":"Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token"}},"access-control-allow-methods":{"schema":{"type":"string","example":"GET, POST, OPTIONS, PUT, DELETE, PATCH"}},"access-control-allow-origin":{"schema":{"type":"string","example":"*"}},"access-control-max-age":{"schema":{"type":"string","example":"604800"}},"cache-control":{"schema":{"type":"string","example":"private, max-age=0"}},"content-encoding":{"schema":{"type":"string","example":"gzip"}},"date":{"schema":{"type":"string","example":"Tue, 03 Jun 2025 12:37:20 GMT"}},"server":{"schema":{"type":"string","example":"envoy"}},"strict-transport-security":{"schema":{"type":"string","example":"max-age=31536000"}},"x-content-type-options":{"schema":{"type":"string","example":"nosniff"}},"x-robots-tag":{"schema":{"type":"string","example":"noindex, nofollow"}}},"content":{"application/json":{"schema":{"type":"object","properties":{"snapshot_id":{"type":"string","example":"AAAABSs9PBSwdiXanc1JGdC9NUiBqIV6"}}},"examples":{"Add Items to Playlist":{"value":{"snapshot_id":"AAAABSs9PBSwdiXanc1JGdC9NUiBqIV6"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

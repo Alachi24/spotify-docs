@@ -1,0 +1,63 @@
+---
+id: get-user-s-saved-album
+title: "Get User's Saved Album"
+description: "Get a list of the albums saved in the current Spotify user's 'Your Music' library."
+sidebar_label: "Get User's Saved Album"
+hide_title: true
+hide_table_of_contents: true
+api: eJy1Vttu4zYQ/RViHhqgoGzZcRaNCqMwEiMboE7cWt42m+SBpsYWE4nUkpRrxdC/F6TsxOkmXW2BPkkgOWdmzly3YNnKQHQLo2xR5gbuKSRouBaFFUpCBBdoCSOZMJaoJbEpEuZfEsPWmBAh/RkvtUZpyaxQViwrUhrUR4Yc3ahSk0lpBD8imVhopqsOUFAFauYUXCYQwQrt3KCezRyitwMoaDSFkgYNRFvoh6H7vLZsylZonFGNQUAhRZag9hKjzAazNXe/hqeYM/dnqwIhAmO1kCuggBuWF5k7So+HdxANBsd38DPJ2bB/ctoPw5Cmx0H/9M0rqGsKsWbSLFEHY8lV4kBb6uNpKR8x8SCfBGsr9jGOp90+wWSFhVabipJep0dWSq0y9FiMczQm4EparbKAZZn6K+AaE5RWsMy0VWR1+S+ABzy3ARtxjoWlZFQUwTRjdql0TsmotKnS4snnASVnSlqUNoirAim51mIlJCW/o9VVMFpa1HSfXIHD+YTaeLk/g7NMlUkQa8Yx8CgbSwnPhEOz6hElJXwHvvPGn77vXo42VUlr9y7GMSXT61lMyfU0vry+mlEynceUnI9/HcdjSqaj+Ozj++qU97Wtth/fAsrZJmArbIvxIRz8tMtgzniKe5y28oUWa2aRkp3e4Q5rxzJ+ZzGsnkThARJmW/sQpyUlvRMyYRXph/0T0htEg37UOyUXk9ijoWWtTbiDyVlwmd88TeLJydXF/GlyPg5vHtLH6/ixuvrjt83nfD64Ok8ePp+n2eThsXe5Gg7vwOsxqNeo22pCuVZVI2e14DawrocUStvAIC+1sFVbqD37x72T4w/7lrQJ9mFwgoHy3bJ1LktlpFgud0haLZQ1wXfwKJWQCW4okWqpXHZDfZAZTpYVRSa4L/rug1Fv571aPCC3QKHQblRY0YyBVOPyG33c2sJE3S4rRMc07aLDVd5d97o5dptB8YtaLg3aYfhDJnJhh/0QagrCYm4OwJnWrIKX8/pAze19TcELHwjIMl+gPrQmrClI3PhHsswytnCnrrUePHIXNYXGpm/CFRrXQpWmDaRVlmXfQKxf3PKYbtrPm9ntpzFpxnG0hTXLSnwJwn9l+pnQ2/tnCsM9Tc7wFyrCQ3ebq51Lzu7a29606maHcOnCbAoRvDIC9hXqlG6h1Nn71kNNv3rBuSqlNa+f3VMQcqk8u8L61NuvPqPpJVBYN/MJIuh1wo7z29UA4y7EzvBCGZszn/2S5bhbtN6g/h/72Pallv6f1WyXLG6KdouMCemKw1Oy3dF7C+seOOqBAnveGlNlrLvbbhfM4Fxnde2Ov5Soqybaa6ZFk6++fpolwsfkEavnNcFx16Ta163C0f4c8Yuxa/N/A5Guo8Y=
+sidebar_class_name: "get api-method"
+info_path: docs/spotify/spotify-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get User's Saved Album"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/me/albums"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get a list of the albums saved in the current Spotify user's 'Your Music' library.
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Pages of albums","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"}},"Transfer-Encoding":{"schema":{"type":"string","example":"chunked"}},"Via":{"schema":{"type":"string","example":"HTTP/2 edgeproxy, 1.1 google"}},"access-control-allow-credentials":{"schema":{"type":"string","example":"true"}},"access-control-allow-headers":{"schema":{"type":"string","example":"Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token"}},"access-control-allow-methods":{"schema":{"type":"string","example":"GET, POST, OPTIONS, PUT, DELETE, PATCH"}},"access-control-allow-origin":{"schema":{"type":"string","example":"*"}},"access-control-max-age":{"schema":{"type":"string","example":"604800"}},"cache-control":{"schema":{"type":"string","example":"private, max-age=0"}},"content-encoding":{"schema":{"type":"string","example":"gzip"}},"date":{"schema":{"type":"string","example":"Thu, 15 May 2025 14:42:19 GMT"}},"etag":{"schema":{"type":"string","example":"\"MC-ImYzMTM5NGUzMDE0YjhkOTkyNWQxZmU4NDdjZDhlMjk1Ig==\""}},"server":{"schema":{"type":"string","example":"envoy"}},"strict-transport-security":{"schema":{"type":"string","example":"max-age=31536000"}},"x-content-type-options":{"schema":{"type":"string","example":"nosniff"}},"x-robots-tag":{"schema":{"type":"string","example":"noindex, nofollow"}}},"content":{"application/json":{"schema":{"type":"object","properties":{"href":{"type":"string","example":"https://api.spotify.com/v1/me/albums?offset=0&limit=20"},"items":{"type":"array","items":{},"example":[]},"limit":{"type":"number","example":0},"next":{"nullable":true,"example":null},"offset":{"type":"number","example":0},"previous":{"nullable":true,"example":null},"total":{"type":"number","example":0}}},"examples":{"Get User's Saved Album":{"value":{"href":"https://api.spotify.com/v1/me/albums?offset=0&limit=20","items":[],"limit":0,"next":null,"offset":0,"previous":null,"total":0}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

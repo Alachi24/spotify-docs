@@ -1,0 +1,71 @@
+---
+id: get-track-s-audio-features
+title: "Get Track's Audio Features [DEPRECATED]"
+description: "Get audio feature information for a single track identified by its unique Spotify ID."
+sidebar_label: "Get Track's Audio Features [DEPRECATED]"
+hide_title: true
+hide_table_of_contents: true
+api: eJy1Vt9v2zYQ/lcOfOk2ULb8I8WiIQ9emqUu1tlY1GJAmweGOktsJJIhT45dQ//7QNoenDXZtIc9SaB43313/HifdoxE6Vn2ieVOyHvPbjkr0EunLCmjWcaukUC0hTKwQkGtQ1B6ZVwjwndYGQcCvNJljUABAlSBmtRKYQF3W1DkodXqoUW4sYbUagvzNwPGmbHoIsa8YBkrkSKBm1lI9cs+k2ecOfTWaI+eZTs2TtPweEpwdkrOR0ZGH8iwjrNpOvk26GdRwGLWUgUOH1r0BN89OqNLkEb7tkEH97jlcCcK0EZL5IAbqxwWQKpBT6Kxg8Hg+wF8CM2gVgvCesvBYSJaqkIHpCClS6AKofXo4NHoVwQV1hYqdBh6UKEo0MXSZjUlN2sZXr2ssBHhjbYWWcY8OaVLxhluRGPrsFRNLj6zbDqdfGY/QSMuxmfn4zRNeTVJxufPfmJdx8Mha79Cl1xpaYoA2jOfrFp9j0UE+ahE37C3eb4cjgGLEq0zmy2H0WAEpTFljRFLSIneJ9JocqZORF2bx0Q6jBoSte+biFz7D4Anfe4DNpMSLXGYWZssa0FB7hyCWoxTX6NoOVwaTagpybcWOSycKpXm8DuS2yazFaHjR8EnAecjOh/j/kgua9MWSZA7JhFlQxxkrQIamXvUPKgwgh+qiasvl9cgVaboXd71Vc5hubjJOSyW+Xzx2w2H5Yecw5urX6/yKw7LWX759uV0JtbaN9sPzwE1YpOIEvtivE6nPx4ULGpK/P9+T6SQFR7Z9s1lnVoLQg6H6i4OWIezxP945cqvykaAQlDvTr0PEkvP4V2rYZyOz2A0ydJpNh7D9fs8onl0a3R98VCvzXYfR05JSihMEGscJR5l6xRt+0IduzIZnU1eHxu9SY7tCYGJifO5t5K18VqtVqw76XOIENbWcf4aPfzizfNaNXdfUBLjzLrgRaT2HoPOGffv2zwJav3JPt02d+hO6U3TSddFaoeluD34abS6Vx721vWX22U7thZ1i09oHBMd0SKgFU40SHGmfdoxLZpAYV6wv7t3Xp36bjTHYEjRHIMDhXvMrKAqWu1DGyyOZWGa8hdPoOtuOdvPnL1zh+YEiIwN16Nh/FlIjn483O3mRdexo/D2hFtXh8tJZH02HAqrBn5PciBNwzr+zQ4pTavJP912G/ivTGSoKCriWOtsOWecrfdDl2VsNEgHKduLRMggkq7r/gSfngmm
+sidebar_class_name: "get api-method"
+info_path: docs/spotify/spotify-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Track's Audio Features [DEPRECATED]"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/audio-features/{{Id}}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get audio feature information for a single track identified by its unique Spotify ID.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"Id","description":"The Spotify ID for the track.","in":"path","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Audio features for one track"},"403":{"description":"Bad OAuth request (wrong consumer key, bad nonce, expired timestamp...). Unfortunately, re-authenticating the user won't help here.","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"}},"Transfer-Encoding":{"schema":{"type":"string","example":"chunked"}},"Via":{"schema":{"type":"string","example":"HTTP/2 edgeproxy, 1.1 google"}},"access-control-allow-credentials":{"schema":{"type":"string","example":"true"}},"access-control-allow-headers":{"schema":{"type":"string","example":"Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token"}},"access-control-allow-methods":{"schema":{"type":"string","example":"GET, POST, OPTIONS, PUT, DELETE, PATCH"}},"access-control-allow-origin":{"schema":{"type":"string","example":"*"}},"access-control-max-age":{"schema":{"type":"string","example":"604800"}},"alt-svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"}},"cache-control":{"schema":{"type":"string","example":"private, max-age=0"}},"content-encoding":{"schema":{"type":"string","example":"gzip"}},"date":{"schema":{"type":"string","example":"Mon, 09 Jun 2025 13:04:22 GMT"}},"server":{"schema":{"type":"string","example":"envoy"}},"strict-transport-security":{"schema":{"type":"string","example":"max-age=31536000"}},"x-content-type-options":{"schema":{"type":"string","example":"nosniff"}}},"content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"object","properties":{"status":{"type":"number","example":403}}}}},"examples":{"Get Track's Audio Features":{"value":{"error":{"status":403}}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

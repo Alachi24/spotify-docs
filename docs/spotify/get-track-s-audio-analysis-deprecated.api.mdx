@@ -1,0 +1,71 @@
+---
+id: get-track-s-audio-analysis-deprecated
+title: "Get Track's Audio Analysis[DEPRECATED]"
+description: "Get a low-level audio analysis for a track in the Spotify catalog. The audio analysis describes the track's structure and musical content, including rhythm, pitch, and timbre."
+sidebar_label: "Get Track's Audio Analysis[DEPRECATED]"
+hide_title: true
+hide_table_of_contents: true
+api: eJy1VlFv2zYQ/isHvnQbKFuxk27RkAcvMdoU62I0ajEgDQaGOktsJJIlT47dQP99IGUNyZJs2sOeLMh33313/Hif7hmJ0rPsiuVOyFvPrjkr0EunLCmjWcbeIIGA2twlNW6wBtEWyoDQot555WFtHAigkAxKA1UIl9aQWu9AChK1KSeQV/j3tL7GDfqYEdNfefDkWkmtQxC6gKb1SooapNGEmjgoLeu2ULoEV+2oajhYRbLiMZpUc+NwwjgzFp0I7M8LlrESKbZ2uQgMFnsCZ2gdSkFYMM4cemu0R8+yezZL0/DzeAiLp00bvefNOs4O0/nTpF9EAReLlipw+LVFT/DdnTO6DA35tkEHt7jjcCMK0EZL5IBbqxzGXtCTaOxkMvl+Ah/12jhqtSCsdxwcJqKlCjUpKSiMI8yw9ejgzuhXBBXWFirsp1GhKNDF1hY1JZcbGR69rLAR4Yl2FlnGPDmlS8YZbkVj6/Cqmp98Ztnh4fwz+xkacTI7Op6lacqreTI7fvYv1nU8CEn7NbpkqaUJpzW2nqxafYtFBPmkxNi0t3m+ms4AixKtM9sdh4PJAZTGlDVGLCElep8EGTlTJ6IOYpYOizBBUfuxhci1/wD4YM5jwBZSoiUOC2uTVS1obVzDIajFOPUtypfDaa/8JN9Z5HDhVKk0hw9Ibpcs1oSOD5ctCTif0PmY93tyWpu2SILwMYkoW+IgaxXQyNyi5sO1SvbdxLcvt9cgVaYY3d6bZc5hdXGZc7hY5ecXv11yWH3MOZwtf13mSw6rRX769uVyJvY6ttoPzwE1YpuIEsdivE4Pf9orWNSU+P/9nkghKxzYjq1lndoIQg777k72WPuzxP945cpvykaAQtDoSb0PEkuP4V2rYZbOjuBgnqU/ZkczePM+j2ge3QbdWDzUG7Pr88gpSQmFDWKNo8SjbJ2i3VioYSrzg6P562HQ22QYT0hMTNzPo5WsjddqvWbdgzmHDGFtHfev0dMv3jyvVXPzBSUxzqwLrkSq9xh0zrh/D/MkqPUP4nTb3KB7SO8wnXddpLZ/FcODZ+d7T+2ta/C9q7Pl6sPydJEvz65D5EbULT6iNBQdkCO4FU40SHG/Xd0zLZpAJ5b44zxY6GPnyx98BZyfRbv8y+aDJ4WbzaygKprv1zaYHsvCfuUvnknXXXPWb6He1cO4AkTGppuDafy+SAaHnt7fD+S6jg2C7Mm3rg6Xlsj6bDoVVk18T3UiTcM6/iRCStNq8o/DrkMXaxN5KopKGTperM4ZZ5t+GbOMHUzSScp68QgZxNN13Z+ITDZ6
+sidebar_class_name: "get api-method"
+info_path: docs/spotify/spotify-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Track's Audio Analysis[DEPRECATED]"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/audio-analysis/{{Track_Id}}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get a low-level audio analysis for a track in the Spotify catalog. The audio analysis describes the track's structure and musical content, including rhythm, pitch, and timbre.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"Track_Id","description":"The Spotify ID for the track.","in":"path","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Audio analysis for one track"},"403":{"description":"Bad OAuth request (wrong consumer key, bad nonce, expired timestamp...). Unfortunately, re-authenticating the user won't help here.","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"}},"Transfer-Encoding":{"schema":{"type":"string","example":"chunked"}},"Via":{"schema":{"type":"string","example":"HTTP/2 edgeproxy, 1.1 google"}},"access-control-allow-credentials":{"schema":{"type":"string","example":"true"}},"access-control-allow-headers":{"schema":{"type":"string","example":"Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token"}},"access-control-allow-methods":{"schema":{"type":"string","example":"GET, POST, OPTIONS, PUT, DELETE, PATCH"}},"access-control-allow-origin":{"schema":{"type":"string","example":"*"}},"access-control-max-age":{"schema":{"type":"string","example":"604800"}},"alt-svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"}},"cache-control":{"schema":{"type":"string","example":"private, max-age=0"}},"content-encoding":{"schema":{"type":"string","example":"gzip"}},"date":{"schema":{"type":"string","example":"Mon, 09 Jun 2025 13:07:52 GMT"}},"server":{"schema":{"type":"string","example":"envoy"}},"strict-transport-security":{"schema":{"type":"string","example":"max-age=31536000"}},"x-content-type-options":{"schema":{"type":"string","example":"nosniff"}}},"content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"object","properties":{"status":{"type":"number","example":403}}}}},"examples":{"Get Track's Audio Analysis[DEPRECATED]":{"value":{"error":{"status":403}}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

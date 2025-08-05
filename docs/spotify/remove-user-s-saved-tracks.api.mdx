@@ -1,0 +1,73 @@
+---
+id: remove-user-s-saved-tracks
+title: "Remove User's Saved Tracks"
+description: "Remove one or more tracks from the current user's 'Your Music' library."
+sidebar_label: "Remove User's Saved Tracks"
+hide_title: true
+hide_table_of_contents: true
+api: eJzNVltPGzkU/ivWeUGKPLkCbWfFQwoR0EJJSWAvwIPjOUncesau7RkyjfLfV/ZMuCwUjbRaafNAwrHP5/Od+xocW1iIb2BqGP9u4Y5CgpYboZ1QGcRwiakqkKgMiTIkVQaJC1fJ3KiUuCUSnhuDmSO5RbNjyc6fKjfkPLeC7xApZoaZsn2b3Wat1hflMG61yDB3S2XET+YfIZYrjTYirZZHiGqVKFWJmJetFlBQGk24e5pADCaYdGXRTCaswKQ2nYJmhqXo0HhGa8hYihCDSPzZc1ZDwlWassii13GYECmsI2oeCE20cmJektMj2yat1jlbiTRPveF73SAECsLD/MjRlEDB8iWmDOI1uFL7N60zIlsABVyxVEsv6srl2eS+uPx8fDI/5dejn4P86+d92teY6uP9T/LdXydH+vDjSH69Qg6bzR0Fgz9ytO6jSkqPzVXmMHP+J9NaCh5c0vlmPaX1SyPU7Bty5/1ivAOdQOtPvT8eLzFjmKcgHKb2bQa1aPNEdrMV3m02j/KAUyfOVZUUIVCkjlS8hoLJHB+seQYTkAxarTJbQfW7Xf/1PIQBi1S5kACFJbIkRH4NQ+miScFfdcorvJaDg1uId3cHt/AbSdlBf+9Dv9vt0uUg6n949Qi8iYdVOKIzzBZu2fSxSvdasKYKJ9PpuNMnmCxQG7UqKem1e2Sh1EJiwGKco7WRzw6jZMSkVPcRN5hg5gSTtulDzuRvAD5xbxOwIeeoHSVDraOxZG6uTEqf1z0lWw9OS42UXBixEBkll+hMGQ3nDg3dlmLkca7R2KD3R3QoVZ5EPgUwCigrRwmXwqM59R0zSupqiWo2Qfpreim6pUoa0zseTSkZX0ymlFyMp6cXXyaUjK+mlByNzkbTESXj4fTw5NfPqcC16Wut14BStorYApti7Hd339eJy6SL7H9eHpzxJW6tbfqWNqJgDimp2R1UWAlzjYn+jgklvR75lGek3+3vkd5evPcu7u2T4/NpQLNoCjRN8TArVFnpOSO4i5xhmdXKuMgiz41wZVOoLalBb2+wv/XTKtpmqleMVOhvjRMxUzYT83mNZNRMORs5tmiuL7IEV5Rkaq58akJov4+jJvxbVQfEkKBEh2HU+pYHnaLXSbHjthO4cm01fnMjffY4p23c6TAt2rYq5jZXKWzoixucqzxz9vm1Owp+wF0+jsLR1viXw8OP5bkKjIUL/LajfDg+BQpF1UEghl672+5CRZTxiigFraxLWajLenl4Y4r9Y6d4Mp//H0tTHXTfGztaMpH5yR1cvq7DdwNFD3x0/e2H/W+prPNn6/WMWbwycrPx4mrX8YFNhGUziQnEcyYtvuGHf79mvUriO5YPe129SEDIlIIZ4U2D+MYnQzWzgs2VytOB80T3xTblsR5yvmrpQGFW72GpSryWYfdAw98Ywo76ULhBtgbJskUeWjRUqP7zN51S2cQ=
+sidebar_class_name: "delete api-method"
+info_path: docs/spotify/spotify-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Remove User's Saved Tracks"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/v1/me/tracks"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Remove one or more tracks from the current user's 'Your Music' library.
+
+**Note:** Authorization scopes- **user-library-modify**
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"ids","description":"A comma-separated list of the Spotify IDs. **Maximum:** 50 IDs.","in":"query","schema":{"type":"string","example":"0lhLSwvRKGHfIcVEz3uQK6,2pempG6Jl7ZHDpCBElQUec"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"ids":{"type":"array","items":{"type":"string","example":"string"},"example":["string"]}}},"examples":{"Remove User's Saved Tracks":{"value":{"ids":["string"]}}}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Track removed","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"}},"Content-Length":{"schema":{"type":"string","example":"0"}},"Via":{"schema":{"type":"string","example":"HTTP/2 edgeproxy, 1.1 google"}},"access-control-allow-credentials":{"schema":{"type":"string","example":"true"}},"access-control-allow-headers":{"schema":{"type":"string","example":"Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token"}},"access-control-allow-methods":{"schema":{"type":"string","example":"GET, POST, OPTIONS, PUT, DELETE, PATCH"}},"access-control-allow-origin":{"schema":{"type":"string","example":"*"}},"access-control-max-age":{"schema":{"type":"string","example":"604800"}},"alt-svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"}},"cache-control":{"schema":{"type":"string","example":"private, max-age=0"}},"date":{"schema":{"type":"string","example":"Wed, 11 Jun 2025 15:57:16 GMT"}},"server":{"schema":{"type":"string","example":"envoy"}},"strict-transport-security":{"schema":{"type":"string","example":"max-age=31536000"}},"x-content-type-options":{"schema":{"type":"string","example":"nosniff"}},"x-robots-tag":{"schema":{"type":"string","example":"noindex, nofollow"}}},"content":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

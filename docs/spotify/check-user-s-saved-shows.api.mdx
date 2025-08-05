@@ -1,0 +1,73 @@
+---
+id: check-user-s-saved-shows
+title: "Check User's Saved Shows"
+description: "Check if one or more shows is already saved in the current Spotify user's library."
+sidebar_label: "Check User's Saved Shows"
+hide_title: true
+hide_table_of_contents: true
+api: eJzNVl1P4zgU/SvWfVmpcvpJWSYrHiqooKspdKcBtgs8GOe2MSR2xnY6DVX/+8pOYGCAVUbalbYPbWX7nnvP/bDPFixbGQivYZ6obwZuKcRouBa5FUpCCEcJ8gcilkRJJEqTTGkkxp0lwhCWamRxSQxbY0yEJDZBwgutUVoyz5UVy5IUBvUvhqTiTjNdtm/kjWy1zpTFsNUio8ImSotH5vwRw1WOJiCtljMKapPAOWm1gILKUfuTkxhC4C62C4N6Pnf+KwYUcqZZhha147UFyTKEEETs9l6TGxGusowFBp2NxZikwliilp7HU/yTY0OWSvs1z7xNWq0p24isyByFYdcdaQMF4UC/FqhLoGB4ghmDcAu2zF0ExmohV0ABNyzLU7fUTw+iyeZghovF6eWDOT6elcV8RIdqfjbj8upzNJ/OV+L0SzIoCgu73S0FjSZX0qBxyP1u1/38wEprVjoSd0qlyKSpMj6uvLqIr5csNUitLvAWKCTIYp+tLYxSG8zX3P1tEn8yOLyBcG9vcAO/kYwd9oef+t1ulyaDoP/p3S3Y7ShEmkmzRB2MJVexA23ojyeFfMDYg1wK1tTsNIpmnT7BeIW5VpuSkl67R1ZKrVL0WIxzNCbgSlqt0oClqfoWcI0xSitYapo6chn9GPBFnpuAjTjH3FIyyvNgljK7VDqjrweGkiMlLUobRGWOlJxrsRKSki9odRmMlhY1ferjwOFcojbe7s/gKFVFHESacQw8ysZSwlPh0Kx6QEkJr8FrNn71Y3oZ2kTFjemdjCNKZufziJLzWTQ5P5tTMruIKDkefx5HY0pmo+jo9GN3ynNt6q31HlDGNgFbYVOM/e7eQd3BLLWB+c/nhDOe4FO0TX3lWqyZRUpqdoc1Vl1L/MmRWz2K3APEzDbO1JxZSrq/kt8LSfrd/pD0e+FwPxzskZNp5NHQssYh3MD0KJjcT/cW/b/E+dV4s7ga7y0ex4Pzk0lv8XixOTu5FNP7OJ1Gfzwusulwsjo8vAHvx6Beo27qCeValZWd1YLbwLqbKlfaBgZ5oYUtm0I9ZX/QGw72nwq6ZroxwKtB99ab4KmIzipQ/sJvPG9SGSmWyxpJqztlTfATVZBKyBg3lEi1VG4CYfeir5wty/NUcB9v596o92eTudfJvZUWM/NivX6sXrr0r9TuxUL9bvnv2+8bHqYSKheV1vB6gFSCINzCmqXFG3P/oVDdWq7R0XrxYBMIobPudTLs+Oe+4ygyIZ1+qNqpEhaFTt1oW5ubsNNhuWib6qZtc5XBjr45wbkqpDWvj9062bBUPhPCVtNTC4/RbAIU1tWVDSH02t12F6qUM+5S7gjkytiM+WTXUufDVPygf7bfi/c/03l1T7g3qZOnTEjY0Sqb27pC17DugaueK0pN7rlOtxQSZaw7td3eMYMXOt3t3HIlzlz1YmHYXYpx3Wb/kJp/WyW+S+4By2eRWrcr+OZYMy1coBBeu5avNIRnUJlUKuGF1ZspdCjPXX4ydvfv35L6CJE=
+sidebar_class_name: "get api-method"
+info_path: docs/spotify/spotify-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Check User's Saved Shows"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/me/shows/contains"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Check if one or more shows is already saved in the current Spotify user's library.
+
+**Note:** Authorization scopes- **user-library-read**
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"ids","description":"A comma-separated list of the Spotify IDs for the shows. **Maximum:** 50 IDs.","in":"query","schema":{"type":"string","example":"2l8TIx8PeYYHVksDDPyuSA,5oSNPcnWLTSMSgiHRh3uut"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Array of booleans\n\n**Example:** [false,true]","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"}},"Transfer-Encoding":{"schema":{"type":"string","example":"chunked"}},"Via":{"schema":{"type":"string","example":"HTTP/2 edgeproxy, 1.1 google"}},"access-control-allow-credentials":{"schema":{"type":"string","example":"true"}},"access-control-allow-headers":{"schema":{"type":"string","example":"Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token"}},"access-control-allow-methods":{"schema":{"type":"string","example":"GET, POST, OPTIONS, PUT, DELETE, PATCH"}},"access-control-allow-origin":{"schema":{"type":"string","example":"*"}},"access-control-max-age":{"schema":{"type":"string","example":"604800"}},"alt-svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"}},"cache-control":{"schema":{"type":"string","example":"private, max-age=0"}},"content-encoding":{"schema":{"type":"string","example":"gzip"}},"date":{"schema":{"type":"string","example":"Sat, 07 Jun 2025 21:56:34 GMT"}},"etag":{"schema":{"type":"string","example":"\"MC-IjM4Y2ZiOWExYWE4YzE3OGI1YzUxNGViMjdlMTQzYmM5Ig==\""}},"server":{"schema":{"type":"string","example":"envoy"}},"strict-transport-security":{"schema":{"type":"string","example":"max-age=31536000"}},"vary":{"schema":{"type":"string","example":"Authorization"}},"x-content-type-options":{"schema":{"type":"string","example":"nosniff"}},"x-robots-tag":{"schema":{"type":"string","example":"noindex, nofollow"}}},"content":{"application/json":{"schema":{"type":"array","items":{"type":"boolean","example":false},"example":[false,false]},"examples":{"Check User's Saved Shows":{"value":[false,false]}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

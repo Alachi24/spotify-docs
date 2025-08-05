@@ -1,0 +1,71 @@
+---
+id: get-user-s-profile
+title: "Get User's Profile"
+description: "Get public profile information about a Spotify user."
+sidebar_label: "Get User's Profile"
+hide_title: true
+hide_table_of_contents: true
+api: eJzdV11v2zYU/SsEXwoMlC3LsZNqyIOXBKmLpfYWpV3XFAVFXVlMJVIjKdeOof8+kJLz1dRWUOxlfpEh8Z77wXsOLzfY0IXG4Sd8pUFp/JngBDRTvDRcChziczCorOKcM1QqmfIcEBepVAW1CxCNZWUQRZelNDxdo0qD6mGCZQnKrZgmOMQLMBb+ct4gYIIV6FIKDRqHGxz4vn08djxxWJjgDGhiQws3eJIb73LJ7F/NMiio/WfWJeAQa6O4WGCCYUWLMrevsuHxNQ4PDobX+FdU0ONg9DrwfZ9kQy94/ewnXNcER4oKnYLyzgSTiQXt6I9llfgKiQN5z2lXszdRNO8HCJIFlEqu1gQNegO0kHKRg8OijIHWHpPCKJl7NM/lN48pSEAYTnPd1ZFR1Q7AB3XuAjZhDEpD0KQsvXlOje0JgiaVyaTit27vCTqRwoAwXrQugaCZ4gsuCPoTjFp7k9SAItvO8SzOe1Da2f3lneSySrxIUQaeQ1kZgljOLZqRX0EQxFrwNhv39sfpFWAymXRO7/wsImg+u4wIms2j6ezdJUHzq4ig07Pfz6IzguaT6OTNj91Jl2tXb788B1TQlUcX0BVj7B8ctR1Mc+Pp/5wnjLIMttF29dVoCUFtcsctVLuV8ELGLW556QASajoX6gMkBA0G6G0lUOAHIzQYh4ODMBih84vIoYGhnUO4xhcn3vTmt/zi9ur244erYHb+Lp+dfr2dRW/5u2A6uji9CD4W08HH4I/h3x+mw+ni+PgaOz8a1BJUV08glnLd2BnFmfGMFapSKuNpYJXiZt0Valv94WA0HG/3c+Vtt8EaetIpcWfCCKkFT9MWSclYGu29oI5CcpHAiiAhU2kphOsHnWFtaVnmnDll6d9o+Ty5ZHwDzGCCS2XPIMObIybhuszp+ougBeyO4yTjmgooAE1yKTi27bAyoATNv1SqEdvdvnSjaHs4Z0ypw35fliB6rUWPyaJvT73+cBAf5hkkSVnSm/FNIleLG1VpszxMqqYuTY1avd4dT6YgtU9R5TmNrXd7EDwIxn6oCTbS0PwBnKiK2J3Adwt953qLtz85WvJHuS0HLj29Jz+CebLbwV77gi7gYWmoUnSNCeYGii4lA77IzM5aDH2/JrhSebdS8J5miegx2Xex9Wk8PjwcHfr2B3A0OmJJAtQPqH8UxIeQDmMap6M4tdl844nJ9gbjhGv74tN9DkPfb+P8+WDuYnHZ3/sYH7zExTA+Cva7GB/Un21Xupx3ldjNiW4v+O6FbSuG1iDcT7HW0DWEHYPtCPtKo+0QG27wkuYVfC8v32nIMxJyJxI/pQRPdKBhpqXzHZv9O8L+JCsbUu5m3j3x/if9t20/3N5FXIu9rI9q10slVbQA4/bp0wa3fWI76ss0wU8vXVEG7vbzSj+6WKHpqb1b2bESl9Rk7h71T8UVJFtN/9FJW9tcmhG4uY9ZybMQIb7f/82mDaiu8XY4aeJ9XNsnDYTtTjxZwZishNGPl322safSRceNo+Q2vcl8igleNvM/DvGg5/d83Bz/lFklruv6X8Y+7zo=
+sidebar_class_name: "get api-method"
+info_path: docs/spotify/spotify-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get User's Profile"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/users/{{User_Id}}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get public profile information about a Spotify user.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"User_Id","description":"The user's Spotify user ID.","in":"path","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A user","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"}},"Transfer-Encoding":{"schema":{"type":"string","example":"chunked"}},"Via":{"schema":{"type":"string","example":"HTTP/2 edgeproxy, 1.1 google"}},"access-control-allow-credentials":{"schema":{"type":"string","example":"true"}},"access-control-allow-headers":{"schema":{"type":"string","example":"Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token"}},"access-control-allow-methods":{"schema":{"type":"string","example":"GET, POST, OPTIONS, PUT, DELETE, PATCH"}},"access-control-allow-origin":{"schema":{"type":"string","example":"*"}},"access-control-max-age":{"schema":{"type":"string","example":"604800"}},"alt-svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"}},"cache-control":{"schema":{"type":"string","example":"public, max-age=0"}},"content-encoding":{"schema":{"type":"string","example":"gzip"}},"date":{"schema":{"type":"string","example":"Wed, 11 Jun 2025 16:14:25 GMT"}},"etag":{"schema":{"type":"string","example":"\"MC-IjBlMzUzYWU2OGNlODkzOTJiN2I5MDM2YmI1Y2Q3ZWI3Ig==\""}},"server":{"schema":{"type":"string","example":"envoy"}},"strict-transport-security":{"schema":{"type":"string","example":"max-age=31536000"}},"x-content-type-options":{"schema":{"type":"string","example":"nosniff"}},"x-robots-tag":{"schema":{"type":"string","example":"noindex, nofollow"}}},"content":{"application/json":{"schema":{"type":"object","properties":{"display_name":{"type":"string","example":"Chisaneme Aloni"},"external_urls":{"type":"object","properties":{"spotify":{"type":"string","example":"https://open.spotify.com/user/31b7lheddppaj6jdoxgjrustv7du"}}},"followers":{"type":"object","properties":{"href":{"nullable":true,"example":null},"total":{"type":"number","example":0}}},"href":{"type":"string","example":"https://api.spotify.com/v1/users/31b7lheddppaj6jdoxgjrustv7du"},"id":{"type":"string","example":"31b7lheddppaj6jdoxgjrustv7du"},"images":{"type":"array","items":{"type":"object","properties":{"height":{"type":"number","example":300},"url":{"type":"string","example":"https://i.scdn.co/image/ab6775700000ee858cddea02a082b7ef3babf5bf"},"width":{"type":"number","example":300}}},"example":[{"height":300,"url":"https://i.scdn.co/image/ab6775700000ee858cddea02a082b7ef3babf5bf","width":300},{"height":64,"url":"https://i.scdn.co/image/ab67757000003b828cddea02a082b7ef3babf5bf","width":64}]},"type":{"type":"string","example":"user"},"uri":{"type":"string","example":"spotify:user:31b7lheddppaj6jdoxgjrustv7du"}}},"examples":{"Get User's Profile":{"value":{"display_name":"Chisaneme Aloni","external_urls":{"spotify":"https://open.spotify.com/user/31b7lheddppaj6jdoxgjrustv7du"},"followers":{"href":null,"total":0},"href":"https://api.spotify.com/v1/users/31b7lheddppaj6jdoxgjrustv7du","id":"31b7lheddppaj6jdoxgjrustv7du","images":[{"height":300,"url":"https://i.scdn.co/image/ab6775700000ee858cddea02a082b7ef3babf5bf","width":300},{"height":64,"url":"https://i.scdn.co/image/ab67757000003b828cddea02a082b7ef3babf5bf","width":64}],"type":"user","uri":"spotify:user:31b7lheddppaj6jdoxgjrustv7du"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

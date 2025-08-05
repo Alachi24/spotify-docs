@@ -1,0 +1,73 @@
+---
+id: toggle-playback-shuffle
+title: "Toggle Playback Shuffle"
+description: "Toggle shuffle on or off for user's playback. This API only works for users who have Spotify Premium. The order of execution is not guaranteed when you use this API with other Player API endpoints."
+sidebar_label: "Toggle Playback Shuffle"
+hide_title: true
+hide_table_of_contents: true
+api: eJztVm1v2zYQ/isHftlmUH5NilVDP3ip0QZYGi9RigFNMNDUyWIj8VSSsq0a/u8DKTlNlmbTvu+TDeruOd7D5172zIm1ZfEntixEg4bdcZailUZVTpFmMUtovS4QbF5nWYFAGsgAZRlkZKC2aH6wUBWiWQl5P4QkVxbmy3MgXTSwJXNvHwwtbHOCXGwQrityKmtgabBUden9EMik6KEBdyhrHx6UBU0O1rUwQjvEFLY5amio9ojgjtG2yuVALkcDbR7hFHVakdLODm/1rR4MPpDDeDCAee1yMuqrCDGspAptBIOBv2RUUqqyJjqmFFknHA4GjDOq0ASX85TFzAVelp3ZdUsP46wSRpTo0HhW90yLElnMAgrjTHlKv9RoGsaZlTmWgsV75pqqtTJKrxlnuBNlVfgjZ2pkh8MdZwZtRdqi9Q7T8dj/PH2qMypLoVOwqB07cHYynj03+lWkcOkZAINfarQOftwa0muQpG1dooF7bDisRAqatEQOuKuUwRScKtE6UVbD4fCnIdzojIyrtXBYNBwMRqJ2OWqnpHBKr8HlGN4dtqR/cJBjUUGOBoeMsxxFGijas3nhouuN9H/7EJLP3tyy+ORkdst+gVK8mZ6+no7HY57Pounr735ihwNniRHaZmiihZaUetCe8WRe63tMA8hHJfq6vU+S5WgKmK6xMrRrOEyGE1gTrQsMWEJKtDaSpJ2hIhJFQdtIGkw9g6KwfQN1AnkB8BHPfcDmUmLlOMyrKloWwmVkSv60XjickXaoXZQ0FXK4NGqtNIcrdKaJ5plDw4/1HXmcj2hs8PsjOiuoTqPECIlRQNk5DrJQHs3RPWruVRjAu2zC6cvplehySnun926RcFheXiccLpfJ+eWHaw7Lm4TD28Vvi2TBYTlPzt6/HI5Crn2jDb4HVIpdJNbYF+PV+OTnTsFSyByPOH39K6M2wiGHLu6bDqtjGf9jMay/qioApL6d9XS6Fo7DbAIXooHpeHoK03E8O41nJ/DuIgloFs0GTV881BtqWj9nlHSR87VdkXGRRVkb5Zq+UEdWZpPT2atjq9hFR3q8Y0Shc/bWmCarVZZ1SIZW5GzkRG+KNSmd4o6Dpoy86tjh0Yt5X1FVReixpEefLX1fj7T6jNL5eWT83HKqnRtoDJl/NyvR2k6lL9+0m7SymzqZUAWm8XGmh/Hi54afRAZFd9F/gLtaXJzfXPx5tfj95vxq8ZaFBxauto/8dF2u0Dz2OxnPDodAUXcUzLut5Tie4Tif4z3biKLGJ1w8ZNs7pW8ZPb/2t1sfrxZu17YqX5J14Fu4nMVstJmMShxVIe7IPmwRbUW0K0RtCj/3nKtsPBqJSg1t216Hkkp24M8spKTabz1PzO788pFR4FK5tjC7LWy+PGecbdo+zWI2GY6HY9ZqTkivOZ9ARdaVIjxit9S8RPLfVsj9N/H+v00+bJOdoP0M9M+vtNd7eMh9J45PbDNhXjheLu12ztlRInec5WSdt9rvV8LijSkOB3/cbpdeOKmyYlVgyuJMFBY5u8fm0S7aFQIL2tgIo7wxiz/dHY77WUBpndrN4JHXsy7kUR5Evrzxnf0vC2463w==
+sidebar_class_name: "put api-method"
+info_path: docs/spotify/spotify-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Toggle Playback Shuffle"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"put"}
+  path={"/v1/me/player/shuffle"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Toggle shuffle on or off for user's playback. This API only works for users who have Spotify Premium. The order of execution is not guaranteed when you use this API with other Player API endpoints.
+
+**Note:** Authorization scopes- **user-modify-playback-state**
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"state","in":"query","schema":{"type":"string","example":"true"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Command sent"},"403":{"description":"Bad OAuth request (wrong consumer key, bad nonce, expired timestamp...). Unfortunately, re-authenticating the user won't help here.","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"}},"Transfer-Encoding":{"schema":{"type":"string","example":"chunked"}},"Via":{"schema":{"type":"string","example":"HTTP/2 edgeproxy, 1.1 google"}},"access-control-allow-credentials":{"schema":{"type":"string","example":"true"}},"access-control-allow-headers":{"schema":{"type":"string","example":"Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token"}},"access-control-allow-methods":{"schema":{"type":"string","example":"GET, POST, OPTIONS, PUT, DELETE, PATCH"}},"access-control-allow-origin":{"schema":{"type":"string","example":"*"}},"access-control-max-age":{"schema":{"type":"string","example":"604800"}},"cache-control":{"schema":{"type":"string","example":"private, max-age=0"}},"content-encoding":{"schema":{"type":"string","example":"gzip"}},"date":{"schema":{"type":"string","example":"Sat, 31 May 2025 20:35:34 GMT"}},"server":{"schema":{"type":"string","example":"envoy"}},"strict-transport-security":{"schema":{"type":"string","example":"max-age=31536000"}},"x-content-type-options":{"schema":{"type":"string","example":"nosniff"}},"x-robots-tag":{"schema":{"type":"string","example":"noindex, nofollow"}}},"content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"object","properties":{"message":{"type":"string","example":"Player command failed: Premium required"},"reason":{"type":"string","example":"PREMIUM_REQUIRED"},"status":{"type":"number","example":403}}}}},"examples":{"Toggle Playback Shuffle":{"value":{"error":{"message":"Player command failed: Premium required","reason":"PREMIUM_REQUIRED","status":403}}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

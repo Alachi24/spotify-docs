@@ -1,0 +1,73 @@
+---
+id: set-repeat-mode
+title: "Set Repeat Mode"
+description: "Set the repeat mode for the user's playback. This API only works for users who have Spotify Premium. The order of execution is not guaranteed when you use this API with other Player API endpoints."
+sidebar_label: "Set Repeat Mode"
+hide_title: true
+hide_table_of_contents: true
+api: eJztVt9v2zYQ/lcOfOlmUP6ZdKuGPnip0QZYGi9xigFNMNDU2WIjkSx5sq0a/t8HUnKbNG2nve/JBnX33d3Hj3e3ZyTWnqXv2bwQNTp2x1mGXjplSRnNUnaNBJQjOLQoCEqTIayMi2eVR/fMgy1EvRTyvg+LXHmYzs/B6KKGrXH3PhoHQw/b3EAuNgjX1pBa1TB3WKqqDH4IxmXowKwAdyirEB2UB20I1pVwQhNiBtscNdSmCohAx2hbRTkYytFBU0Y8RZ1ZozT5/q2+1b3eW0OY9nowrSg3Tn0SMYaXxqJPoNcLSSalydSqTo4lJZ4EYa/HODMWXXQ5z1jKPNJVZOTCZMg4s8KJEgldIHPPtCgxWAVvxpkKTH6s0NWMMy9zLAVL94xq21g5pdeMM9yJ0hbhSBpNuCN2ONxx5tBboz364DMeDsPP40s6M2UpdAYeNbEDZyfDyVOj30UGl6F4cPixQk/w09YZvQZptK9KdHCPNYelyEAbLZED7qxymAGpEj2J0vb7/Z/7cKNXxlGlBWFRc3CYiIpy1KSkIKXXn7UBW6OfEeRYWMjRYZ9xlqPIIkt7Ni0oud7I8LcLJ/nk5S1LT04mt+w3KMXL8emL8XA45PkkGb/45id2OHC2cEL7FbpkpqXJAmjHeDKv9D1mEeSdEl3d3iwW88EYMFujdWZXcxj1R7A2Zl1gxBJSovdJuGJnikQUhdkm0mEWGBSF7xqIXPUDwAc8dwGbSomWOEytTeaFoJVxJX/8VDicBVVqSha1RQ6XTq2V5nCF5OpkuiJ0/Pi0k4DzDp2Pfn8lZ4WpsmThhMTkrNE2B1mogEbmHjUH2YK31cTT75dXIuUm61ze69mCw/zyesHhcr44v3x7zWF+s+DwavbHbDHjMJ8uzt58P5yJtXaN1vsWUCl2iVhjV4znw5NfWwVLIXM84nT1t05tBCGHNu7LFqtlGf/jY1h/UjYCZKGjdXS6FsRhMoILUcN4OD6F8TCdjNPJL/D6YhHRPLoNuq54qDembvzIKUkJhbdtjaPEo6ycoror1JGVyeh08vzYKnbJkZ7gmJjYOTtrTBuv1WrVIjmzNOQTEp0p1kbpDHcctFmZoDp2eHBjwVdYW8Qea/Tggzff1qNZfkBJYSS5MLJINXMDnTPu381K9L5V6fczbYesbKfOSqgCs/Q4zuN4CXMjTCKHok30B3BXs4vzm4u/r2Z/3pxfzV6xeMGCKv/AT1flEt1Dv5Ph5HCIFLVH0TzsK81khjia0z3biKLCRxx8rrJzKV8qeZrul2yPKcWsmhYVnmIVeRaUs5QNNqNBiQMb4w6arYodH0KzPFSuCOOOyPp0MBBW9X3TVfvSlOzAn1hIaaqw5zwyuwtrx8pEChU177Hdu6bzc8bZpmnPLGWj/rA/ZI3UhAxSC/lb46kU8e7adeZrbr/aFfdftPr/2nhcG1v5hokXLl3poO54f/tWEu/ZZsSCXIJImi08qC0K446z3HgKRvv9Uni8ccXhEI6bbTLIJVNeLAvMWLoShUfO7rF+sHu26mdRERvhVDBm6fu7w3EZiyiNU7MGPPB60nICymdlz29CG/8HslcwmA==
+sidebar_class_name: "put api-method"
+info_path: docs/spotify/spotify-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Set Repeat Mode"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"put"}
+  path={"/v1/me/player/repeat"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Set the repeat mode for the user's playback. This API only works for users who have Spotify Premium. The order of execution is not guaranteed when you use this API with other Player API endpoints.
+
+**Note:** Authorization scopes- **user-modify-playback-state**
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"state","in":"query","schema":{"type":"string","example":"context"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Command sent"},"403":{"description":"Bad OAuth request (wrong consumer key, bad nonce, expired timestamp...). Unfortunately, re-authenticating the user won't help here.","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"}},"Transfer-Encoding":{"schema":{"type":"string","example":"chunked"}},"Via":{"schema":{"type":"string","example":"HTTP/2 edgeproxy, 1.1 google"}},"access-control-allow-credentials":{"schema":{"type":"string","example":"true"}},"access-control-allow-headers":{"schema":{"type":"string","example":"Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token"}},"access-control-allow-methods":{"schema":{"type":"string","example":"GET, POST, OPTIONS, PUT, DELETE, PATCH"}},"access-control-allow-origin":{"schema":{"type":"string","example":"*"}},"access-control-max-age":{"schema":{"type":"string","example":"604800"}},"cache-control":{"schema":{"type":"string","example":"private, max-age=0"}},"content-encoding":{"schema":{"type":"string","example":"gzip"}},"date":{"schema":{"type":"string","example":"Sat, 31 May 2025 20:32:37 GMT"}},"server":{"schema":{"type":"string","example":"envoy"}},"strict-transport-security":{"schema":{"type":"string","example":"max-age=31536000"}},"x-content-type-options":{"schema":{"type":"string","example":"nosniff"}},"x-robots-tag":{"schema":{"type":"string","example":"noindex, nofollow"}}},"content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"object","properties":{"message":{"type":"string","example":"Player command failed: Premium required"},"reason":{"type":"string","example":"PREMIUM_REQUIRED"},"status":{"type":"number","example":403}}}}},"examples":{"Set Repeat Mode":{"value":{"error":{"message":"Player command failed: Premium required","reason":"PREMIUM_REQUIRED","status":403}}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: check-user-s-saved-albums
+title: "Check User's Saved Albums"
+description: "Check if one or more albums is already saved in the current Spotify user's 'Your Music' library."
+sidebar_label: "Check User's Saved Albums"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9VlFz2jgQ/iuafenMjRwMhPTimzxQQlNuQkKK01yb5EHIC1YjS64kuzgM//1GNqTJNL1xX44HMPLut7vfrnZ3A46tLES3MJSLIrNwTyFBy43IndAKIhilyB+IWBKtkGhDMm2QsFqYCEuYNMiSilhWYkKEIi5FwgtjUDkyz7UTy4oUFs0bS9581oUh08IK/oZIsTDMVAdAQedomDc3SSAC7g1eWzTzucfc+UUhZ4Zl6NB4dzegWIYQgUj8O+E9/VagqYCC5SlmDKINuCr3MtYZoVZAAdcsy6U/Okz+lvzdcXZ61R0tph/75+XlRfqeDrofbDot1kffuuXVu69vuxkeyoweyUmve/P26Pw0nPfL0WBwZpbzOWy39xQM2lwri9Yb7IWh/3mNweuGAx8TeYopRZbUAW1gKF0wL7l/bBNA2j+5g+jwsH8Hf5GMnfQGx70wDGnaD3rHr76C7ZZCbJiySzTBWHGdeNCW9nhaqAdMapBPgrVV+xDHs06PYLLC3Oh1RUn3oEtWWq8k1liMc7Q24Fo5o2XApNTfA24wQeUEk7atIWeK/wB8xnMbsCHnmDtKhnkezCRzS20ySoaFS7URj3WpUjLSyqFyQVzlSMmlESuhKPmIzlTBcOnQ0H39Bx7nExpb6/0TjKQukiA2jGNQo6wdJVwKj+b0AypK+A58F019+uvwMnSpTlqHdzaOKZldzmNKLmfx5PJiTsnsOqbkdHw+jseUzIbx6MOvzek61rbW/ngNKGPrgK2wLcZRePjnroI54ynucdrq50aUzCElO7snO6wdy/ibl2H1KPIaIGGudQzvjaCke0SmrCK9sDcgYRgNjqN+n5xN4xoNHWvtwh1MR8Eku6q+nE6+fzn7lF3Gnw+/nPL+9GzSn8ZX1fRxXE0fU3lxM/5+cTMJJ6uTkzuo7Vg0JZq2llCVumr0nBHcBc73kFwbF1jkhRGuagu1Z7/fHfSP9i2pZKY1wIsrWGuvg30SvVag66bb+iYobZVYLndIRi+0s8FvZEFpoRJcU6L0Uvu7AdtndeV1WZ5LwWt/O1+tfv3WMGOYn1zCYWafnS+0lsjUc5O+z22f/b/1B/Tp6/7Huxrol7Mn2kDJZPEaQv2h0DQVX+3o6vHrUoigU3Y7GXaaBaDjA2VC+VHWFFUzmwsj/YhyLrdRp8NycWCbTnjAdQZb+pME57pQzr4Uu/dzfalrPoSr+d4vFMPZBCiUTUuFCLoH4UEIDfGMe+J9BLm2LmM15btt4Sc6kh+z+MXQ3vzI4f+xAe3y7SdBJ5dMKNjShqPNjvhbKLvgkwIU2N7lJ/rvKaTaOi+22SyYxWsjt1t/3CxFPimJsGwhMYFoyaRFCg9YPS1Qu1qAmvWSGeFFIbr19dQMzxqjUWnG4zOtn4rcozzVz9nYt7d/AWyxhLk=
+sidebar_class_name: "get api-method"
+info_path: docs/spotify/spotify-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Check User's Saved Albums"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/me/albums/contains"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Check if one or more albums is already saved in the current Spotify user's 'Your Music' library.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"ids","in":"query","schema":{"type":"string","example":"4dJlcB9mDQ1CbMR3LvONhF,51HshMux6q1vQBj71me4lm,6lI21W76LD0S3vC55GrfSS"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Check User's Save Albums","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"}},"Transfer-Encoding":{"schema":{"type":"string","example":"chunked"}},"Via":{"schema":{"type":"string","example":"HTTP/2 edgeproxy, 1.1 google"}},"access-control-allow-credentials":{"schema":{"type":"string","example":"true"}},"access-control-allow-headers":{"schema":{"type":"string","example":"Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token"}},"access-control-allow-methods":{"schema":{"type":"string","example":"GET, POST, OPTIONS, PUT, DELETE, PATCH"}},"access-control-allow-origin":{"schema":{"type":"string","example":"*"}},"access-control-max-age":{"schema":{"type":"string","example":"604800"}},"cache-control":{"schema":{"type":"string","example":"private, max-age=0"}},"content-encoding":{"schema":{"type":"string","example":"gzip"}},"date":{"schema":{"type":"string","example":"Fri, 16 May 2025 00:59:33 GMT"}},"etag":{"schema":{"type":"string","example":"\"MC-ImQyZDIwZGVmOTY4ZDc3MGI3MTQyMzEyMzhlNWEwNWI0Ig==\""}},"server":{"schema":{"type":"string","example":"envoy"}},"strict-transport-security":{"schema":{"type":"string","example":"max-age=31536000"}},"vary":{"schema":{"type":"string","example":"Authorization"}},"x-content-type-options":{"schema":{"type":"string","example":"nosniff"}},"x-robots-tag":{"schema":{"type":"string","example":"noindex, nofollow"}}},"content":{"application/json":{"schema":{"type":"array","items":{"type":"boolean","example":true},"example":[true,true,true]},"examples":{"Check User's Save Albums":{"value":[true,true,true]}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

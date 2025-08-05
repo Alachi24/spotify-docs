@@ -1,0 +1,73 @@
+---
+id: remove-playlist-items
+title: "Remove Playlist Items"
+description: "Remove one or more items from a user's playlist."
+sidebar_label: "Remove Playlist Items"
+hide_title: true
+hide_table_of_contents: true
+api: eJzFVl1v2zYU/SsEXwZ4pO04TlpryIPieq2LLjFixUmRBAVDXVlsJJIhKceO4f8+UJZWZ00abdjHkwSJ99xzDw/v5Ro7Nrc4uMKTjK0yYZ3FNwTHYLkR2gklcYDPIFcLQEoCUgblygASDnKLEqNyxFBhwfxkka4Q2tfyWrZaJ8pB0GqhsHCpMuKReTRkudJgKWq16uU0V7FIVlQXt5ngrRZ57p8RC+ag1cIEKw2mxBrHOMCm5FaTH3tamGAD9wVYd6ziFQ7WmCvpQDr/yrTOBC/jO1+tL2+NLU8hZ/7NrTTgAKvbr8AdJlgbn80JsOU6ybRNlfsi4p3F1hkh55hgWLJcZ/5TGIbh8dQOJsfTh1hcMsn3Pr6Ph4OTc3F8P54d4g3BzjB+Z3dwmDFshQkupX2dTGHEj0lYrZxIVkGZKOiL2cHFoPg8ij+fz9ibQbi8fXOW4s1msxNzVcE2jL3ZjS5JVU6ptwON61oWLCvgOw1fF+qbTn+DW0nPgNVK2i2/XrfrH0/tHaKaFBq/Q4kyyKXwh5sxwSmwGEwJEGaOThf8Wdc8swfp/tE1Dvr9/Wv8C8rZUe9g0Ot2uyTdp73Bs7+w5xwZJm0Cho4kV7EHbZiPp4W8g7gEmQnWNOxDFE06PQTxHLRRyxVBe+09NFdqnkGJxTgHa6k/R0ZllGWZeqDcQAzSCZbZpomcKX4AuKNzE7CQc9COoFBrOsmYS5TJydN2Q9Bwe/RptNJA0KkRcyEJOgNnVjRMHBiCpltDUY8zA2PLuEs6zFQR08gwDrREWTqCeCY8mlN3IAmq+gqtqim/vlxeDi5VcePy3o8igian04ig00k0Pj2ZEjQ5jwh6N/o0ikYETcJo+OHldKqstWm21nNAOVtSNoemGIfd/tvKwSxz1P7r54QznkLNtmmuapYQVFV3VGFVewl/8cjNH4UuAWLmGiv1qxEEdQ/Rx0KiXrd3gHrdoN8L+n30/reoRLNgFmCa4oFcqNU2zhnBHXW+g2hlHLXACyPcqilUrcr+3sH+YS30ktby+ECqytbZ2MlSWSmSpEIy6lY5Sx1rLLFUQsawJEiqRHlvb8fW/zHVh2fDY3XXGz9kF8vp5cnFTLK3F/fqsUjmP+N/ZBy+lmE71TQzLAdXdsurNZYs9wzrRF/GMf7zJS5Koe50fsyp5MmUa/uLh1+mmUurC5QwEOPAt2zy4jZtNjcEbxsbDnAMGTjwCnuUAHcWe506g+2s1zv8NptONdlrr9czPvP9wDltg06HadGu5n2bqxxvyHcrOFeFdPbpshuCvQ3Ovl0DR/U2/pdXEK9pokrVhCs9VO9AOBljghfbaYMDvNfutrt462nGvac3m83v7EryCw==
+sidebar_class_name: "delete api-method"
+info_path: docs/spotify/spotify-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Remove Playlist Items"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/v1/playlists/{{Playlist_Id}}/tracks"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Remove one or more items from a user's playlist.
+
+**Note:** Authorization scopes- **playlist-modify-public**, **playlist-modify-private**
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"Playlist_Id","description":"The Spotify ID of the playlist.","in":"path","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"snapshot_id":{"type":"string","example":"AAAABSs9PBSwdiXanc1JGdC9NUiBqIV6"},"tracks":{"type":"array","items":{"type":"object","properties":{"uri":{"type":"string","example":"spotify:track:4iV5W9uYEdYUVa79Axb7Rh"}}},"example":[{"uri":"spotify:track:4iV5W9uYEdYUVa79Axb7Rh"}]}}},"examples":{"Remove Playlist Items":{"value":{"snapshot_id":"AAAABSs9PBSwdiXanc1JGdC9NUiBqIV6","tracks":[{"uri":"spotify:track:4iV5W9uYEdYUVa79Axb7Rh"}]}}}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A snapshot ID for the playlist","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"}},"Transfer-Encoding":{"schema":{"type":"string","example":"chunked"}},"Via":{"schema":{"type":"string","example":"HTTP/2 edgeproxy, 1.1 google"}},"access-control-allow-credentials":{"schema":{"type":"string","example":"true"}},"access-control-allow-headers":{"schema":{"type":"string","example":"Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token"}},"access-control-allow-methods":{"schema":{"type":"string","example":"GET, POST, OPTIONS, PUT, DELETE, PATCH"}},"access-control-allow-origin":{"schema":{"type":"string","example":"*"}},"access-control-max-age":{"schema":{"type":"string","example":"604800"}},"alt-svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"}},"cache-control":{"schema":{"type":"string","example":"private, max-age=0"}},"content-encoding":{"schema":{"type":"string","example":"gzip"}},"date":{"schema":{"type":"string","example":"Fri, 06 Jun 2025 20:42:44 GMT"}},"server":{"schema":{"type":"string","example":"envoy"}},"strict-transport-security":{"schema":{"type":"string","example":"max-age=31536000"}},"x-content-type-options":{"schema":{"type":"string","example":"nosniff"}},"x-robots-tag":{"schema":{"type":"string","example":"noindex, nofollow"}}},"content":{"application/json":{"schema":{"type":"object","properties":{"snapshot_id":{"type":"string","example":"AAAACRCBok2IwlWxSXNWVna8Wqozufg+"}}},"examples":{"Remove Playlist Items":{"value":{"snapshot_id":"AAAACRCBok2IwlWxSXNWVna8Wqozufg+"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

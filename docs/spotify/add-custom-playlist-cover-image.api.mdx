@@ -1,0 +1,73 @@
+---
+id: add-custom-playlist-cover-image
+title: "Add Custom Playlist Cover Image"
+description: "Replace the image used to represent a specific playlist."
+sidebar_label: "Add Custom Playlist Cover Image"
+hide_title: true
+hide_table_of_contents: true
+api: eJy1lm1v4ygQx78K4qUFdZI2VeNTX5DU16Rqt3nwrq7dVicWTxy2tvEBTpNG+e4n7Phuq21O1kpnKQoGz29m4M/ADlueGBx8xdOUb1NprMHPBMdghJaFlSrHAZ5DkXIByK4AyYwngEoDMbIKaSg0GMgt4sgUIORSClQcSCdP+VPueZ+UhcDzECvtSmn5xh0VGaEKMBR5XpkIWlFpWaSKx55HkOc1EJqpWC63tCi/pVIcGdNyzS14HiZYFaArD5MYB5jH8ag0VmVNdiO1Bj1x3jDBGv4qwdihirc42GGhcgu5dU0LG+sXKZe5e4MNz4oUjGuzOEY1EjVMVEFRTQ12eM3TEnCA/cF3v/c6CtlQPV4vhLh5O0tvov7odnuxnr2Iwf2bGcw78fjXfmI4Hon8bvvwNl08ZNPPYnD3vevGwnn4q8x4PPf9mLEZY0u/ZKw/fLweyMfZ8OWVuWfsvzI2HzE2ZCy8YqMJY/NwyFbh0L+YscUrGzrTn5+HI/1sdqR//nH/ld9L2B1zwczDUThjPrtJ2Nj3H/HePW5JTaFyU69Vr9Nzf+/FPKkFXEkNYkzwCngMul7c1NLFWrimESvIeKWFbeFW01gt8wSTRg04wKvTyyccnJ2dPuHfUMYve/1Br9PpkNUp7Q0+HMIuxlGtM3oLeWJXbZ3Vtl8kb2swjqKp30MQJ1BotdkS1D3pokSpJIWKxYUAY6iTvVYp5WmqXqnQEENuJU9NW0dWl/8B/GF628CYEFBYglhR0GnK7VLpjLyvHQQ1MxhtCyDoXstE5gTNweotZUsLmqBFoayrDY7zBbSp7P6go1SVMY00F0ArysYSJFLpaFa9QE7QoQzQQzZV7/H0MrArFbdO7zqMCJreLyKC7qfR5P7TgqDp54igq/A2jEKCpiwajY+7U1Wubb15H4EyvqGHStWGcd45uzgIl6eWmv99ewguVtBE29bX4Qgg6JDdZc2KuW2d6O9aEtQ5RzdljnqdXh91B0H/POh30PVdVNEM6DXotjzI12pb21kthaVW89wUSltqQJRa2m1bVJPUabd/et7M04Y2SnWGVFUFrrUQc2VyuVweSFp9U9ZQy5P29jKPYUNQrpbKSRNX9fffM7R6LbjmGdhq/3/d4ZxnzrY5OP+cuPr7vjxHK2j2LppcIbWsbh3/XCkwwU7+uOB2dTjBpYYYB64IkaOR7/fPBNdb1RmXFpMaEWB/3fUbvPF3ux+C2+/96mJicLP2dRqlTp28rS1M4Pu8kCemjvhEqAzvyU9fCKHK3Jr3nz27VJaqClbaalKbxNl0ggle12ULB7h70jnp4Hp2uTjM7t+TMTbc
+sidebar_class_name: "put api-method"
+info_path: docs/spotify/spotify-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Add Custom Playlist Cover Image"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"put"}
+  path={"/v1/playlists/{{Playlist_Id}}/images"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Replace the image used to represent a specific playlist.
+
+**Note:** Authorization scopes- **ugc-image-upload**, **playlist-modify-public**, **playlist-modify-private**
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"Playlist_Id","description":"The Spotify ID of the playlist.","in":"path","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"text/plain":{"examples":{"Add Custom Playlist Cover Image":{"value":"/9j/2wCEABoZGSccJz4lJT5CLy8vQkc9Ozs9R0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0cBHCcnMyYzPSYmPUc9Mj1HR0dEREdHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR//dAAQAAf/uAA5BZG9iZQBkwAAAAAH/wAARCAABAAEDACIAAREBAhEB/8QASwABAQAAAAAAAAAAAAAAAAAAAAYBAQAAAAAAAAAAAAAAAAAAAAAQAQAAAAAAAAAAAAAAAAAAAAARAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwAAARECEQA/AJgAH//Z"}}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"202":{"description":"Image uploaded","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"}},"Content-Length":{"schema":{"type":"string","example":"0"}},"Via":{"schema":{"type":"string","example":"HTTP/2 edgeproxy, 1.1 google"}},"access-control-allow-credentials":{"schema":{"type":"string","example":"true"}},"access-control-allow-headers":{"schema":{"type":"string","example":"Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token"}},"access-control-allow-methods":{"schema":{"type":"string","example":"GET, POST, OPTIONS, PUT, DELETE, PATCH"}},"access-control-allow-origin":{"schema":{"type":"string","example":"*"}},"access-control-max-age":{"schema":{"type":"string","example":"604800"}},"alt-svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"}},"cache-control":{"schema":{"type":"string","example":"private, max-age=0"}},"date":{"schema":{"type":"string","example":"Fri, 06 Jun 2025 19:56:50 GMT"}},"server":{"schema":{"type":"string","example":"envoy"}},"strict-transport-security":{"schema":{"type":"string","example":"max-age=31536000"}},"x-content-type-options":{"schema":{"type":"string","example":"nosniff"}},"x-robots-tag":{"schema":{"type":"string","example":"noindex, nofollow"}}},"content":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

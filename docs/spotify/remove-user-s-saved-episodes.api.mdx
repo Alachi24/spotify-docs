@@ -1,0 +1,73 @@
+---
+id: remove-user-s-saved-episodes
+title: "Remove User's Saved Episodes"
+description: "Remove one or more episodes from the current user's library. This API endpoint is in beta and could change without warning."
+sidebar_label: "Remove User's Saved Episodes"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVltP4zgU/ivWeVmpcnoFZsiKhy7bZVjNQJeG0UjAg+ucJp5JbGM7pZmq/31lJ+WyMCiv2wdajs/5zv2yBccyC/ENzLSwKkW4o5Ci5UZoJ5SEGK6wVGskSiJRhpTKIMGG15KVUSVxORJeGYPSkcqi+c2SQiwNM3WfJLmwZDo/JyhTrYR0RFgiJFmiY4TJlHBVFSnhOZMZkgfhclU58sCMFDLr38pb2etdKIdxr0emlcuVET+ZN4xYrjTaiPR6XmfUaoxKlYpV3esBBaXRBN7zFGIwwY1ri2axYGtMW38tUNDMsBIdGh+ILUhWIsQgUv8mfAjuKzQ1ULA8x5JBvAVXa89jnREyAwq4YaUuPGn8T3r2jdXzcT28GP/88PFvfXB/tIDd7o6CwfsKrftDpbUH4Uo6lM7/ZFoXggdrB9+tj/v2tTa1/I7ceYON980JtP7VG/rExIxh3lbhsLTvm9qSds9oN3vi3W73RA84bR1cNxkOMSSPQYy3sGZFhY/2vAAKWAatVtI2zOPh0H+9rLQWjTSpSoFCjiwNadnCtHDRYs3fDMwbvuWTk1uIDw4mt/A7KdnJ+PB4PBwOaT6JxsdvPoE38rRJSfQZZebyrsoa2a+CdRX4lCTzwZhgmqE2alNTMuqPSKZUVmDAYpyjtZGvEKOKiBWFeoi4wRSlE6ywXRU5U70D+Cy8XcCmnKN2lEy1juYFcytlSvqyLSnZRzCpNVJyaUQmJCVX6EwdTVcODSULrZxY1ZHH+YrGBrlv0WmhqjRKDOMYBZSNo4QXwqM59QMlJW3HRK03gfpr90p0uUo7u3c2SyiZXy4SSi7nyfnlxYKS+XVCyZ+zz7NkRsl8mpx++rU6FXztqq33FlDJNhHLsCvG0fDgY1u4nPEc9zhd5bURa+aQklbvSYOVMtfZhL+MoGQyJF9YTcbD8SEZjeOD4/jwiJx9SQKaRbNG0xUP5VrVjZwzgrvIGSatVsZFFnllhKu7Qu2dmowOJ0f7Bt9E+xrygpEKs6dziUhlpVitWiSjlsrZyLGsu7yQKW4okWqlfNFAGI1PiyD829QtxJBigQ7DhvLDCAbr0aDEAT6tria4zd6qTOEHn3PaxoMB06Jvm0brc1XCjr7i4FxV0tmXbHcU/AK6elpVs735r0e7348rFXwWLnjY9rbf+UBh3XQ3xDDqD/tDaFxlvHGVglbWlSz0TLt1390y/zlNnm3Q/++V0haLn3YDXTAh/T4Oidq2ab+B9Qh8VfhS2ofijkKurPOv2+2SWbw2xW7nyc2x4gsiFZYtC0whXrHCIoUfWD8eNu26hpDxNTPCs0J845Pa7IWA0Yg8H+rPZF9dLR7rsXqbsQkUlu29U/r7MgbDHoCGvzGEM+2xBQNtCwWTWRXGIDSo/vMvJoOg0Q==
+sidebar_class_name: "delete api-method"
+info_path: docs/spotify/spotify-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Remove User's Saved Episodes"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/v1/me/episodes"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Remove one or more episodes from the current user's library. This API endpoint is in beta and could change without warning.
+
+**Note:** Authorization scopes- **user-library-modify**
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"ids","in":"query","schema":{"type":"string","example":"2QdGXayP2y0N2z78Jp4q6S"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"ids":{"type":"array","items":{"type":"string","example":"string"},"example":["string"]}}},"examples":{"Remove User's Saved Episodes":{"value":{"ids":["string"]}}}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Episode removed","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"}},"Content-Length":{"schema":{"type":"string","example":"0"}},"Via":{"schema":{"type":"string","example":"HTTP/2 edgeproxy, 1.1 google"}},"access-control-allow-credentials":{"schema":{"type":"string","example":"true"}},"access-control-allow-headers":{"schema":{"type":"string","example":"Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token"}},"access-control-allow-methods":{"schema":{"type":"string","example":"GET, POST, OPTIONS, PUT, DELETE, PATCH"}},"access-control-allow-origin":{"schema":{"type":"string","example":"*"}},"access-control-max-age":{"schema":{"type":"string","example":"604800"}},"cache-control":{"schema":{"type":"string","example":"private, max-age=0"}},"date":{"schema":{"type":"string","example":"Fri, 30 May 2025 12:49:56 GMT"}},"server":{"schema":{"type":"string","example":"envoy"}},"strict-transport-security":{"schema":{"type":"string","example":"max-age=31536000"}},"x-content-type-options":{"schema":{"type":"string","example":"nosniff"}},"x-robots-tag":{"schema":{"type":"string","example":"noindex, nofollow"}}},"content":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

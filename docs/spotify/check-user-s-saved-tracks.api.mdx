@@ -1,0 +1,73 @@
+---
+id: check-user-s-saved-tracks
+title: "Check User's Saved Tracks"
+description: "Check if one or more tracks is already saved in the current Spotify user's 'Your Music' library."
+sidebar_label: "Check User's Saved Tracks"
+hide_title: true
+hide_table_of_contents: true
+api: eJzNVltP4zgU/iuWX0aqnF4pO5MVD13ols5QKNMAy+3BOKeNF8fO2E5pWvW/r+ykDMyAlNFqpe1Dmzo+3znfudjfBlu6MDi8xZGm7NHge4JjMEzzzHIlcYgPE2CPiM+RkoCURqnSgKzfjLhBVGigcYEMXUKMuEQ2AcRyrUFaNMuU5fMC5Qb0B4M+XKtco0luOPuABH/QVBfNO3knG41TZSFsNNAgt4nSfE2dd2SYysAEqNFwCEFlEjiPjQYmWGWg/c5xjEPMXKQXBvRs5oKpCBGcUU1TsKAdzw2WNAUcYh67d6+5DhBTaUoDA87GQowENxapuWe1YzM+Mk3UaEzoiqd56qLut/0iJpg7mG856AITbFgCKcXhBtsicz6N1VwuMMGwomkm3NL++oav/tzPrx/s6GPOT9dHZ92TY9IWycnsafn1y+h4PmaXw3UvP/+yT7oZpNlo/7P47eb4KDv8YyjOL4Dh7faeYA0mU9KAcQ677bb7+YGe1rRwbB6UEkClKXM/LINxRG7nVBggVudwjwlOgMY+bRs8EDaYLZl7rEMr6R3c4XBvr3eHf0cpPej2P3Xb7TZJekH305uv8HZLXBNKMwcdDCVTsQOt6Y8luXyE2INcclrX7DiKpq0ugngBmVargqBOs4MWSi0EeCzKGBgTMCWtViKgQqingGmIQVpOhanryGX0fcAXea4DNmAMMkvQIMuCqaB2rnRKXo8OQYdKWpA2iIoMCDrTfMElQV/B6iIYzC1osmvowOFcgjbe7q/gUKg8Dtz4QOBRVpYgJrhDs+oRJEGsAq/Y+NX36aVgExXXpjcaRgRNz2YRQWfTaHx2OiNoehERdDQ8GUZDgqaD6PD4fXfKc63rrfEWUEpXAV1AXYz99t7HqoOpsIH5z+eEUZbALtq6vjLNl9QCQRW7gwqrqiX84sgt1jzzADG1tTN1BTFBnQ76nEvUbXf7qNMP+/2w00ejSeTRwNLaIdzhyWEwTs+Lm6Px083oMj2LrvdujlhvMhr3JtF5MVkPi8k6EadXw6fTq3F7vDg4uMPejwG9BF3XE8ilKko7qzmzgXUnVaa0DQywXHNb1IXaZb/X6ff2dwVdUl0b4NWge+tVsCuiswqUP/Brz5tURvL5vELS6kFZE/xCFaTiMoYVQVLNlZtAvH3RV86WZpngzMfb+tuot2eTutvJXaEWUvNivbqsXrp0p+n2xf9bt0Cev+6/v/NApYS5KEWI1waoEgfhBi+pyN+C8B+Cy7PLtTtYryVsgkPcWnZaKbRKGdRyTCmXTk+UXVUKjVwLN+HWZiZstWjGm6Y8cJtMpXhLftrBmMqlNa+33TtRMVc+Idz6hO+EyGA6xgQvy5Mbh7jTbDfbuMw8ZS7zjkGmjE2pz3klfd7Pxw+CaPO9iP9rHVh1irupWpmgXOItKZO7qSp2i5cd7Krpdu+4PtftnuBEGeu2bTYP1MCFFtutWy6lnKtmzA19EBDjsNRI72fq36vIN/k8QvEsW6umxb49llRzFxoOb13nl2LCx1yalHLhhdVP4+hQnht9NHQH8T+QnRM5
+sidebar_class_name: "get api-method"
+info_path: docs/spotify/spotify-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Check User's Saved Tracks"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/me/tracks/contains"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Check if one or more tracks is already saved in the current Spotify user's 'Your Music' library.
+
+**Note:** Authorization scopes- **user-library-read**
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"ids","description":"A comma-separated list of the Spotify IDs. **Maximum:** 50 IDs.","in":"query","schema":{"type":"string","example":"6zZixF6uYbtG8uiNzDO2LH,0lhLSwvRKGHfIcVEz3uQK6,2pempG6Jl7ZHDpCBElQUec"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Array of booleans\n\n**Example:** [false,true]","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"}},"Transfer-Encoding":{"schema":{"type":"string","example":"chunked"}},"Via":{"schema":{"type":"string","example":"HTTP/2 edgeproxy, 1.1 google"}},"access-control-allow-credentials":{"schema":{"type":"string","example":"true"}},"access-control-allow-headers":{"schema":{"type":"string","example":"Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token"}},"access-control-allow-methods":{"schema":{"type":"string","example":"GET, POST, OPTIONS, PUT, DELETE, PATCH"}},"access-control-allow-origin":{"schema":{"type":"string","example":"*"}},"access-control-max-age":{"schema":{"type":"string","example":"604800"}},"alt-svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"}},"cache-control":{"schema":{"type":"string","example":"private, max-age=0"}},"content-encoding":{"schema":{"type":"string","example":"gzip"}},"date":{"schema":{"type":"string","example":"Wed, 11 Jun 2025 15:55:15 GMT"}},"etag":{"schema":{"type":"string","example":"\"MC-ImQyZDIwZGVmOTY4ZDc3MGI3MTQyMzEyMzhlNWEwNWI0Ig==\""}},"server":{"schema":{"type":"string","example":"envoy"}},"strict-transport-security":{"schema":{"type":"string","example":"max-age=31536000"}},"vary":{"schema":{"type":"string","example":"Authorization"}},"x-content-type-options":{"schema":{"type":"string","example":"nosniff"}},"x-robots-tag":{"schema":{"type":"string","example":"noindex, nofollow"}}},"content":{"application/json":{"schema":{"type":"array","items":{"type":"boolean","example":true},"example":[true,true,true]},"examples":{"Check User's Saved Tracks":{"value":[true,true,true]}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

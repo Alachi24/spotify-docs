@@ -1,0 +1,73 @@
+---
+id: check-if-user-follows-artists-or-users
+title: "Check If User Follows Artists or Users"
+description: "Check to see if the current user is following one or more artists or other Spotify users."
+sidebar_label: "Check If User Follows Artists or Users"
+hide_title: true
+hide_table_of_contents: true
+api: eJzNV11T2zgU/Sua+5iREyeBztY7PGQhS7OzIWFxaYHkQcg3sYotuZISYjL57zuSHaAUdtyd2Q8eCrZ1z73nHunqdAuWLQ1EN/DRoDYwp5Cg4VoUVigJERynyO+IVcQgErEgNkXCV1qjtGRlUBNhyEJlmboXckmURKI0yZVGwrQVxhr3rGyKmlwUyopF6cNMeyZnstU6UxajVosMVjZVWjwwl5YYrgo0AWm13Nqgwg80sqTVAgqqQO0XjhKIgLsKRwtX/69+oRlUmSe64kShYJrlaN1DdLMFyXKECGxZILzkG6dIRifEfQsICl94xcQRceXUlQ9cKkzImmUrNI7DDKqFM6BkBm7pDKq1ww3Li8wTdcBH1TqgIFzKryvUJVAwPMWcQbStKovAWC3kEihgFQ9RnQF2O/pIQyTmOxYDwlWes8Cgo24xIZlnUOn3xMc9eRX32oxOjBPb97RNBiRnG5Gvchd5GPqvnElyi8S4DSCkV1zj1xUa2/47hMKrPlueM/Zu2dPhVf5hOpm81ynt/z7Jw8H1l+L+8hxv13clk19OSto7DcurSSKnerH4pTfW2P18PF7DbjenoNEUSho0LmEvDN2vF13RmpWOyq1SGTJpvlPnZsEyg9TqFc6BQoos8ZtmC4PMBhdr7v5sQivtH80gOjjoz+BnkrOj3uH7XhiGNO0HvfevfnKaQqyZNAvUwVBylTjQhvl4upJ3mHiQS8Gahn2I42mnRzBZYqHVpqSk2+6SpVLLDD0W4xyNCbiSVqssYP4gco0JSitYZpomch19G/BZn5uADTjHwlIyKIpgmjG7UDqn344QSo6VtChtEJcFUjLRYikkJX+g1WUwWFjUdL/pA4dzidr4uM/BcaZWSRBrxjHwKBtLCc+EQ7PqDiUlvAav2fi3b9PL0aYqaUzvdBhTMp1cxJRMpvFocnZByfRjTMnJ8PdhPKRkOoiPP7ydTnmuTbO1XgPK2SZgS2yK8S48+KnewSyzgfnHzwlnPMV9tU1zFVqsmUVKanZHNVatJf7gkVs+iMIDJMw27tQnTCjpdslvK0l6Ye+Q9LrRQS/qHZDTcezR0LLGJcxgfByM8vPy+mR0f316mU/iq4PrE94fn4764/i8HD8My/FDmp19Gt6ffRqFo+XR0Qx8HoN6jbppJpRrVVZxVgtuA+smVaG0DQzylRa2bAq1736/e9h/txd0zXRjgG8Ouo/eBHsR/b2t/MBvfN6kMlIsFjWSVrfKmuAHVJBKyAQ3lEhVORXYPdtXLpYVRSa4r7fzxajXzyZzt5O7Qi3m5tn7+rJ6ntJN092z5xv3gj7+M3/65oEqDzdaEOeHSG2SyODJn1U+KdqCNzOv4PkfCtUgc3sfrbdVNoUIOutuJ8fOowvsOOZMSGdLql1W2a6VztyJt7YwUafDCtE21QBuc5WDczQvVnCuVtKab5fNnclYKN8gYb0Ae/MymI6Awrqa5BBBtx22Q6iUYNwp4UgUyticeQ1qB9WwPy9M1vZJ4f+lS663j7u+OkXGhIQdrTq8rZW7gXUXnKpA4bG6fb+cfnMKqTLWrdxub5nBjzrb7dzryuI5VRNh2G2GCUSVd3q7Sf+utX6V/h2WT8a/3uzgt15zGv+Zt/4LRtX/AZ4Izf1EFY4RRDduHlQWyytWhVQm6lnUd0PKoTye+NOhu57+BGRbz1g=
+sidebar_class_name: "get api-method"
+info_path: docs/spotify/spotify-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Check If User Follows Artists or Users"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/me/following/contains"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Check to see if the current user is following one or more artists or other Spotify users.
+
+**Note:** Authorization scopes- **user-follow-read**
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"type","description":"The ID type- either artist or user.\n\n**Allowed values:** \"artist\", \"user\"\n\n**Example:** type=artist","in":"query","schema":{"type":"string","example":"artist"}},{"name":"ids","description":"A comma-separated list of the artist or the user Spotify IDs to check. A maximum of 50 IDs can be sent in one request.","in":"query","schema":{"type":"string","example":"0Y3agQaa6g2r0YmHPOO9rh,3LOm0AZjpwVQebvkyanjDy,2G0yYOdnPrffB2Mre1XCMv"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Array of booleans\n\n**Example:** [false,true]","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"}},"Transfer-Encoding":{"schema":{"type":"string","example":"chunked"}},"Via":{"schema":{"type":"string","example":"HTTP/2 edgeproxy, 1.1 google"}},"access-control-allow-credentials":{"schema":{"type":"string","example":"true"}},"access-control-allow-headers":{"schema":{"type":"string","example":"Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token"}},"access-control-allow-methods":{"schema":{"type":"string","example":"GET, POST, OPTIONS, PUT, DELETE, PATCH"}},"access-control-allow-origin":{"schema":{"type":"string","example":"*"}},"access-control-max-age":{"schema":{"type":"string","example":"604800"}},"alt-svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"}},"cache-control":{"schema":{"type":"string","example":"private, max-age=0"}},"content-encoding":{"schema":{"type":"string","example":"gzip"}},"date":{"schema":{"type":"string","example":"Wed, 11 Jun 2025 21:42:24 GMT"}},"etag":{"schema":{"type":"string","example":"\"MC-ImQyZDIwZGVmOTY4ZDc3MGI3MTQyMzEyMzhlNWEwNWI0Ig==\""}},"server":{"schema":{"type":"string","example":"envoy"}},"strict-transport-security":{"schema":{"type":"string","example":"max-age=31536000"}},"vary":{"schema":{"type":"string","example":"Authorization"}},"x-content-type-options":{"schema":{"type":"string","example":"nosniff"}},"x-robots-tag":{"schema":{"type":"string","example":"noindex, nofollow"}}},"content":{"application/json":{"schema":{"type":"array","items":{"type":"boolean","example":true},"example":[true,true,true]},"examples":{"Check If User Follows Artists or Users":{"value":[true,true,true]}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

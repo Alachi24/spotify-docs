@@ -1,0 +1,73 @@
+---
+id: change-playlist-details
+title: "Change Playlist Details"
+description: "Change a playlist's name and public/private state. (The user must, of course, own the playlist.)"
+sidebar_label: "Change Playlist Details"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVktv2zgQ/ivEXHbXoPxMgkaLHNzEaLJIE7dRii2SHGhqbLGVSJakHDuG//uClOQkmwd02MsaPkgU55uZb54bcGxhIb6Bac7WubDOwh2FFC03QjuhJMRwnDG5QMKIru/8ZolkBRImU6LLWS54TxuxZA6Jdcxhl/yeZEhKi4YUpXWUqDnhqjQWKVH3krgMd2DdP27lrex0LpTDuNMh49JlyogH5rUTy5VGG5FOp7kfFSoV83VUKe506GvfKms6HaCgNJqAdZZCDDz40jh7go6J3AIFg79KtO6jStcQb4Ar6VA6/8i0zgUPCL0f1hOyAcszLJh/cmuNEIOa/UDugII2Xp8TaP3XZzzuLltnhFwABVyxQuf+6FqnzGG6I4U8ldxS8HS/j3DBCszx4cHfrqh5cn+mVI5MPhWYs9zidrvdHQWD61A3/JCGoHgDS5aX+MKp9y1vDH+07tG4xoBgg0GrlbSVEcN+/6WenUllpRAoZMhSNEFknLvoaslfjc0rZGWjo1uI9/ZGt/AnKdjRcP9w2O/3aTaKhoevfgJv5XGVFdE5yoXL2iqrZL8J1lbgNEmmvSHBdIHaqNWakkF3QBZKLXIMWIxztDbySWpUHrE8V/cRN5iidIJV4WqjyJnyHcAn9LYBG3OO2lEy1jqa5szNlSno82qmpGEwWWuk5NKIhZCUfEVn1tF47tBQcqWV8zXscb6hsUHu7+g4V2UaJYZxjALKylHCc+HRnPqJkpK6aKPam3D6tnsFukylrd37NEkomV5eJZRcTpOzy4srSqbXCSUnk/NJMqFkOk6OT99Wp4KvbbV1XgMq2CpiC2yLcdDf+1AnLmc8wwanrXzdRCmp9R5VWL762kIkJVLSH5G/SkmG/eE+GQxi//9APn1OAppFs0TTFg/lUq0rOWcEd5EzTFqtjIss8tIIt24L1Tg1GuyPDpoCX0VNDnnBSIXm0zpFpLJSzOc1klEz5Wzk2KK9vJApriiRaq580kDojY+zKLxWeevjU4aBw3wngt5y0GtasO0dnIvvH/XV/snkcPpl8vkk+/5wesmhodsP/A2UJvet0Dlt416PadG1Vel1uSpgS1/c4FyV0tnn1+4o+Kn49XF+ThqH/uNRQUHIuQoUChcIq1sFGU/PgMKyahYQw6Db7/ahYo7xijkKWllXsFCCtaq3ph399+DeheB/vgvVueebp88WEXaLEOVNnUg3sBx45nfbIIU3kumOQqas8yKbzYxZvDb5duuPf5Vo1hDf3FFYMiPYzAfr5m7bTOyQfT9x7el8Mg98CKsd4+XO5dNsl/jT6wQozOpVrVCpFzHs3q9x7B5iCFvfrnTD2QZyJhdlaJ9QQfrfP7LGw6Y=
+sidebar_class_name: "put api-method"
+info_path: docs/spotify/spotify-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Change Playlist Details"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"put"}
+  path={"/v1/playlists/6LiYBpS5DE9PQEMDhYzHOc"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Change a playlist's name and public/private state. (The user must, of course, own the playlist.)
+
+**Note:** Authorization scopes- **playlist-modify-public**, **playlist-modify-private**
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"description":{"type":"string","example":"Updated playlist description"},"name":{"type":"string","example":"Namelezz"},"public":{"type":"boolean","example":false}}},"examples":{"Change Playlist Details":{"value":{"description":"Updated playlist description","name":"Namelezz","public":false}}}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Playlist updated","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"}},"Content-Length":{"schema":{"type":"string","example":"0"}},"Via":{"schema":{"type":"string","example":"HTTP/2 edgeproxy, 1.1 google"}},"access-control-allow-credentials":{"schema":{"type":"string","example":"true"}},"access-control-allow-headers":{"schema":{"type":"string","example":"Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token"}},"access-control-allow-methods":{"schema":{"type":"string","example":"GET, POST, OPTIONS, PUT, DELETE, PATCH"}},"access-control-allow-origin":{"schema":{"type":"string","example":"*"}},"access-control-max-age":{"schema":{"type":"string","example":"604800"}},"cache-control":{"schema":{"type":"string","example":"private, max-age=0"}},"date":{"schema":{"type":"string","example":"Tue, 03 Jun 2025 11:11:18 GMT"}},"server":{"schema":{"type":"string","example":"envoy"}},"strict-transport-security":{"schema":{"type":"string","example":"max-age=31536000"}},"x-content-type-options":{"schema":{"type":"string","example":"nosniff"}},"x-robots-tag":{"schema":{"type":"string","example":"noindex, nofollow"}}},"content":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

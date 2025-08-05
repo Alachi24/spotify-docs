@@ -1,0 +1,73 @@
+---
+id: add-item-to-playback-queue
+title: "Add Item to Playback Queue"
+description: "Add an item to be played next in the user's current playback queue. This API only works for users who have Spotify Premium. The order of execution is not guaranteed when you use this API with other Player API endpoints."
+sidebar_label: "Add Item to Playback Queue"
+hide_title: true
+hide_table_of_contents: true
+api: eJztVu9v2zYQ/VcOBIpuBmU7dtIuGvrBS43OwNK4iZOtSIKBJs8WG4lUyJNj1dD/PlCS03T9pX3fJwv03ePd4yPv7RiJtWfxNZunokTHbjlT6KXTOWlrWMwmSoEwoAkzIAtLhDxEKjC4JdAGKEEoPLrnHmThHBqqI5ZC3sF9gQX2YZFoD5P5DKxJS3iw7s7Dyro6zcNDYiERG4SL3JJelTB3mOkiC3kI1il0YFeAW5RFKAq0B2MJ1oVwwhCigocEDZS2CIhA+90eNCVgKUEHTXf1KhqVW23I92/Mjen13lrCuNeDSUGJdfqjqPfw0uboI+j1QpFRZpVeldG+sciTIOz1GGc2R1enzBSLmVBqRpgt7LyNfBcYYJzlwokMCV0ge8eMyJDFrHCacaYDz/cFupJx5mWCmWDxjlGZhxhPTps14wy3IsvTeqkh6tl4Qk7Iu2fjyaG+OvrzuHg/Ve8vr8TL48l2+fI8YVV1y5lDn1vj0QfQ0XAYfj4/4xObZcIocChRb1CxirPD4fjLwN+EgrNAFDi8L9AT/PTgrFmDtMYXGTq4w5LDUigw1kjkgNtcO1RAOkNPIsv7/f7Pfbg0K+uoMIIwLTk4jERBCRrSUpA260dVwYM1zwkSTHNI0GGfcZagUDWROzZJKbrYyPDZhbhk/OqGxYeH4xv2K2Ti1ejoeDQcDnkyjkbHX/2LVRVnCyeMX6GLpkZaFUA77ieTwtwFPivOrrTomvb7YjEfjADVGnNntyWHg/4BrK1dp1hjCSnR+0haQ86mkUhT+xBJhyowKFLfdSNyxXcAn/DcBWwiJebEYZLn0TwVtLIu459fKw4n1hAaihZljhzOnF5rw+EcyZXRZEXo+P4ZiALOFTpf5/0VnaS2UNHCCYlRjbIlDjLVAY3sHRoeVFiDt93Uq99uL0NKrOrc3pvpgsP87GLB4Wy+mJ29veAwv1xweD39Y7qYcphPFie/f3s7W/fadbfe14AysY3EGrtivBge/tIqWAqZ4B6na37u9EYQcmj3fdVitSzjf7wM6486rwGUoM49XAjiMD6AU1HCaDg6gtEwPjqMR0N4c7qo0Ty6DbqueGg2tmzyyGlJEYW7nVtHkUdZOE1lV6g9K+ODo/GL/VOxjfb0hMTI1i9nZ40Z641erVokZ5eWfESiM8XGaqNwy8HYlQ2qY9WTEwu5Is/T+o21ZvDB26/r0S4/oKQwtVwYb6Sb2YHOWffjsAy9b1X67UrbgSzbybMSOkUV70d/PV7C3AiTyKFoC/0O3Pn0dHZ5+vf59N3l7Hz6mtUHLKjwT/JMkS3RPc07HI6rqqaoXWqGilIwa/3Ofo5DM8jjHduItPl4pOOx4c5dfWrqy8o/Fb6vri6wea3CrbS+5lxQwmI22BwMMhzUnswN7lu30dyJxmoULg2Tjyj38WAgct1v7UNf2oxV/IsIKW0R7NFnYbfBpqxszaam5mq2dm0ynzHONs1LzWJ20B/2h6xRnZBBdaH+UHYm6mNszc93aP6XCd19UvD/fvQHfrTVehiPQRXahKtQn/Cu1cw12xywIKigosb1c9Yo55azJMgrvma73VJ4vHRpVYXlxp4GPSntxTJFxeKVSD1ydoflo5VtLwerBbMRTodQFl/fVnvbVmM0KY1heJL1xeMUUB6FH2Yvq6p/AKPWVmg=
+sidebar_class_name: "post api-method"
+info_path: docs/spotify/spotify-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Add Item to Playback Queue"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/v1/me/player/queue"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Add an item to be played next in the user's current playback queue. This API only works for users who have Spotify Premium. The order of execution is not guaranteed when you use this API with other Player API endpoints.
+
+**Note:** Authorization scopes- **user-modify-playback-state**
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"uri","in":"query","schema":{"type":"string","example":"spotify%3Atrack%3A4iV5W9uYEdYUVa79Axb7Rh"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Command received"},"403":{"description":"Bad OAuth request (wrong consumer key, bad nonce, expired timestamp...). Unfortunately, re-authenticating the user won't help here.","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"}},"Transfer-Encoding":{"schema":{"type":"string","example":"chunked"}},"Via":{"schema":{"type":"string","example":"HTTP/2 edgeproxy, 1.1 google"}},"access-control-allow-credentials":{"schema":{"type":"string","example":"true"}},"access-control-allow-headers":{"schema":{"type":"string","example":"Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token"}},"access-control-allow-methods":{"schema":{"type":"string","example":"GET, POST, OPTIONS, PUT, DELETE, PATCH"}},"access-control-allow-origin":{"schema":{"type":"string","example":"*"}},"access-control-max-age":{"schema":{"type":"string","example":"604800"}},"cache-control":{"schema":{"type":"string","example":"private, max-age=0"}},"content-encoding":{"schema":{"type":"string","example":"gzip"}},"date":{"schema":{"type":"string","example":"Sat, 31 May 2025 20:54:20 GMT"}},"server":{"schema":{"type":"string","example":"envoy"}},"strict-transport-security":{"schema":{"type":"string","example":"max-age=31536000"}},"x-content-type-options":{"schema":{"type":"string","example":"nosniff"}},"x-robots-tag":{"schema":{"type":"string","example":"noindex, nofollow"}}},"content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"object","properties":{"message":{"type":"string","example":"Player command failed: Premium required"},"reason":{"type":"string","example":"PREMIUM_REQUIRED"},"status":{"type":"number","example":403}}}}},"examples":{"Add Item to Playback Queue":{"value":{"error":{"message":"Player command failed: Premium required","reason":"PREMIUM_REQUIRED","status":403}}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      
