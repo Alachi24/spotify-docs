@@ -23,18 +23,13 @@ import Heading from "@theme/Heading";
   as={"h1"}
   className={"openapi__heading"}
   children={"Access Token"}
->
-</Heading>
+></Heading>
 
 <MethodEndpoint
   method={"post"}
   path={"/api/token"}
   context={"endpoint"}
->
-  
-</MethodEndpoint>
-
-
+></MethodEndpoint>
 
 Access Token
 
@@ -43,29 +38,173 @@ Access Token
   as={"h2"}
   className={"openapi-tabs__heading"}
   children={"Request"}
->
-</Heading>
+></Heading>
 
-<ParamsDetails
-  parameters={undefined}
->
-  
-</ParamsDetails>
+<ParamsDetails parameters={undefined}></ParamsDetails>
 
 <RequestSchema
   title={"Body"}
-  body={{"content":{"application/x-www-form-urlencoded":{"schema":{"type":"object","properties":{"client_id":{"type":"string","example":"598f0b886ddd4bcb9c0a56684ecd3c49"},"client_secret":{"type":"string","example":"0d5fdb50df78432a94c363cf346ba8e3"},"grant_type":{"type":"string","example":"refresh_token"},"refresh_token":{"type":"string","example":"AQAh9kC9cF_Z8u3oCIO0PUl0vRbInlABV4wtmmcakBLMLPNHOd7ZLDeqXxyGlmPzKtNN_7b1L-JcxRJ6nm3r86QD7Nkreq3ZPOj51R5WzlF804T1LfRIbudzjjVPbDulcAQ"}}},"examples":{"Access Token":{"value":{"client_id":"598f0b886ddd4bcb9c0a56684ecd3c49","client_secret":"0d5fdb50df78432a94c363cf346ba8e3","grant_type":"client_credentials"}},"Auth code flow":{"value":{"client_id":"598f0b886ddd4bcb9c0a56684ecd3c49","client_secret":"0d5fdb50df78432a94c363cf346ba8e3","code":"AQCuTHJrkzJ4rP432Aeql1V7rnMjzWKjD6718c2Ht1KEn4VKZlBqcfi64vofdG5aqUSFmZXFmw3JPpeMZzFqWZz4s-BUkjeNUUhG0BznSH1qax1VVsP-brK47gWsqtE5ebbC2wK31jkJkiG3nBo66lA4UgrgCf_umK4hEb7si20IgQd2g9Ir57yXKCUasww4kgfqicSRzRkGxxQxiwdQoLH0zsZ4xA9EijgG6uyg0mnJYS9JILrztKBOOxpMYK-SLY_3RKgwaqrhTJBLn00aUjyvyR2j_YEiObUeacz5SMwHozUfKVApp-iZipH6vKOcrOAbkQch_3RQNAzRwHG5idehRGi2oU69k2AKTO_RPHYYNqFq6hsQ-koOHKqZUG3bgQgAVKQ12J5ohNeLTmuq9VgaLtEpDf1s-EizOBSuytsq0jLZdfruUB5PPejcHJOzM3UTEWKkEL5bMurA0StAkbSrtgAUMzpIQs31sWSVspvwhQRAbGVntTqPRpkYeRhqtl9MdVVAfkvWJCJ8kXulRx9tYgy2OwEvBmuojeUnFbBDpKnpGellSEbae6u1ITrTyIptb6hw_nVkqGgvoJfdsELCX8Y5ofvrjFqklKdreKizsWcRiQzhXGVNv_sL7i0BPI2cG4BJDJuNl8CP7-epsddK5myeAWDpHjtLdcVCQN0pgIUAiQ","grant_type":"authorization_code","redirect_uri":"http://127.0.0.1:8000/callback"}},"Refresh Token":{"value":{"client_id":"598f0b886ddd4bcb9c0a56684ecd3c49","client_secret":"0d5fdb50df78432a94c363cf346ba8e3","grant_type":"refresh_token","refresh_token":"AQAh9kC9cF_Z8u3oCIO0PUl0vRbInlABV4wtmmcakBLMLPNHOd7ZLDeqXxyGlmPzKtNN_7b1L-JcxRJ6nm3r86QD7Nkreq3ZPOj51R5WzlF804T1LfRIbudzjjVPbDulcAQ"}}}}}}}
->
-  
-</RequestSchema>
+  body={{
+    content: {
+      "application/x-www-form-urlencoded": {
+        schema: {
+          type: "object",
+          properties: {
+            client_id: { type: "string", example: "{CLIENT_ID}" },
+            client_secret: { type: "string", example: "{CLIENT_SECRET}" },
+            grant_type: { type: "string", example: "refresh_token" },
+            refresh_token: {
+              type: "string",
+              example:
+                "AQAh9kC9cF_Z8u3oCIO0PUl0vRbInlABV4wtmmcakBLMLPNHOd7ZLDeqXxyGlmPzKtNN_7b1L-JcxRJ6nm3r86QD7Nkreq3ZPOj51R5WzlF804T1LfRIbudzjjVPbDulcAQ",
+            },
+          },
+        },
+        examples: {
+          "Access Token": {
+            value: {
+              client_id: "",
+              client_secret: "",
+              grant_type: "client_credentials",
+            },
+          },
+          "Auth code flow": {
+            value: {
+              client_id: "",
+              client_secret: "",
+              code: "AQCuTHJrkzJ4rP432Aeql1V7rnMjzWKjD6718c2Ht1KEn4VKZlBqcfi64vofdG5aqUSFmZXFmw3JPpeMZzFqWZz4s-BUkjeNUUhG0BznSH1qax1VVsP-brK47gWsqtE5ebbC2wK31jkJkiG3nBo66lA4UgrgCf_umK4hEb7si20IgQd2g9Ir57yXKCUasww4kgfqicSRzRkGxxQxiwdQoLH0zsZ4xA9EijgG6uyg0mnJYS9JILrztKBOOxpMYK-SLY_3RKgwaqrhTJBLn00aUjyvyR2j_YEiObUeacz5SMwHozUfKVApp-iZipH6vKOcrOAbkQch_3RQNAzRwHG5idehRGi2oU69k2AKTO_RPHYYNqFq6hsQ-koOHKqZUG3bgQgAVKQ12J5ohNeLTmuq9VgaLtEpDf1s-EizOBSuytsq0jLZdfruUB5PPejcHJOzM3UTEWKkEL5bMurA0StAkbSrtgAUMzpIQs31sWSVspvwhQRAbGVntTqPRpkYeRhqtl9MdVVAfkvWJCJ8kXulRx9tYgy2OwEvBmuojeUnFbBDpKnpGellSEbae6u1ITrTyIptb6hw_nVkqGgvoJfdsELCX8Y5ofvrjFqklKdreKizsWcRiQzhXGVNv_sL7i0BPI2cG4BJDJuNl8CP7-epsddK5myeAWDpHjtLdcVCQN0pgIUAiQ",
+              grant_type: "authorization_code",
+              redirect_uri: "http://127.0.0.1:8000/callback",
+            },
+          },
+          "Refresh Token": {
+            value: {
+              client_id: "",
+              client_secret: "",
+              grant_type: "refresh_token",
+              refresh_token:
+                "AQAh9kC9cF_Z8u3oCIO0PUl0vRbInlABV4wtmmcakBLMLPNHOd7ZLDeqXxyGlmPzKtNN_7b1L-JcxRJ6nm3r86QD7Nkreq3ZPOj51R5WzlF804T1LfRIbudzjjVPbDulcAQ",
+            },
+          },
+        },
+      },
+    },
+  }}
+></RequestSchema>
 
 <StatusCodes
   id={undefined}
   label={undefined}
-  responses={{"200":{"description":"Access Token[1 Hour] / Auth code flow / Refresh Token","headers":{"Alt-Svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"}},"Transfer-Encoding":{"schema":{"type":"string","example":"chunked"}},"Via":{"schema":{"type":"string","example":"HTTP/2 edgeproxy, 1.1 google"}},"alt-svc":{"schema":{"type":"string","example":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"}},"content-encoding":{"schema":{"type":"string","example":"gzip"}},"date":{"schema":{"type":"string","example":"Thu, 12 Jun 2025 11:10:34 GMT"}},"request-id":{"schema":{"type":"string","example":"2b579db2-7cad-4cb8-b94e-d4e25efa6f94"}},"server":{"schema":{"type":"string","example":"envoy"}},"set-cookie":{"schema":{"type":"string","example":"sp_tr=false;Version=1;Domain=accounts.spotify.com;Path=/;Secure;SameSite=Lax"}},"sp-trace-id":{"schema":{"type":"string","example":"43ba8f5533bb1569"}},"strict-transport-security":{"schema":{"type":"string","example":"max-age=31536000"}},"vary":{"schema":{"type":"string","example":"Accept-Encoding"}},"x-content-type-options":{"schema":{"type":"string","example":"nosniff"}},"x-envoy-upstream-service-time":{"schema":{"type":"string","example":"31"}}},"content":{"application/json":{"schema":{"type":"object","properties":{"access_token":{"type":"string","example":"BQC2Kdqp_JK7kJtNoVSLOmw4c1wsqvVkrmCKJVOqoBviUgZ9JWGG2S9mIVYTgfAqJSyt_VXcz2dPhkDjaVDjB_Qjk0_tcsxSDCOQr1mZ5xXtfYy2bN-a17o2S4yyWGxP1CHa-nxujXM"},"expires_in":{"type":"number","example":3600},"refresh_token":{"type":"string","example":"AQAh9kC9cF_Z8u3oCIO0PUl0vRbInlABV4wtmmcakBLMLPNHOd7ZLDeqXxyGlmPzKtNN_7b1L-JcxRJ6nm3r86QD7Nkreq3ZPOj51R5WzlF804T1LfRIbudzjjVPbDulcAQ"},"scope":{"type":"string","example":"playlist-read-private playlist-read-collaborative ugc-image-upload user-follow-read playlist-modify-private user-read-email user-read-private user-modify-playback-state user-follow-modify user-library-read user-library-modify playlist-modify-public user-read-playback-state user-read-currently-playing user-read-recently-played user-read-playback-position user-top-read"},"token_type":{"type":"string","example":"Bearer"}}},"examples":{"Access Token[1 Hour]":{"value":{"access_token":"BQC2Kdqp_JK7kJtNoVSLOmw4c1wsqvVkrmCKJVOqoBviUgZ9JWGG2S9mIVYTgfAqJSyt_VXcz2dPhkDjaVDjB_Qjk0_tcsxSDCOQr1mZ5xXtfYy2bN-a17o2S4yyWGxP1CHa-nxujXM","expires_in":3600,"token_type":"Bearer"}},"Auth code flow":{"value":{"access_token":"BQDAV_Dw84d_2zTQZgqJSrUkFFj4nQwetp94Mxb7QSBCt4NtmDYOFg6cXKT0Bo2Cv_11Y_NEP96VWKwnigjmVFtD8jNiXNLgSXh53MIHcGpz_YJhSft0I61SfMWGgf4TJCr2yyjIN7RW6BCDkZHX6HnEkHo6apzH6f-GjuVOn_PaJBHEftoj3-iLz3Zun09eEqRIfAfweVzjJ_g_wkoeK_vo1WU2ZWulF6LGsskTyV73STsqTBJ2L_SOUZLN6BLTo6XLjX7f4YB_Tz49wOueya_MomdGBotgR0GU5C0hHVroQVvUgBs02rAWTLF2fXsxcCc_lA8htAO3kjfk2PrRpQ_CXOvHdNWcTUABuUhOpW2UwSYcE65sDAU","expires_in":3600,"refresh_token":"AQAh9kC9cF_Z8u3oCIO0PUl0vRbInlABV4wtmmcakBLMLPNHOd7ZLDeqXxyGlmPzKtNN_7b1L-JcxRJ6nm3r86QD7Nkreq3ZPOj51R5WzlF804T1LfRIbudzjjVPbDulcAQ","scope":"playlist-read-private playlist-read-collaborative ugc-image-upload user-follow-read playlist-modify-private user-read-email user-read-private user-modify-playback-state user-follow-modify user-library-read user-library-modify playlist-modify-public user-read-playback-state user-read-currently-playing user-read-recently-played user-read-playback-position user-top-read","token_type":"Bearer"}},"Refresh Token":{"value":{"access_token":"BQDHKd5lD16ZosVn_Em_7imaOL46J-Uha0rj_NlQTnhPu1_7nTNCHL1EZK2GvigrgSwSuZGa07bJHcKKjJl0zWDl5_18EC10hfReT6YwptZCMyq3iRsAUURmYJerG-HaKnx7HyfmUh75Nr2ZewEWlwKKb0Pq1lv8KFKBzsugQF7zM5535YtsKHNkMfcvyx3kuu5EgrOm_D5ExdfcXtGBfMw-bCtoBge_AX8nUwGP3jkRz_jgT5jAZeK8uQ1Ikn03Z5OrVd2N-kwILR6XLh1nARVrBiUxscaPLwmWt89XngpiOvgLfgebGSzVyxeT4kTdpKa0BIABzw78sy9Q35w37tZkb20mg_fSqHfJR24BmiuPhlMY3HPR0oM","expires_in":3600,"scope":"playlist-read-private playlist-read-collaborative ugc-image-upload user-follow-read playlist-modify-private user-read-email user-read-private user-follow-modify user-modify-playback-state user-library-read user-library-modify playlist-modify-public user-read-playback-state user-read-currently-playing user-read-recently-played user-read-playback-position user-top-read","token_type":"Bearer"}}}}}}}}
->
-  
-</StatusCodes>
-
-
-      
+  responses={{
+    "200": {
+      description: "Access Token[1 Hour] / Auth code flow / Refresh Token",
+      headers: {
+        "Alt-Svc": {
+          schema: {
+            type: "string",
+            example: 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000',
+          },
+        },
+        "Transfer-Encoding": { schema: { type: "string", example: "chunked" } },
+        Via: {
+          schema: { type: "string", example: "HTTP/2 edgeproxy, 1.1 google" },
+        },
+        "alt-svc": {
+          schema: {
+            type: "string",
+            example: 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000',
+          },
+        },
+        "content-encoding": { schema: { type: "string", example: "gzip" } },
+        date: {
+          schema: { type: "string", example: "Thu, 12 Jun 2025 11:10:34 GMT" },
+        },
+        "request-id": {
+          schema: {
+            type: "string",
+            example: "2b579db2-7cad-4cb8-b94e-d4e25efa6f94",
+          },
+        },
+        server: { schema: { type: "string", example: "envoy" } },
+        "set-cookie": {
+          schema: {
+            type: "string",
+            example:
+              "sp_tr=false;Version=1;Domain=accounts.spotify.com;Path=/;Secure;SameSite=Lax",
+          },
+        },
+        "sp-trace-id": {
+          schema: { type: "string", example: "43ba8f5533bb1569" },
+        },
+        "strict-transport-security": {
+          schema: { type: "string", example: "max-age=31536000" },
+        },
+        vary: { schema: { type: "string", example: "Accept-Encoding" } },
+        "x-content-type-options": {
+          schema: { type: "string", example: "nosniff" },
+        },
+        "x-envoy-upstream-service-time": {
+          schema: { type: "string", example: "31" },
+        },
+      },
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: {
+              access_token: {
+                type: "string",
+                example:
+                  "BQC2Kdqp_JK7kJtNoVSLOmw4c1wsqvVkrmCKJVOqoBviUgZ9JWGG2S9mIVYTgfAqJSyt_VXcz2dPhkDjaVDjB_Qjk0_tcsxSDCOQr1mZ5xXtfYy2bN-a17o2S4yyWGxP1CHa-nxujXM",
+              },
+              expires_in: { type: "number", example: 3600 },
+              refresh_token: {
+                type: "string",
+                example:
+                  "AQAh9kC9cF_Z8u3oCIO0PUl0vRbInlABV4wtmmcakBLMLPNHOd7ZLDeqXxyGlmPzKtNN_7b1L-JcxRJ6nm3r86QD7Nkreq3ZPOj51R5WzlF804T1LfRIbudzjjVPbDulcAQ",
+              },
+              scope: {
+                type: "string",
+                example:
+                  "playlist-read-private playlist-read-collaborative ugc-image-upload user-follow-read playlist-modify-private user-read-email user-read-private user-modify-playback-state user-follow-modify user-library-read user-library-modify playlist-modify-public user-read-playback-state user-read-currently-playing user-read-recently-played user-read-playback-position user-top-read",
+              },
+              token_type: { type: "string", example: "Bearer" },
+            },
+          },
+          examples: {
+            "Access Token[1 Hour]": {
+              value: {
+                access_token:
+                  "BQC2Kdqp_JK7kJtNoVSLOmw4c1wsqvVkrmCKJVOqoBviUgZ9JWGG2S9mIVYTgfAqJSyt_VXcz2dPhkDjaVDjB_Qjk0_tcsxSDCOQr1mZ5xXtfYy2bN-a17o2S4yyWGxP1CHa-nxujXM",
+                expires_in: 3600,
+                token_type: "Bearer",
+              },
+            },
+            "Auth code flow": {
+              value: {
+                access_token:
+                  "BQDAV_Dw84d_2zTQZgqJSrUkFFj4nQwetp94Mxb7QSBCt4NtmDYOFg6cXKT0Bo2Cv_11Y_NEP96VWKwnigjmVFtD8jNiXNLgSXh53MIHcGpz_YJhSft0I61SfMWGgf4TJCr2yyjIN7RW6BCDkZHX6HnEkHo6apzH6f-GjuVOn_PaJBHEftoj3-iLz3Zun09eEqRIfAfweVzjJ_g_wkoeK_vo1WU2ZWulF6LGsskTyV73STsqTBJ2L_SOUZLN6BLTo6XLjX7f4YB_Tz49wOueya_MomdGBotgR0GU5C0hHVroQVvUgBs02rAWTLF2fXsxcCc_lA8htAO3kjfk2PrRpQ_CXOvHdNWcTUABuUhOpW2UwSYcE65sDAU",
+                expires_in: 3600,
+                refresh_token:
+                  "AQAh9kC9cF_Z8u3oCIO0PUl0vRbInlABV4wtmmcakBLMLPNHOd7ZLDeqXxyGlmPzKtNN_7b1L-JcxRJ6nm3r86QD7Nkreq3ZPOj51R5WzlF804T1LfRIbudzjjVPbDulcAQ",
+                scope:
+                  "playlist-read-private playlist-read-collaborative ugc-image-upload user-follow-read playlist-modify-private user-read-email user-read-private user-modify-playback-state user-follow-modify user-library-read user-library-modify playlist-modify-public user-read-playback-state user-read-currently-playing user-read-recently-played user-read-playback-position user-top-read",
+                token_type: "Bearer",
+              },
+            },
+            "Refresh Token": {
+              value: {
+                access_token:
+                  "BQDHKd5lD16ZosVn_Em_7imaOL46J-Uha0rj_NlQTnhPu1_7nTNCHL1EZK2GvigrgSwSuZGa07bJHcKKjJl0zWDl5_18EC10hfReT6YwptZCMyq3iRsAUURmYJerG-HaKnx7HyfmUh75Nr2ZewEWlwKKb0Pq1lv8KFKBzsugQF7zM5535YtsKHNkMfcvyx3kuu5EgrOm_D5ExdfcXtGBfMw-bCtoBge_AX8nUwGP3jkRz_jgT5jAZeK8uQ1Ikn03Z5OrVd2N-kwILR6XLh1nARVrBiUxscaPLwmWt89XngpiOvgLfgebGSzVyxeT4kTdpKa0BIABzw78sy9Q35w37tZkb20mg_fSqHfJR24BmiuPhlMY3HPR0oM",
+                expires_in: 3600,
+                scope:
+                  "playlist-read-private playlist-read-collaborative ugc-image-upload user-follow-read playlist-modify-private user-read-email user-read-private user-follow-modify user-modify-playback-state user-library-read user-library-modify playlist-modify-public user-read-playback-state user-read-currently-playing user-read-recently-played user-read-playback-position user-top-read",
+                token_type: "Bearer",
+              },
+            },
+          },
+        },
+      },
+    },
+  }}
+></StatusCodes>
