@@ -69,11 +69,9 @@ const config: Config = {
         // },
         // { to: "/blog", label: "Blog", position: "left" },
         {
-          type: "doc",
-          docId: "Documentation",
           label: "Documentation",
           position: "left",
-          to: "/docs/category/Documentation.md",
+          to: "/docs/Documentation/overview", // Links to the overview page as the entry point
         },
         {
           label: "Spotify API",
@@ -95,7 +93,7 @@ const config: Config = {
           items: [
             {
               label: "Documentation",
-              to: "/docs/Documentation",
+              to: "/docs/Documentation/overview",
             },
           ],
         },

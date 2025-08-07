@@ -1,228 +1,68 @@
 ---
 id: access-token-auth-flow
 title: "Access Token & Auth Flow"
-description: "Access Token & Auth Flow"
+description: "Learn how to secure and manage access tokens for the Spotify Web API using the Authorization Code Flow with Postman."
 custom_edit_url: null
 ---
 
+# Access Token & Auth Flow
 
+This guide walks you through the Authorization Code Flow to obtain and use access tokens for the Spotify Web API, even without a running server. Use Postman to test the process and resolve common issues like the "response_type must be code or token" error.
 
-Step-by-Step Fix in Postman for Auth Flow
+## Step-by-Step Fix in Postman
 
-To resolve this, you need to:
+Follow these steps to configure your Spotify app, capture an authorization code, exchange it for an access token, and call the albums endpoint.
 
-- Ensure the redirect URI is correctly configured.
-    
-- Capture the authorization code, even if no server is running.
-    
-- Use Postman to exchange the code for an access token and call the albums endpoint.
-    
+### Step 1: Verify Spotify App Configuration
 
-Step 1: Verify Spotify App ConfigurationEnsure [http://127.0.0.1:8000/callback](http://127.0.0.1:8000/callback) is registered in your Spotify application:
+Ensure your Spotify application is correctly set up with the redirect URI.
 
 1. Go to the [Spotify Developer Dashboard](https://developer.spotify.com/dashboard/).
-    
-2. Select your app.
-    
-3. Click Edit Settings.
-    
-4. [http://127.0.0.1:8000/callback](http://127.0.0.1:8000/callback)
-    
-    - Ensure it’s exact (no trailing slashes, correct port, 127.0.0.1 instead of localhost).
-        
-    - Save changes.
-        
-5. Note your Client ID and Client Secret.
-    
+2. Select your app and click **Edit Settings**.
+3. Under **Redirect URIs**, add `http://127.0.0.1:8000/callback`:
+   - Use exactly `http://127.0.0.1:8000/callback` (no trailing slashes, use `127.0.0.1` instead of `localhost`).
+   - Save the changes.
+4. Note your **Client ID** and **Client Secret** for later use.
 
-Step 2: Construct and Test the Authorization URLThe previous "response_type must be code or token" error suggests a malformed URL. Let’s build it correctly:
+### Step 2: Construct and Test the Authorization URL
 
-1. [https://accounts.spotify.com/authorize?client_id=YOUR_CLIENT_ID&amp;response_type=code&amp;redirect_uri=http://127.0.0.1:8000/callback&amp;scope=user-library-read&amp;state=12345](https://accounts.spotify.com/authorize?client_id=YOUR_CLIENT_ID&response_type=code&redirect_uri=http://127.0.0.1:8000/callback&scope=user-library-read&state=12345)
-    
-    - Parameters:
-        
-        - client_id: Your Client ID.
-            
-        - response_type: code (for Authorization Code Flow).
-            
-        - redirect_uri: [http://127.0.0.1:8000/callback](http://127.0.0.1:8000/callback) (URL-encoded [http://127.0.0.1:8000/callback](http://127.0.0.1:8000/callback)).
-            
-        - scope: user-library-read.
-            
-        - state: 12345 (a random string for security).
-            
-    - [https://accounts.spotify.com/authorize?client_id=abc123&amp;response_type=code&amp;redirect_uri=http://127.0.0.1:8000/callback&amp;scope=user-library-read&amp;state=12345](https://accounts.spotify.com/authorize?client_id=abc123&response_type=code&redirect_uri=http://127.0.0.1:8000/callback&scope=user-library-read&state=12345)
-        
-2. Test in Browser:
-    
-    - Paste the URL into a browser (e.g., Chrome).
-        
-    - Log in to Spotify and authorize the app.
-        
-    - [http://127.0.0.1:8000/callback?code=AUTHORIZATION_CODE&amp;state=12345](http://127.0.0.1:8000/callback?code=AUTHORIZATION_CODE&state=12345)
-        
-    - You’ll likely see "site can't be reached" because no server is running, but the code parameter is in the URL.
-        
-    - Copy the AUTHORIZATION_CODE (e.g., AQBXYBI0mA-j2TGg...).
-        
-3. Fixing the Error:
-    
-    - If you see "response_type must be code or token", check:
-        
-        - response_type=code is exact (no typos, case-sensitive).
-            
-        - No extra spaces or characters in the URL.
-            
-        - You’re using /authorize, not /api/token.
-            
+Fix the "response_type must be code or token" error by building a correct authorization URL.
 
-Step 1: Exchange Authorization Code for Access Token (cURL)
+1. Construct the authorization URL with these parameters:
 
-This cURL command sends a POST request to [https://accounts.spotify.com/api/token](https://accounts.spotify.com/api/token) to exchange the authorization code for an access token.bash
+   - `client_id`: Your Client ID.
+   - `response_type`: `code` (for Authorization Code Flow).
+   - `redirect_uri`: `http://127.0.0.1:8000/callback` (URL-encoded).
+   - `scope`: `user-library-read`.
+   - `state`: A random string (e.g., `12345`) for security.
+   - Example:
+     ```
+     https://accounts.spotify.com/authorize?client_id=YOUR_CLIENT_ID&response_type=code&redirect_uri=http%3A%2F%2F127.0.0.1%3A8000%2Fcallback&scope=user-library-read&state=12345
+     ```
 
+2. Test the URL:
+
+   - Paste the URL into a browser (e.g., Chrome).
+   - Log in to Spotify and authorize the app.
+   - The browser will redirect to `http://127.0.0.1:8000/callback?code=AUTHORIZATION_CODE&state=12345`.
+   - You may see "site can't be reached" (expected without a server), but copy the `AUTHORIZATION_CODE` (e.g., `AQBB8bO8QPJGLGrUDOQTqbwJzMs078o08AI5g9vcvcqw4dCFmlHJc7t9YBzvfSDIlMYAOklahY3KvvyWvBcgIDVegmtm-Cq227TWTjQPnsZ0HbDO58jMqTqubBVrEukKGJAipcpDyddnJIxrvJnQQaT6j7-IGU5p7ZvTpaZNCC-hGppkXeqjd4vtmcj2W1mQQyf2S-M`).
+
+3. Troubleshoot the Error:
+   - If you see "response_type must be code or token":
+     - Ensure `response_type=code` is exact (no typos, case-sensitive).
+     - Verify no extra spaces or characters in the URL.
+     - Confirm you're using `/authorize`, not `/api/token`.
+
+### Step 3: Exchange Authorization Code for Access Token
+
+Use this cURL command to exchange the authorization code for an access token.
+
+```bash
+    curl --request POST \
+    --url 'https://accounts.spotify.com/api/token' \
+    --header 'Content-Type: application/x-www-form-urlencoded' \
+    --data 'grant_type=authorization_code&code=AQBB8bO8QPJGLGrUDOQTqbwJzMs078o08AI5g9vcvcqw4dCFmlHJc7t9YBzvfSDIlMYAOklahY3KvvyWvBcgIDVegmtm-Cq227TWTjQPnsZ0HbDO58jMqTqubBVrEukKGJAipcpDyddnJIxrvJnQQaT6j7-IGU5p7ZvTpaZNCC-hGppkXeqjd4vtmcj2W1mQQyf2S-M&redirect_uri=http://127.0.0.1:8000/callback&client_id=YOUR_CLIENT_ID&client_secret=YOUR_CLIENT_SECRET'
 ```
-curl --request POST \
-  --url 'https://accounts.spotify.com/api/token' \
-  --header 'Content-Type: application/x-www-form-urlencoded' \
-  --data 'grant_type=authorization_code&code=AQBB8bO8QPJGLGrUDOQTqbwJzMs078o08AI5g9vcvcqw4dCFmlHJc7t9YBzvfSDIlMYAOklahY3KvvyWvBcgIDVegmtm-Cq227TWTjQPnsZ0HbDO58jMqTqubBVrEukKGJAipcpDyddnJIxrvJnQQaT6j7-IGU5p7ZvTpaZNCC-hGppkXeqjd4vtmcj2W1mQQyf2S-M&redirect_uri=http://127.0.0.1:8000/callback&client_id=YOUR_CLIENT_ID&client_secret=YOUR_CLIENT_SECRET'
-
- ```
-
-Details:
-
-- Method: POST
-    
-- URL: [https://accounts.spotify.com/api/token](https://accounts.spotify.com/api/token)
-    
-- Headers:
-    
-    - Content-Type: application/x-www-form-urlencoded
-        
-- Body (URL-encoded):
-    
-    - grant_type=authorization_code
-        
-    - code: Your authorization code from the redirect URL.
-        
-    - redirect_uri: [http://127.0.0.1:8000/callback](http://127.0.0.1:8000/callback) (must match your Spotify app settings).
-        
-    - client_id: Replace YOUR_CLIENT_ID with your Spotify Client ID.
-        
-    - client_secret: Replace YOUR_CLIENT_SECRET with your Spotify Client Secret.
-        
-- \{ "access_token": "YOUR_ACCESS_TOKEN", "token_type": "Bearer", "expires_in": 3600, "refresh_token": "YOUR_REFRESH_TOKEN", "scope": "user-library-read"\}
-    
-- Postman Import:
-    
-    1. In Postman, click Import > Raw Text.
-        
-    2. Paste the cURL command.
-        
-    3. Replace YOUR_CLIENT_ID and YOUR_CLIENT_SECRET.
-        
-    4. Send the request and copy the access_token from the response.
-        
-
-Notes:
-
-- Ensure the code is used only once; it’s single-use. If you get an "invalid grant" error, redo the authorization URL step to get a new code.
-    
-- Verify scope in the response includes user-library-read.
-    
-
----
-
-Step 2: Call the Albums Endpoint (cURL)
-
-This cURL command sends a GET request to [https://api.spotify.com/v1/me/albums](https://api.spotify.com/v1/me/albums) to retrieve your saved albums, using the access token from Step 1.bash
-
-```
-curl --request GET \
-  --url 'https://api.spotify.com/v1/me/albums' \
-  --header 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
-  --header 'Content-Type: application/json'
-
- ```
-
-Details:
-
-- Method: GET
-    
-- URL: [https://api.spotify.com/v1/me/albums](https://api.spotify.com/v1/me/albums)
-    
-- Headers:
-    
-    - Authorization: Bearer YOUR_ACCESS_TOKEN (replace YOUR_ACCESS_TOKEN with the token from Step 1).
-        
-    - Content-Type: application/json (optional for GET, but included to match your example).
-        
-- Body: None (GET requests don’t require a body).
-    
-- \{ "items": \[ \{ "album": \{ "name": "Album Name", "id": "album_id" \} \} \], "total": 1\}
-    
-- Postman Import:
-    
-    1. Import the cURL command as in Step 1.
-        
-    2. Replace YOUR_ACCESS_TOKEN with the actual token.
-        
-    3. Send the request.
-        
-
-Notes:
-
-- If you get a 401 error (“Valid user authentication required”):
-    
-    - Ensure the Authorization header is formatted as Bearer followed by the token (with a space).
-        
-    - Verify the token’s scope includes user-library-read.
-        
-    - If the token is expired, proceed to Step 3 to refresh it.
-        
-
----
-
-Step 3: Refresh the Token (cURL, Optional)
-
-If the access token from Step 1 expires (valid for 1 hour), use this cURL command to refresh it using the refresh_token.bash
-
-```
-curl --request POST \
-  --url 'https://accounts.spotify.com/api/token' \
-  --header 'Content-Type: application/x-www-form-urlencoded' \
-  --data 'grant_type=refresh_token&refresh_token=YOUR_REFRESH_TOKEN&client_id=YOUR_CLIENT_ID&client_secret=YOUR_CLIENT_SECRET'
-
- ```
-
-Details:
-
-- Method: POST
-    
-- URL: [https://accounts.spotify.com/api/token](https://accounts.spotify.com/api/token)
-    
-- Headers:
-    
-    - Content-Type: application/x-www-form-urlencoded
-        
-- Body (URL-encoded):
-    
-    - grant_type=refresh_token
-        
-    - refresh_token: The YOUR_REFRESH_TOKEN from Step 1.
-        
-    - client_id: Your Client ID.
-        
-    - client_secret: Your Client Secret.
-        
-- \{ "access_token": "NEW_ACCESS_TOKEN", "token_type": "Bearer", "expires_in": 3600, "scope": "user-library-read"\}
-    
-- Postman Import:
-    
-    - Import as before, replace YOUR_REFRESH_TOKEN, YOUR_CLIENT_ID, and YOUR_CLIENT_SECRET.
-        
-    - Use the new access_token in Step 2.
-
-
 
 ```mdx-code-block
 import DocCardList from '@theme/DocCardList';
@@ -230,4 +70,3 @@ import {useCurrentSidebarCategory} from '@docusaurus/theme-common';
 
 <DocCardList items={useCurrentSidebarCategory().items}/>
 ```
-      
