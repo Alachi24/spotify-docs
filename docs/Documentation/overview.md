@@ -24,7 +24,7 @@ Kick off your development with these essential steps:
    Include the access token in your API requests to authenticate and access Spotify data.
 
 4. **Follow the Getting Started Tutorial**  
-   Dive into our [Getting Started Tutorial](#) to learn how to make your first Web API call.
+   Dive into our [Getting Started Tutorial](docs\Documentation\Getting_Started.md) to learn how to make your first Web API call.
 
 ### Documentation Structure
 
@@ -65,6 +65,6 @@ Have questions or run into issues? Visit the [Spotify Developer Community](https
 
 ### Legal
 
-By using the Spotify Web API, you agree to the [Spotify Developer Terms of Service](https://developer.spotify.com/terms/).
+By using the Spotify Web API, you agree to the [Spotify Developer Terms of Service](#).
 
 <!-- <DocCardList items={useCurrentSidebarCategory().items} /> -->
