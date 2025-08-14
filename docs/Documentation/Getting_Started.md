@@ -144,4 +144,4 @@ Let’s use the Get Artist endpoint to fetch an artist’s information. You’ll
 
 - **Challenge:** Try using the [Search endpoint](#) to find artist IDs programmatically.
 - **Learn More:** Check the [Authorization](#) Guide to pick the right flow for your project.
-- **Deep Dive:** Read the [API Calls](#) Guide for detailed request and response info.
+- **Deep Dive:** Read the [API Calls](\docs\Documentation\API_Calls.md) Guide for detailed request and response info.

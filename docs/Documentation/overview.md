@@ -53,7 +53,7 @@ The Spotify Web API offers a wide range of functionality for developers, includi
 - Search for Spotify content using powerful query tools.
 - Control playback with features like play, resume, seek to a position, or retrieve your queue.
 - Manage your personal library by creating playlists and adding your favorite tracks.
-- And much more! Explore the full list of endpoints in the [API Reference](#).
+- And much more! Explore the full list of endpoints in the [API Reference](/docs/spotify/albums).
 
 ### Examples
 
