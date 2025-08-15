@@ -9,16 +9,18 @@ import type * as OpenApiPlugin from "docusaurus-plugin-openapi-docs";
 const config: Config = {
   title: "Spotify API Docs",
   tagline: "Documentation for Spotify API",
-  url: "https://your-docusaurus-test-site.com",
-  baseUrl: "/",
+  url: "https://alachi24.github.io",
+  baseUrl: "/spotify-docs/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "facebook", // Usually your GitHub org/user name.
-  projectName: "docusaurus", // Usually your repo name.
+  organizationName: "Alachi24", // Usually your GitHub org/user name.
+  projectName: "spotify-doc", // Usually your repo name.
+  trailingSlash: false, // Optional: Set to true if you prefer URLs with trailing slashes
+  deploymentBranch: "gh-pages", // The branch where the site will be deployed
 
   presets: [
     [
