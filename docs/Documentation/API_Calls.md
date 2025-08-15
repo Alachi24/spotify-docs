@@ -46,7 +46,7 @@ The Web API uses the following status codes, as defined in RFC 2616 and RFC 6585
 | 201         | **Created** - The request was fulfilled, creating a new resource.                                                                               |
 | 202         | **Accepted** - The request is being processed, but not yet complete.                                                                            |
 | 204         | **No Content** - The request succeeded, but no message body is returned.                                                                        |
-| 304         | **Not Modified** - See [Conditional Requests](docs/Documentation/API_Calls).                                                                    |
+| 304         | **Not Modified** - See _Conditional Requests_.                                                                                                  |
 | 400         | **Bad Request** - The server couldn’t understand the request due to invalid syntax. Check the response body for details; see _Response Schema_. |
 | 401         | **Unauthorized** - Authentication is required, or the provided credentials were rejected.                                                       |
 | 403         | **Forbidden** - The server understood the request but refuses to fulfill it.                                                                    |
@@ -118,7 +118,7 @@ Most API responses contain appropriate cache-control headers set to assist in cl
 
 ### Timestamps
 
-Timestamps are returned in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format as [Coordinated Universal Time (UTC)](https://en.wikipedia.org/wiki/Offset_to_Coordinated_Universal_Time) with a zero offset: `YYYY-MM-DDTHH:MM:SSZ`. If the time is imprecise (for example, the date/time of an album release), an additional field indicates the precision; see for example, release_date in an [Album Object](/docs/spotify/get-album-tracks.api).
+Timestamps are returned in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format as [Coordinated Universal Time (UTC)](https://en.wikipedia.org/wiki/Offset_to_Coordinated_Universal_Time) with a zero offset: `YYYY-MM-DDTHH:MM:SSZ`. If the time is imprecise (for example, the date/time of an album release), an additional field indicates the precision; see for example, release_date in an [Album Object](/docs/spotify/get-album-tracks).
 
 ### Pagination
 
