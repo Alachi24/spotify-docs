@@ -15,7 +15,7 @@ The base address for all Web API requests is: `https://api.spotify.com`
 
 ### Authorization
 
-All requests to the Spotify Web API require authorization. Be sure to read the [Authorization Guide](#) to grasp the fundamentals (update with actual link).
+All requests to the Spotify Web API require authorization. Be sure to read the _Authorization Guide_ to grasp the fundamentals.
 
 To access private data (e.g., user profiles or playlists), your application must obtain the user’s permission.
 
@@ -40,21 +40,21 @@ The Spotify Web API typically returns JSON data in the response body. However, s
 
 The Web API uses the following status codes, as defined in RFC 2616 and RFC 6585:
 
-| Status Code | Description                                                                                                                                        |
-| ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 200         | **OK** - The request succeeded. The response body and headers contain the result.                                                                  |
-| 201         | **Created** - The request was fulfilled, creating a new resource.                                                                                  |
-| 202         | **Accepted** - The request is being processed, but not yet complete.                                                                               |
-| 204         | **No Content** - The request succeeded, but no message body is returned.                                                                           |
-| 304         | **Not Modified** - See [Conditional Requests](#).                                                                                                  |
-| 400         | **Bad Request** - The server couldn’t understand the request due to invalid syntax. Check the response body for details; see [Response Schema](#). |
-| 401         | **Unauthorized** - Authentication is required, or the provided credentials were rejected.                                                          |
-| 403         | **Forbidden** - The server understood the request but refuses to fulfill it.                                                                       |
-| 404         | **Not Found** - The requested resource couldn’t be found (temporary or permanent).                                                                 |
-| 429         | **Too Many Requests** - [Rate limiting](#) has been applied. applied.                                                                              |
-| 500         | **Internal Server Error** - Our clever coders aim to catch all errors, but if you encounter this, please report it via a comment below.            |
-| 502         | **Bad Gateway** - The server, acting as a gateway or proxy, received an invalid response from an upstream server.                                  |
-| 503         | **Service Unavailable** - The server is temporarily unable to handle the request. Try again after a delay.                                         |
+| Status Code | Description                                                                                                                                     |
+| ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| 200         | **OK** - The request succeeded. The response body and headers contain the result.                                                               |
+| 201         | **Created** - The request was fulfilled, creating a new resource.                                                                               |
+| 202         | **Accepted** - The request is being processed, but not yet complete.                                                                            |
+| 204         | **No Content** - The request succeeded, but no message body is returned.                                                                        |
+| 304         | **Not Modified** - See [Conditional Requests](docs/Documentation/API_Calls).                                                                    |
+| 400         | **Bad Request** - The server couldn’t understand the request due to invalid syntax. Check the response body for details; see _Response Schema_. |
+| 401         | **Unauthorized** - Authentication is required, or the provided credentials were rejected.                                                       |
+| 403         | **Forbidden** - The server understood the request but refuses to fulfill it.                                                                    |
+| 404         | **Not Found** - The requested resource couldn’t be found (temporary or permanent).                                                              |
+| 429         | **Too Many Requests** - [Rate limiting](/docs/Documentation/Rate_Limits) has been applied. applied.                                             |
+| 500         | **Internal Server Error** - Our clever coders aim to catch all errors, but if you encounter this, please report it via a comment below.         |
+| 502         | **Bad Gateway** - The server, acting as a gateway or proxy, received an invalid response from an upstream server.                               |
+| 503         | **Service Unavailable** - The server is temporarily unable to handle the request. Try again after a delay.                                      |
 
 #### Handling Response Errors
 
@@ -71,7 +71,7 @@ The Authentication Error Object includes the following key-value pairs:
 | `error`             | string     | A high-level error description as defined in RFC 6749 Section 5.2.   |
 | `error_description` | string     | A detailed error explanation as defined in RFC 6749 Section 4.1.2.1. |
 
-**Note**: Refer to the [OAuth 2.0 Authorization Framework RFC 6749](#) for a complete list of error codes and descriptions (update with actual link).
+**Note**: Refer to the **OAuth 2.0 Authorization Framework RFC 6749** for a complete list of error codes and descriptions.
 
 Here is an example of a failing request to refresh an access token.
 
@@ -89,10 +89,10 @@ When a Spotify Web API request fails, apart from the HTTP status code, an unsucc
 
 The Regular Error Object contains these key-value pairs:
 
-| Key       | Value Type | Value Description                                                                                                |
-| --------- | ---------- | ---------------------------------------------------------------------------------------------------------------- |
-| `status`  | integer    | The HTTP status code, also returned in the response header. See [Response Status Codes](#) for more information. |
-| `message` | string     | A concise explanation of the error's cause.                                                                      |
+| Key       | Value Type | Value Description                                                                                               |
+| --------- | ---------- | --------------------------------------------------------------------------------------------------------------- |
+| `status`  | integer    | The HTTP status code, also returned in the response header. See **Response Status Codes** for more information. |
+| `message` | string     | A concise explanation of the error's cause.                                                                     |
 
 **Note**: Use the `status` and `message` fields to debug and handle errors effectively in your application.
 
@@ -118,7 +118,7 @@ Most API responses contain appropriate cache-control headers set to assist in cl
 
 ### Timestamps
 
-Timestamps are returned in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format as [Coordinated Universal Time (UTC)](https://en.wikipedia.org/wiki/Offset_to_Coordinated_Universal_Time) with a zero offset: `YYYY-MM-DDTHH:MM:SSZ`. If the time is imprecise (for example, the date/time of an album release), an additional field indicates the precision; see for example, release_date in an [Album Object](#).
+Timestamps are returned in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format as [Coordinated Universal Time (UTC)](https://en.wikipedia.org/wiki/Offset_to_Coordinated_Universal_Time) with a zero offset: `YYYY-MM-DDTHH:MM:SSZ`. If the time is imprecise (for example, the date/time of an album release), an additional field indicates the precision; see for example, release_date in an [Album Object](/docs/spotify/get-album-tracks.api).
 
 ### Pagination
 

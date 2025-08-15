@@ -55,7 +55,7 @@ Every app is unique, so it’s important to plan your app’s architecture and u
 
   - Playlist APIs provide a `snapshot_id` that reflects the playlist version you’re working with.
   - Storing and checking the `snapshot_id` can prevent redundant downloads of unchanged playlists.
-  - Learn more in the [Working with Playlists Guide](#) (update with actual link).
+  - Learn more in the **Working with Playlists Guide**.
 
 - **Study Your App's Request Patterns**:
 

@@ -9,7 +9,7 @@ tags:
 
 A **refresh token** is a security credential that allows client applications to obtain new access tokens without requiring users to reauthorize the application.
 
-- **Token Lifespan**: [Access tokens](<(\docs\Documentation\Access_Token.md)>) are designed with a limited lifespan of 1 hour. Once expired, new access tokens can be obtained by providing the original refresh token, which is issued during the authorization token request response.
+- **Token Lifespan**: [Access tokens](/docs/Documentation/Access_Token) are designed with a limited lifespan of 1 hour. Once expired, new access tokens can be obtained by providing the original refresh token, which is issued during the authorization token request response.
 
 ```Json
 {
