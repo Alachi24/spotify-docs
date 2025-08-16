@@ -18,7 +18,7 @@ const config: Config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: "Alachi24", // Usually your GitHub org/user name.
-  projectName: "spotify-doc", // Usually your repo name.
+  projectName: "spotify-docs", // Usually your repo name.
   trailingSlash: false, // Optional: Set to true if you prefer URLs with trailing slashes
   deploymentBranch: "gh-pages", // The branch where the site will be deployed
 
