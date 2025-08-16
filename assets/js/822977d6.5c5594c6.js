@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkspotify_docs=self.webpackChunkspotify_docs||[]).push([[9978],{5499:s=>{s.exports=JSON.parse('{"tags":[{"label":"test","permalink":"/spotify-docs/docs/tags/test","count":16}]}')}}]);

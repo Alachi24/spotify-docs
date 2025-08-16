@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkspotify_docs=self.webpackChunkspotify_docs||[]).push([[1903],{1912:s=>{s.exports=JSON.parse('{"blogBasePath":"/spotify-docs/blog","blogTitle":"Blog","authorsListPath":"/spotify-docs/blog/authors"}')}}]);
