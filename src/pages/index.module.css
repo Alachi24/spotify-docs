@@ -1,23 +1,114 @@
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
-
-.heroBanner {
+/* HERO */
+.heroBannerSpotify {
   padding: 4rem 0;
   text-align: center;
   position: relative;
-  overflow: hidden;
-}
-
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
-  }
-}
-
-.buttons {
+  min-height: 50vh;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  /* Bottom fade over the background image */
+  background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.85) 35%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url("/img/Spotify_2.jpg") center/cover no-repeat;
+}
+
+/* Mobile tweaks */
+@media screen and (max-width: 996px) {
+  .heroBannerSpotify {
+    padding: 2rem 1rem;
+    min-height: 40vh;
+  }
+  .spotifyTitle {
+    font-size: 2.5rem;
+  }
+  .spotifySubtitle {
+    font-size: 1.2rem;
+  }
+  .spotifyButton {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+/* No shadow box over the image */
+.heroContent {
+  padding: 2rem;
+  background: none !important;
+  backdrop-filter: none !important;
+  box-shadow: none !important;
+  border-radius: 0;
+}
+
+/* TEXT */
+.spotifyTitle {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #1db954;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+  margin-bottom: 1rem;
+}
+
+.spotifySubtitle {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* BUTTONS WRAP */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* TRANSPARENT OUTLINE BUTTON (Link renders as <a.button>) */
+.spotifyButton,
+.spotifyButton:link,
+.spotifyButton:visited {
+  background: transparent !important; /* keep transparent */
+  color: #1db954 !important; /* green text */
+  border: 2px solid #1db954 !important; /* green outline */
+  padding: 1rem 2.5rem;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  box-shadow: none !important; /* no box shadow */
+  text-decoration: none; /* ensure no underline */
+}
+
+/* 🎵 icon (subtle, animated on hover) */
+.spotifyButton::after {
+  content: "🎶";
+  position: absolute;
+  right: 1rem;
+  font-size: 1.3rem;
+  opacity: 0.7;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+/* Hover → fill green */
+.spotifyButton:hover,
+.spotifyButton:focus {
+  background: #1db954 !important;
+  color: #ffffff !important;
+  transform: translateY(-1px);
+  box-shadow: 0 0 12px rgba(29, 185, 84, 0.4);
+}
+
+.spotifyButton:hover::after,
+.spotifyButton:focus::after {
+  transform: translateY(-4px) rotate(-10deg);
+  opacity: 1;
 }

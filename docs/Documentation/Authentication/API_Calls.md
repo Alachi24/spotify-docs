@@ -1,6 +1,6 @@
 ---
-sidebar_position: 4
-title: "API Calls"
+sidebar_position: 5
+title: "Errors and Status"
 tags:
   - test
 ---

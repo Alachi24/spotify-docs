@@ -6,30 +6,28 @@ const FeatureList = [
   {
     title: "Albums",
     Svg: require("@site/static/img/Albums.svg").default,
-    description: <>Retrieve and Manage Album Metadata.</>,
+    description: "Retrieve and manage album metadata seamlessly.",
   },
   {
     title: "Artists on your beck and call",
     Svg: require("@site/static/img/Artists.svg").default,
-    description: <>Discover Artist Information and Top Tracks.</>,
+    description: "Discover artist information and top tracks instantly.",
   },
   {
     title: "Save Track Details",
     Svg: require("@site/static/img/Playlist.svg").default,
-    description: <>Create and Customize Playlists Easily.</>,
+    description: "Create and customize playlists with ease.",
   },
 ];
 
 function Feature({ Svg, title, description }) {
   return (
-    <div className={clsx("col col--4")}>
-      <div className="text--center">
+    <div className={clsx("col col--4", styles.featureCard)}>
+      <div className={styles.iconWrapper}>
         <Svg className={styles.featureSvg} role="img" />
       </div>
-      <div className="text--center padding-horiz--md">
-        <h3>{title}</h3>
-        <p>{description}</p>
-      </div>
+      <h3 className={styles.featureTitle}>{title}</h3>
+      <p className={styles.featureDesc}>{description}</p>
     </div>
   );
 }

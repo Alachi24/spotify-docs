@@ -1,11 +1,112 @@
 .features {
   display: flex;
   align-items: center;
-  padding: 2rem 0;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem; /* space between cards */
+  padding: 4rem 2rem;
   width: 100%;
 }
 
+/* Feature Card Base */
+.featureCard {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  border-radius: 20px;
+  width: 320px;
+  max-width: 100%;
+
+  /* Smooth transitions on theme switch */
+  transition: background-color 0.4s ease, color 0.4s ease, box-shadow 0.4s ease,
+    transform 0.3s ease;
+
+  background: var(--ifm-background-surface); /* auto from theme */
+  color: var(--ifm-font-color-base); /* auto from theme */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.featureCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Icon Wrapper */
+.iconWrapper {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  transition: background 0.3s ease;
+}
+
+/* =========================
+   SVG ICON ANIMATION
+   ========================= */
+
+/* Base animation for all icons (spread + stack loop) */
 .featureSvg {
-  height: 200px;
-  width: 200px;
+  width: 70px;
+  height: 70px;
+  fill: var(--ifm-color-primary); /* Spotify green */
+  transition: transform 0.4s ease;
+  animation: spreadStack 4s ease-in-out infinite;
+}
+
+/* Keyframes for elegant spread + stack */
+@keyframes spreadStack {
+  0% {
+    transform: scale(1) translate(0, 0);
+  }
+  25% {
+    transform: scale(1.1) translate(-5px, -5px); /* slight spread top-left */
+  }
+  50% {
+    transform: scale(1.1) translate(5px, 5px); /* shift bottom-right */
+  }
+  75% {
+    transform: scale(1.05) translate(-3px, 3px); /* gentle float */
+  }
+  100% {
+    transform: scale(1) translate(0, 0); /* back to stack */
+  }
+}
+
+/* 🎵 OPTIONAL: Staggered "dance" effect
+   Uncomment these if you want icons to animate in sequence */
+/* .featureCard:nth-child(1) .featureSvg {
+  animation-delay: 0s;
+}
+.featureCard:nth-child(2) .featureSvg {
+  animation-delay: 0.5s;
+}
+.featureCard:nth-child(3) .featureSvg {
+  animation-delay: 1s;
+} */
+
+/* Title + Description */
+.featureTitle {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.featureDesc {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0 auto;
+  max-width: 250px;
+  color: var(--ifm-color-content-secondary);
+}
+
+/* Dark mode handled automatically by your custom.css vars */
+[data-theme="dark"] .featureCard:hover {
+  box-shadow: 0 0 20px rgba(29, 185, 84, 0.4); /* subtle Spotify glow */
+}
+
+[data-theme="dark"] .iconWrapper {
+  background: rgba(29, 185, 84, 0.1);
 }

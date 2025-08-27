@@ -49,6 +49,8 @@ const config: Config = {
   ],
 
   themeConfig: {
+    // Replace with your project's social card
+    image: "img/Spotify_card.jpg",
     docs: {
       sidebar: {
         hideable: true,
@@ -68,6 +70,7 @@ const config: Config = {
         //   label: "Tutorial",
         // },
         // { to: "/blog", label: "Blog", position: "left" },
+
         {
           label: "Documentation",
           position: "left",
@@ -86,7 +89,7 @@ const config: Config = {
       ],
     },
     footer: {
-      style: "dark",
+      style: "light",
       links: [
         {
           title: "Docs",
@@ -124,7 +127,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Chisaneme Aloni.`,
     },
     prism: {
       additionalLanguages: [
