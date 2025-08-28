@@ -18,6 +18,6 @@ When interacting with the Spotify Web API, you’ll frequently encounter various
 
 :::tip
 
-Use the appropriate identifier type based on your API call requirements. Refer to the [API Calls](/docs/Documentation/API_Calls) guide for more details.
+Use the appropriate identifier type based on your API call requirements. Refer to the [API Calls](/docs/Documentation/Authentication/API_Calls) guide for more details.
 
 :::

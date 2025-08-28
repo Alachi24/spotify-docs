@@ -16,7 +16,7 @@ The **Authorization Code Flow** is ideal for long-running applications, such as 
 Before proceeding, ensure the following:
 
 - You have read the **Authorization Guide**.
-- You have created an app following the [Apps Guide](/docs/Documentation/Apps).
+- You have created an app following the [Apps Guide](/docs/Documentation/Authentication/Apps).
 
 ### Example
 
@@ -26,18 +26,18 @@ Check out an example app implementing the Authorization Code Flow on GitHub in t
 
 The first step to enable your app to access Spotify resources on behalf of a user is to request their authorization. This involves building and sending a GET request to the `/authorize` endpoint with the following parameters.
 
-| Query Parameter | Relevance                      | Value                                                                                                                                                                                                                                |
-| --------------- | ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `client_id`     | Required                       | The Client ID generated after registering your application (see [App Guide](/docs/Documentation/Apps) for details).                                                                                                                  |
-| `response_type` | Required                       | Set to `code` for the Authorization Code Flow.                                                                                                                                                                                       |
-| `redirect_uri`  | Required                       | The URI to redirect to after the user grants or denies permission. This must match exactly (including case, slashes, etc.) one of the Redirect URIs allowlisted during app registration (see [App Guide](/docs/Documentation/Apps)). |
-| `state`         | Optional, strongly recommended | A random string to protect against cross-site request forgery (CSRF) attacks. Refer to RFC-6749 for details.                                                                                                                         |
-| `scope`         | Optional                       | A space-separated list of scopes. If omitted, only public data (visible in Spotify players) is accessible.                                                                                                                           |
-| `show_dialog`   | Optional                       | Determines if the user must re-approve the app. Defaults to `false` (auto-redirects if approved); set to `true` to force re-approval.                                                                                                |
+| Query Parameter | Relevance                      | Value                                                                                                                                                                                                                                               |
+| --------------- | ------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `client_id`     | Required                       | The Client ID generated after registering your application (see [App Guide](/docs/Documentation/Authentication/Apps) for details).                                                                                                                  |
+| `response_type` | Required                       | Set to `code` for the Authorization Code Flow.                                                                                                                                                                                                      |
+| `redirect_uri`  | Required                       | The URI to redirect to after the user grants or denies permission. This must match exactly (including case, slashes, etc.) one of the Redirect URIs allowlisted during app registration (see [App Guide](/docs/Documentation/Authentication/Apps)). |
+| `state`         | Optional, strongly recommended | A random string to protect against cross-site request forgery (CSRF) attacks. Refer to RFC-6749 for details.                                                                                                                                        |
+| `scope`         | Optional                       | A space-separated list of scopes. If omitted, only public data (visible in Spotify players) is accessible.                                                                                                                                          |
+| `show_dialog`   | Optional                       | Determines if the user must re-approve the app. Defaults to `false` (auto-redirects if approved); set to `true` to force re-approval.                                                                                                               |
 
 :::note
 
-Ensure the `redirect_uri` is correctly configured to avoid authorization errors. Check the [Redirect URI Guide](/docs/Documentation/Redirect_URIs) for best practices.
+Ensure the `redirect_uri` is correctly configured to avoid authorization errors. Check the [Redirect URI Guide](/docs/Documentation/Authentication/Redirect_URIs) for best practices.
 
 :::
 
@@ -169,17 +169,17 @@ app.get('/callback', function(req, res) {
 
 On success, the response will have a 200 OK status and the following JSON data in the response body:
 
-| Key             | Type   | Description                                                                                                    |
-| --------------- | ------ | -------------------------------------------------------------------------------------------------------------- |
-| `access_token`  | string | An access token to include in subsequent API calls, such as those to Spotify Web API services.                 |
-| `token_type`    | string | Specifies how the access token is used; always set to `Bearer`.                                                |
-| `scope`         | string | A space-separated list of scopes granted for this `access_token`.                                              |
-| `expires_in`    | int    | The duration (in seconds) for which the access token remains valid.                                            |
-| `refresh_token` | string | A token for refreshing the access token; see the [Refreshing Tokens](/docs/Documentation/Refresh_Token) guide. |
+| Key             | Type   | Description                                                                                                                   |
+| --------------- | ------ | ----------------------------------------------------------------------------------------------------------------------------- |
+| `access_token`  | string | An access token to include in subsequent API calls, such as those to Spotify Web API services.                                |
+| `token_type`    | string | Specifies how the access token is used; always set to `Bearer`.                                                               |
+| `scope`         | string | A space-separated list of scopes granted for this `access_token`.                                                             |
+| `expires_in`    | int    | The duration (in seconds) for which the access token remains valid.                                                           |
+| `refresh_token` | string | A token for refreshing the access token; see the [Refreshing Tokens](/docs/Documentation/Authentication/Refresh_Token) guide. |
 
 ### What's next?
 
-- Congratulations! Your fresh access token is ready to be used! How can we make API calls with it? take a look at to the [access token](/docs/Documentation/Access_Token) guide to learn how to make an API call using your new fresh access token.
+- Congratulations! Your fresh access token is ready to be used! How can we make API calls with it? take a look at to the [access token](/docs/Documentation/Authentication/Access_Token) guide to learn how to make an API call using your new fresh access token.
 
-- If your access token has expired, you can learn how to issue a new one without requiring users to reauthorize your application by reading the [refresh token](/docs/Documentation/Refresh_Token) guide.
-- For users who are more comfortable with Postman, we’ve prepared a guide on the [Access Token Authentication Flow](/docs/spotify/access-token-auth-flow) to help you navigate the process smoothly..
+- If your access token has expired, you can learn how to issue a new one without requiring users to reauthorize your application by reading the [refresh token](/docs/Documentation/Authentication/Refresh_Token) guide.
+- For users who are more comfortable with Postman, we’ve prepared a guide on the [Access Token Authentication Flow](/docs/Documentation/Authentication/Auth_with_postman) to help you navigate the process smoothly..
