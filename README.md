@@ -1,3 +1,5 @@
+https://github.com/user-attachments/assets/e932b433-bc56-4056-8c8e-1c7d8fe3cd68
+
 # Template
 
 This template is built for [Docusaurus 3](https://docusaurus.io/), a modern static website generator.
