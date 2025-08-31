@@ -5,7 +5,7 @@ tags:
   - test
 ---
 
-# Access Token & Auth Flow
+# Auth with Postman
 
 This guide walks you through the Authorization Code Flow to obtain and use access tokens for the Spotify Web API, even without a running server. Use Postman to test the process and resolve common issues like the "response_type must be code or token" error.
 
