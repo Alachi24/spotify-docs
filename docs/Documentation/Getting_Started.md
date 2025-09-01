@@ -9,12 +9,6 @@ tags:
 
 This guide will help you make your first Spotify Web API call to get a [200 OK] response, retrieving an artist’s metadata. Let’s get started!
 
-### What You'll Learn
-
-- How to set up your Spotify developer account.
-- How to request an access token.
-- How to make your first API call and get a [200 OK] response.
-
 ### Prerequisites
 
 - A Spotify account (free or premium).
