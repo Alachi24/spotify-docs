@@ -13,6 +13,7 @@
 /* Feature Card Base */
 .featureCard {
   text-align: center;
+  margin: 0.2rem;
   padding: 2rem 1.5rem;
   border-radius: 20px;
   flex: 1 1 300px; /* <-- flexible width (min 300px) */
@@ -36,21 +37,21 @@
 .iconWrapper {
   background: rgba(0, 0, 0, 0.05);
   border-radius: 50%;
-  width: 120px;
-  height: 120px;
+  width: 90px; /* reduced from 120px */
+  height: 90px; /* reduced from 120px */
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto 1rem;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, width 0.3s ease, height 0.3s ease;
 }
 
 /* SVG Animation */
 .featureSvg {
-  width: 70px;
-  height: 70px;
+  width: 50px; /* reduced from 70px */
+  height: 50px; /* reduced from 70px */
   fill: var(--ifm-color-primary);
-  transition: transform 0.4s ease;
+  transition: transform 0.4s ease, width 0.3s ease, height 0.3s ease;
   animation: spreadStack 4s ease-in-out infinite;
 }
 
@@ -98,7 +99,7 @@
 
 /* RESPONSIVENESS */
 
-/* Mobile: stack vertically */
+/* Mobile: stack vertically & shrink icons */
 @media screen and (max-width: 768px) {
   .features {
     flex-direction: column;
@@ -108,5 +109,15 @@
   .featureCard {
     flex: 1 1 100%;
     max-width: 100%;
+  }
+
+  .iconWrapper {
+    width: 70px; /* smaller circle on mobile */
+    height: 70px;
+  }
+
+  .featureSvg {
+    width: 38px; /* smaller svg on mobile */
+    height: 38px;
   }
 }
